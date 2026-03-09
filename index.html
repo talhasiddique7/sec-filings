@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEC Filings Guide — Understand Every SEC Form | Educational Resource</title>
+  <meta name="description" content="Comprehensive guide to SEC filings. Learn about Form 10-K, 10-Q, 8-K, S-1, 13F, DEF 14A, and more. Search filings, read comparisons, and master corporate disclosures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== STICKY HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="site-logo">
+        <div class="logo-icon">SEC</div>
+        <span class="logo-text">Filings Guide</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#popular-filings">Filings</a>
+        <a href="#search-filings">Search</a>
+        <a href="#deep-dives">Learn</a>
+        <a href="#comparisons">Compare</a>
+        <a href="#blog">Blog</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="overview">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Investor Education Platform</div>
+      <h1>Understanding SEC Filings</h1>
+      <p class="hero-subtitle">Learn how public companies disclose financial information through regulatory filings. Master every form from 10-K to 13F.</p>
+      <div class="hero-search" id="hero-search">
+        <input type="text" placeholder="Search filings, companies, or form types…" id="hero-search-input" aria-label="Search filings">
+        <button type="button" id="hero-search-btn">Search</button>
+      </div>
+      <div class="hero-ctas">
+        <a href="#popular-filings" class="btn btn-primary">Explore Filings ↓</a>
+        <a href="#deep-dives" class="btn btn-ghost">Learn About SEC Forms</a>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">SEC Forms Explained</div></div>
+        <div class="stat-item"><div class="stat-number">10</div><div class="stat-label">Deep-Dive Articles</div></div>
+        <div class="stat-item"><div class="stat-number">4</div><div class="stat-label">Side-by-Side Comparisons</div></div>
+        <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Free & Open Access</div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== FEATURED FILING ===== -->
+  <section class="section featured-filing-section" id="featured-filing">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">Deep Dive Highlight</span>
+        <h2 class="section-title">Featured Filing Breakdown</h2>
+      </div>
+      <div class="featured-card fade-in" id="featured-filing-card">
+        <div class="featured-content-wrapper" id="featured-content-wrapper" style="display: flex; width: 100%;">
+          <div class="featured-card-content">
+            <div class="featured-badge">Detailed Reference</div>
+            <div class="filing-card-icon blue" id="feat-icon">10-K</div>
+            <h3 id="feat-title">Form 10-K — The Annual Report</h3>
+            <p class="featured-intro" id="feat-desc">
+              Go beyond the summary. Our dedicated Form 10-K guide breaks down all 19 pages of the official SEC requirements, from Item 1 Business descriptions to Item 15 Exhibits. 
+              Understand the legal structure and disclosure mandates that govern corporate annual transparency.
+            </p>
+            <div class="featured-tags" id="feat-tags">
+              <span class="tag">Part I-IV</span>
+              <span class="tag">16 Items Detailed</span>
+              <span class="tag">Legal Reference</span>
+            </div>
+            <a href="filings/10k.html" class="btn btn-primary" id="feat-link">See Full Filing Details →</a>
+          </div>
+          <div class="featured-card-preview">
+            <div class="preview-line"></div>
+            <div class="preview-line"></div>
+            <div class="preview-line short"></div>
+            <div class="preview-box"></div>
+          </div>
+        </div>
+        <div class="featured-progress-bar" id="feat-progress"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== POPULAR FILINGS ===== -->
+  <section class="section" id="popular-filings">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">Most Referenced Forms</span>
+        <h2 class="section-title">Popular SEC Filing Types</h2>
+        <p class="section-subtitle">The filings investors encounter most often. Click any card to read the full explanation.</p>
+      </div>
+      <div class="filings-grid fade-in">
+        <article class="filing-card" id="card-10k">
+          <div class="filing-card-icon blue">10-K</div>
+          <h3>Form 10-K</h3>
+          <p class="card-desc">The annual report providing a comprehensive overview of a company's financial condition, audited financials, business operations, risk factors, and MD&amp;A.</p>
+          <div class="card-meta"><span>📅 Annual</span><span>⏰ 60–90 days post FY-end</span></div>
+          <a href="filings/10k.html" class="card-link">Read full guide →</a>
+        </article>
+        <article class="filing-card" id="card-10q">
+          <div class="filing-card-icon cyan">10-Q</div>
+          <h3>Form 10-Q</h3>
+          <p class="card-desc">Quarterly financial snapshot with unaudited statements. Filed for Q1–Q3 (Q4 is covered by the 10-K annual report).</p>
+          <div class="card-meta"><span>📅 Quarterly</span><span>⏰ 40–45 days post quarter</span></div>
+          <a href="filings/10q.html" class="card-link">Read full guide →</a>
+        </article>
+        <article class="filing-card" id="card-8k">
+          <div class="filing-card-icon purple">8-K</div>
+          <h3>Form 8-K</h3>
+          <p class="card-desc">Current report for material events: M&amp;A, executive changes, bankruptcy, asset dispositions, and other major corporate developments.</p>
+          <div class="card-meta"><span>📅 Event-driven</span><span>⏰ Within 4 business days</span></div>
+          <a href="filings/8k.html" class="card-link">Read full guide →</a>
+        </article>
+        <article class="filing-card" id="card-s1">
+          <div class="filing-card-icon gold">S-1</div>
+          <h3>Form S-1</h3>
+          <p class="card-desc">IPO registration statement with prospectus: business overview, financial statements, risk factors, use of proceeds, and management bios.</p>
+          <div class="card-meta"><span>📅 Pre-offering</span><span>⏰ Before IPO</span></div>
+          <a href="filings/s1.html" class="card-link">Read full guide →</a>
+        </article>
+        <article class="filing-card" id="card-13f">
+          <div class="filing-card-icon green">13F</div>
+          <h3>Form 13F</h3>
+          <p class="card-desc">Quarterly holdings report filed by institutional investment managers with discretionary assets over $100 million.</p>
+          <div class="card-meta"><span>📅 Quarterly</span><span>⏰ 45 days post quarter</span></div>
+          <a href="filings/13f.html" class="card-link">Read full guide →</a>
+        </article>
+        <article class="filing-card" id="card-def14a">
+          <div class="filing-card-icon red">DEF14A</div>
+          <h3>Proxy Statement (DEF 14A)</h3>
+          <p class="card-desc">Definitive proxy: executive compensation, board elections, shareholder voting matters, and corporate governance disclosures.</p>
+          <div class="card-meta"><span>📅 Annual</span><span>⏰ Before shareholder meeting</span></div>
+          <a href="filings/def14a.html" class="card-link">Read full guide →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== SEARCHABLE FILINGS INDEX ===== -->
+  <section class="search-section" id="search-filings">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">Complete Reference</span>
+        <h2 class="section-title">All SEC Forms — What, Who, When</h2>
+        <p class="section-subtitle">Every filing explained in one searchable table. Filter by category or search for a specific form.</p>
+      </div>
+      <div class="search-controls fade-in">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="table-search" placeholder="Search forms by name, description, or filer type…" aria-label="Search forms table">
+        </div>
+        <div class="filter-pills" id="filter-pills">
+          <button class="filter-pill active" data-filter="all">All Forms</button>
+          <button class="filter-pill" data-filter="periodic">Periodic</button>
+          <button class="filter-pill" data-filter="registration">Registration</button>
+          <button class="filter-pill" data-filter="insider">Insider &amp; Ownership</button>
+          <button class="filter-pill" data-filter="foreign">Foreign Issuers</button>
+          <button class="filter-pill" data-filter="other">Other</button>
+        </div>
+      </div>
+      <div class="result-count fade-in" id="result-count"></div>
+      <div class="filings-table-wrap fade-in">
+        <table class="filings-table" id="filings-table">
+          <thead>
+            <tr><th>Form</th><th>What</th><th>Who Files</th><th>When Due</th></tr>
+          </thead>
+          <tbody>
+            <tr data-category="registration"><td><a href="filings/s1.html">Form S-1</a></td><td>IPO registration statement with prospectus: business, management, financials, risks. Required for first public offering.</td><td>Companies offering securities to the public for the first time.</td><td>Before the offering. Financials audited by independent CPA.</td></tr>
+            <tr data-category="periodic"><td><a href="filings/10k.html">Form 10-K</a></td><td>Annual report: business summary, MD&amp;A, audited financials, legal proceedings, risk factors. More detailed than the glossy annual report.</td><td>All public companies.</td><td>Within 60–90 days after fiscal year end.</td></tr>
+            <tr data-category="periodic"><td><a href="filings/10q.html">Form 10-Q</a></td><td>Quarterly report: unaudited financials, ongoing view of financial condition for Q1–Q3.</td><td>All public companies (Q4 covered by 10-K).</td><td>Within 40–45 days after quarter end.</td></tr>
+            <tr data-category="periodic"><td><a href="filings/8k.html">Form 8-K</a></td><td>Current report for material events: bankruptcy, M&amp;A, exec changes, asset deals, impairments.</td><td>Public companies.</td><td>Within 4 business days of the event.</td></tr>
+            <tr data-category="insider"><td><a href="#detail-proxy">Proxy (DEF 14A)</a></td><td>Executive/director pay, items for shareholder vote, how to vote (mail, phone, online).</td><td>Public companies soliciting shareholder votes.</td><td>Before soliciting votes; deadline typically 24 hrs before meeting.</td></tr>
+            <tr data-category="insider"><td><a href="#detail-forms345">Forms 3, 4, 5</a></td><td>Insider ownership: Form 3 = initial; Form 4 = changes; Form 5 = annual summary.</td><td>Officers, directors, 10%+ beneficial owners.</td><td>Form 3: 10 days; Form 4: 2 business days; Form 5: 45 days post FY.</td></tr>
+            <tr data-category="insider"><td><a href="#detail-13d">Schedule 13D</a></td><td>Beneficial ownership report when crossing 5% of voting shares. 13G = shorter form for passive investors.</td><td>Any person/group acquiring &gt;5% voting shares.</td><td>Within 5 business days of crossing 5%.</td></tr>
+            <tr data-category="insider"><td><a href="#detail-144">Form 144</a></td><td>Notice of intent to sell restricted stock (not yet freely tradable).</td><td>Insiders/affiliates selling restricted stock.</td><td>When 3-month sales exceed 5,000 shares or $50,000.</td></tr>
+            <tr data-category="periodic"><td>Form 10</td><td>Registration to become a reporting company under Exchange Act Section 12(g). Triggers 10-K/10-Q/8-K requirements.</td><td>Companies with &gt;500 shareholders and &gt;$10M assets (or voluntary).</td><td>No fixed deadline; info should be "reasonably close" to filing.</td></tr>
+            <tr data-category="other"><td>Form 12b-25</td><td>Notification of inability to file 10-K or 10-Q on time; request for extension.</td><td>Companies needing more time for periodic reports.</td><td>By the original due date of the 10-K or 10-Q.</td></tr>
+            <tr data-category="registration"><td>Form S-3</td><td>Short-form registration for shelf offerings; notifies shares will be offered later.</td><td>Seasoned issuers meeting SEC eligibility.</td><td>Before the offering(s).</td></tr>
+            <tr data-category="registration"><td>Form S-4</td><td>Registration in connection with mergers, acquisitions, or exchange offers.</td><td>Companies involved in M&amp;A or exchange offers.</td><td>In connection with the transaction.</td></tr>
+            <tr data-category="registration"><td>Form S-8</td><td>Registration of securities offered to employees (stock plans, options, compensation).</td><td>Companies with employee benefit plans involving stock.</td><td>When registering employee plan securities.</td></tr>
+            <tr data-category="other"><td>Form D</td><td>Notice of securities sold without registration (private placements, exempt offerings).</td><td>Issuers relying on exemptions (startups, private placements).</td><td>Within specified time after first sale.</td></tr>
+            <tr data-category="other"><td><a href="#detail-13f">Form 13F</a></td><td>Quarterly disclosure of equity holdings by institutional investment managers.</td><td>Managers with discretionary holdings over $100 million.</td><td>Within 45 calendar days after quarter end.</td></tr>
+            <tr data-category="foreign"><td><a href="#detail-20f">Form 20-F</a></td><td>Annual report for foreign private issuers: financials, governance, business (similar to 10-K).</td><td>Foreign private issuers with SEC-registered securities.</td><td>Within 4 months of fiscal year end.</td></tr>
+            <tr data-category="foreign"><td><a href="#detail-6k">Form 6-K</a></td><td>Current report for foreign private issuers: material information disclosed abroad.</td><td>Foreign private issuers listed on U.S. exchanges.</td><td>Promptly after disclosure in home country.</td></tr>
+            <tr data-category="foreign"><td>Form 40-F</td><td>Annual report or registration for Canadian issuers listing on U.S. exchanges.</td><td>Canadian companies listed on U.S. exchanges.</td><td>Annual, or with registration.</td></tr>
+            <tr data-category="foreign"><td>Form F-1</td><td>Registration for foreign companies offering securities to U.S. public (like S-1 for foreign issuers).</td><td>Foreign private issuers in first U.S. public offering.</td><td>Before the offering.</td></tr>
+            <tr data-category="foreign"><td>Form F-6</td><td>Registration of American Depositary Receipts (ADRs) representing foreign shares.</td><td>Depositary banks offering ADR programs.</td><td>Before offering ADRs.</td></tr>
+            <tr data-category="other"><td>Form S-6</td><td>Registration of unit investment trust (UIT) securities: trust structure, fees.</td><td>Unit investment trusts (UITs).</td><td>Before offering UIT securities.</td></tr>
+            <tr data-category="other"><td>Form N-PX</td><td>Disclosure of how mutual funds voted on proxy matters.</td><td>Mutual funds and registered investment companies.</td><td>Annual; by August 31.</td></tr>
+            <tr data-category="other"><td>Form 1-K</td><td>Annual report for Regulation A issuers.</td><td>Companies that raised funds under Reg A.</td><td>Annual per Reg A rules.</td></tr>
+            <tr data-category="other"><td>Form 1-Z</td><td>Exit report: termination or completion of a Regulation A offering.</td><td>Reg A issuers when offering ends.</td><td>When the Reg A offering is completed or terminated.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== DEEP DIVE ARTICLES ===== -->
+  <section class="section article-section" id="deep-dives">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">In-Depth Education</span>
+        <h2 class="section-title">Deep-Dive Filing Guides</h2>
+        <p class="section-subtitle">Detailed explanations of each major SEC form — what it is, what it contains, deadlines, and why investors should care.</p>
+      </div>
+      <div class="article-grid">
+
+        <!-- 10-K -->
+        <article class="article-block fade-in" id="detail-10k">
+          <h3>Form 10-K — Annual Report</h3>
+          <p>Form 10-K is the annual report providing a comprehensive analysis of a company's financial condition. Though it overlaps with a company's glossy "annual report," the 10-K is the longer, more detailed technical document filed within 60–90 days of the fiscal year end.</p>
+          <h4>Key Sections</h4>
+          <ul>
+            <li><strong>Business Summary:</strong> Operations, segments, products, subsidiaries, markets, regulatory issues, R&amp;D, competition, and employees.</li>
+            <li><strong>Management Discussion &amp; Analysis (MD&amp;A):</strong> Management explains operations and financial results for the past year.</li>
+            <li><strong>Financial Statements:</strong> Audited balance sheet, income statement, and cash flow statement for fundamental analysis.</li>
+            <li><strong>Risk Factors:</strong> Material risks such as legal proceedings, competitive landscape, regulatory changes, and market conditions.</li>
+          </ul>
+          <h4>Why Investors Read the 10-K</h4>
+          <p>The 10-K is the primary document for fundamental analysis — extracting revenues, earnings, growth, ROE, profit margins, and equity multiples to determine underlying value. For corporate bonds, look at liquidity, leverage, and solvency ratios.</p>
+          <p>Pay attention to <strong>Item 1</strong> (what the company does), risk factors, and especially <strong>footnotes</strong> — they explain accounting methods and can flag questionable practices, prior errors, legal cases, and synthetic leases.</p>
+          <div class="callout tip"><strong>Tip:</strong> As an investor, pay special attention to footnotes in the 10-K to flag questionable accounting practices. Very confusing footnote sections or sudden one-time charges can be red flags.</div>
+        </article>
+
+        <!-- 10-Q -->
+        <article class="article-block fade-in" id="detail-10q">
+          <h3>Form 10-Q — Quarterly Report</h3>
+          <p>Form 10-Q is a truncated version of the 10-K filed quarterly for the first three quarters of the fiscal year. The deadline is 40–45 days from the end of the quarter. Unlike the 10-K, financial statements are <strong>unaudited</strong> and less detailed.</p>
+          <h4>What's Inside</h4>
+          <ul>
+            <li>Condensed unaudited financial statements (income statement, balance sheet, cash flow)</li>
+            <li>MD&amp;A for the quarter</li>
+            <li>Updates to risk factors and legal proceedings</li>
+            <li>Changes in securities and use of proceeds</li>
+          </ul>
+          <h4>Why Investors Rely on the 10-Q</h4>
+          <p>Because the 10-K only comes once a year, the 10-Q lets investors update valuation metrics and financial ratios quarterly. Key areas include changes to working capital, accounts receivable, inventory factors, share buybacks, and legal risks.</p>
+          <div class="investor-tip"><strong>Investor tip:</strong> Compare a company's 10-Q with a close competitor's to evaluate relative performance — strengths, weaknesses, and room for improvement.</div>
+        </article>
+
+        <!-- 8-K -->
+        <article class="article-block fade-in" id="detail-8k">
+          <h3>Form 8-K — Current Report</h3>
+          <p>The 8-K discloses major developments between 10-K and 10-Q filings. Triggers include bankruptcies, material impairments, acquisitions/dispositions, and executive changes. Companies must generally file within <strong>four business days</strong> of the event.</p>
+          <h4>Common 8-K Triggers</h4>
+          <ul>
+            <li>Mergers, acquisitions, or asset dispositions</li>
+            <li>Bankruptcy or receivership</li>
+            <li>CEO/CFO departure or appointment</li>
+            <li>Material impairments or write-downs</li>
+            <li>Amendments to articles of incorporation</li>
+            <li>Earnings announcements (voluntary)</li>
+          </ul>
+          <h4>Impact on Investors</h4>
+          <p>The 8-K provides <strong>direct, timely notification</strong> not filtered by media or sell-side analysts. Because 8-K disclosures are legally standardized and must be accurate, they provide a complete record useful for event studies and statistical research on stock price impacts.</p>
+        </article>
+
+        <!-- S-1 -->
+        <article class="article-block fade-in" id="detail-s1">
+          <h3>Form S-1 — IPO Registration Statement</h3>
+          <p>A company preparing to offer securities to the public for the first time files a Form S-1 registration statement. It consists of two parts:</p>
+          <ul>
+            <li><strong>Prospectus:</strong> Mandatory document for every buyer — details management, business operations, financial health, results, risk factors. The Securities Act of 1933 requires this. Financials must be audited by an independent CPA.</li>
+            <li><strong>Additional Information:</strong> Recent sales of unregistered securities, material contracts, and other relevant data.</li>
+          </ul>
+          <h4>Reading the Prospectus</h4>
+          <p>Focus on company-specific or unique information rather than broad legal statements. Look for risk factors, use of proceeds, competitive landscape, and growth strategy. Because the prospectus is a legal declaration with transparency standards, companies must include certain facts — though they may use careful wording to minimize red flags.</p>
+          <div class="callout important"><strong>Important:</strong> Forward-looking statements in the prospectus are only projections. There is no guarantee the company will meet its targets for sales and profits.</div>
+        </article>
+
+        <!-- 13F -->
+        <article class="article-block fade-in" id="detail-13f">
+          <h3>Form 13F — Institutional Holdings</h3>
+          <p>Form 13F is filed quarterly by institutional investment managers with discretionary equity holdings exceeding <strong>$100 million</strong>. Filers include hedge funds, mutual funds, banks, insurance companies, and pension funds. Due within 45 calendar days after each quarter end.</p>
+          <h4>What It Reveals</h4>
+          <ul>
+            <li>Complete list of equity positions (stocks and options)</li>
+            <li>Number of shares held and market value</li>
+            <li>Changes in positions from prior quarter (new buys, additions, reductions, sells)</li>
+          </ul>
+          <h4>How Investors Use 13F</h4>
+          <p>Investors track "smart money" by monitoring what top hedge funds and institutional managers are buying and selling. 13F filings reveal portfolio strategies, sector bets, and conviction levels. However, note the 45-day delay means positions may have changed by the time the filing is public.</p>
+          <div class="callout warning"><strong>Warning:</strong> 13F filings only show long equity positions. They do not disclose short positions, most derivatives, fixed income, or non-U.S. securities, so the picture is incomplete.</div>
+        </article>
+
+        <!-- DEF 14A / Proxy -->
+        <article class="article-block fade-in" id="detail-proxy">
+          <h3>Proxy Statement (DEF 14A)</h3>
+          <p>The proxy statement is presented before the annual shareholder meeting and must be filed with the SEC before soliciting votes. It reveals management salaries, perks, and all items up for shareholder vote.</p>
+          <h4>What's Inside</h4>
+          <ul>
+            <li>Executive and director compensation (salary, bonus, stock awards, total)</li>
+            <li>Board nominee biographies and qualifications</li>
+            <li>Items to be voted on (director elections, compensation plans, auditor ratification)</li>
+            <li>How to vote: by mail, phone, or online — deadline is typically 24 hours before the meeting</li>
+          </ul>
+          <h4>Importance for Shareholders</h4>
+          <p>Owning common stock gives you a vote (usually one per share). The proxy statement lets you cast your votes through a designated proxy who aggregates and casts votes on your behalf. Vote options: "For," "Against," "Abstain," or "Not Voted."</p>
+        </article>
+
+        <!-- Forms 3, 4, 5 -->
+        <article class="article-block fade-in" id="detail-forms345">
+          <h3>Forms 3, 4, and 5 — Insider Ownership</h3>
+          <p>The SEC defines an insider as officers, directors, and beneficial owners of more than 10% of a class of equity securities. These individuals must report their ownership and transactions:</p>
+          <ul>
+            <li><strong>Form 3:</strong> Initial statement of beneficial ownership — filed within 10 days of becoming an insider.</li>
+            <li><strong>Form 4:</strong> Report of changes in ownership — filed within 2 business days of any transaction.</li>
+            <li><strong>Form 5:</strong> Annual summary of Form 4 and any transactions that should have been reported.</li>
+          </ul>
+          <h4>Why Track Insider Activity</h4>
+          <p>If insiders are buying shares, they might know something the market doesn't — great potential, a possible acquisition, or undervaluation. Peter Lynch: <em>"There's only one reason insiders buy: they think the stock is undervalued."</em> Insiders are prevented from short-swing trading within six months following corporate events.</p>
+          <div class="callout warning"><strong>Warning:</strong> Too much insider ownership can be a governance risk. When insiders gain corporate control, management may not feel responsible to shareholders.</div>
+        </article>
+
+        <!-- Schedule 13D -->
+        <article class="article-block fade-in" id="detail-13d">
+          <h3>Schedule 13D — Beneficial Ownership Report</h3>
+          <p>Required when any person or group acquires more than <strong>5% of voting shares</strong>. Must be filed within 5 business days of crossing the threshold. Schedule 13G is a shorter form for passive investors.</p>
+          <h4>Disclosure Requirements</h4>
+          <ul>
+            <li>Acquirer's name, address, and background</li>
+            <li>Relationship with the company</li>
+            <li>Purpose of the transaction</li>
+            <li>Type and class of security</li>
+            <li>Source of funds used for purchases</li>
+            <li>Criminal history in the past five years</li>
+          </ul>
+          <p>Added through the 1968 Williams Act to warn investors of impending changes to corporate control from activist investors or corporate raiders. Investors use 13D both to detect governance risks and as a possible harbinger of acquisition.</p>
+        </article>
+
+        <!-- Form 144 -->
+        <article class="article-block fade-in" id="detail-144">
+          <h3>Form 144 — Restricted Stock Sale Notice</h3>
+          <p>Form 144 notifies intent to sell restricted stock — typically acquired in non-public transactions. Required when sales in any three-month period exceed 5,000 shares or $50,000. The sale must occur within 90 days of filing.</p>
+          <h4>Lock-Up Periods</h4>
+          <p>After an IPO, insiders sign lock-up agreements (typically 180 days, ranging 120–365 days) prohibiting stock sales. Form 144 is useful for knowing how much supply may hit the market when lock-ups expire — potentially affecting stock price.</p>
+        </article>
+
+        <!-- 20-F -->
+        <article class="article-block fade-in" id="detail-20f">
+          <h3>Form 20-F — Foreign Annual Report</h3>
+          <p>Form 20-F is the annual report filed by foreign private issuers listed on U.S. exchanges. It's similar to the 10-K for domestic companies, covering financials, governance, business operations, and risk factors. Due within <strong>4 months</strong> of fiscal year end (shortened from 6 months in 2008).</p>
+          <p>Many investors diversify geographically. Foreign companies' shares can be acquired as <strong>American Depositary Receipts (ADRs)</strong> on U.S. exchanges, and Form 20-F ensures these companies meet U.S. disclosure standards.</p>
+        </article>
+
+        <!-- 6-K -->
+        <article class="article-block fade-in" id="detail-6k">
+          <h3>Form 6-K — Foreign Current Report</h3>
+          <p>Used by foreign private issuers to report material information that they have disclosed publicly in their home country, filed with a stock exchange abroad, or distributed to shareholders. It is the foreign equivalent of Form 8-K.</p>
+          <p>Under SEC rules, foreign private issuers do not file 10-Q quarterly reports. Instead, they use 6-K filings to provide ongoing material information throughout the year. Common 6-K content includes earnings releases, regulatory approvals, and corporate governance changes.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== COMPARISONS ===== -->
+  <section class="section section-alt" id="comparisons">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">Side-by-Side Analysis</span>
+        <h2 class="section-title">Filing Comparisons</h2>
+        <p class="section-subtitle">Understand the differences between similar SEC forms and when to use each one.</p>
+      </div>
+      <div class="comparison-grid fade-in">
+        <div class="comparison-card"><span class="vs-badge">Comparison</span><h3>10-K vs. Annual Report</h3><p>Both cover the fiscal year, but they serve different purposes and contain different levels of detail.</p><a href="#cmp-10k-ar">Read comparison →</a></div>
+        <div class="comparison-card"><span class="vs-badge">Comparison</span><h3>10-K vs. 10-Q</h3><p>Annual vs. quarterly — different scope, audit standards, and level of detail.</p><a href="#cmp-10k-10q">Read comparison →</a></div>
+        <div class="comparison-card"><span class="vs-badge">Comparison</span><h3>10-K vs. 8-K</h3><p>Scheduled annual filing vs. event-triggered disclosure — when is each required?</p><a href="#cmp-10k-8k">Read comparison →</a></div>
+        <div class="comparison-card"><span class="vs-badge">Comparison</span><h3>10-Q vs. 8-K</h3><p>Periodic quarter update vs. immediate material event — understanding the timing difference.</p><a href="#cmp-10q-8k">Read comparison →</a></div>
+      </div>
+
+      <!-- Comparison details -->
+      <div class="comparison-detail fade-in" id="cmp-10k-ar">
+        <h3>10-K vs. Annual Report — What's the Difference?</h3>
+        <p>Companies file both an annual report and a 10-K with the SEC. While they cover the same fiscal year, they are fundamentally different documents:</p>
+        <table class="comparison-table">
+          <thead><tr><th>Aspect</th><th>Form 10-K</th><th>Annual Report</th></tr></thead>
+          <tbody>
+            <tr><td>Purpose</td><td>Legal compliance with SEC regulations</td><td>Marketing/investor relations communication</td></tr>
+            <tr><td>Format</td><td>Standardized SEC format, all text</td><td>Glossy, illustrated, designed</td></tr>
+            <tr><td>Length</td><td>100+ pages typical</td><td>20–50 pages typical</td></tr>
+            <tr><td>Financials</td><td>Complete audited statements with all footnotes</td><td>Summary financials, highlights</td></tr>
+            <tr><td>Content</td><td>Risk factors, legal proceedings, MD&amp;A, full segments</td><td>CEO letter, highlights, strategy overview</td></tr>
+            <tr><td>Audience</td><td>Analysts, institutional investors, regulators</td><td>Shareholders, general public</td></tr>
+            <tr><td>Required?</td><td>Yes — SEC mandate</td><td>Optional (but common)</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Key takeaway:</strong> Use the 10-K for fundamental analysis and due diligence. Use the annual report for a quick strategic overview and management perspective.</p>
+      </div>
+
+      <div class="comparison-detail fade-in" id="cmp-10k-10q">
+        <h3>10-K vs. 10-Q — Annual vs. Quarterly</h3>
+        <table class="comparison-table">
+          <thead><tr><th>Aspect</th><th>Form 10-K</th><th>Form 10-Q</th></tr></thead>
+          <tbody>
+            <tr><td>Frequency</td><td>Annual (once per year)</td><td>Quarterly (Q1, Q2, Q3)</td></tr>
+            <tr><td>Audit status</td><td>Fully audited financials</td><td>Unaudited financials</td></tr>
+            <tr><td>Detail level</td><td>Comprehensive — all segments and full notes</td><td>Condensed — key updates only</td></tr>
+            <tr><td>Deadline</td><td>60–90 days post FY-end</td><td>40–45 days post quarter-end</td></tr>
+            <tr><td>Risk disclosure</td><td>Full risk factors section</td><td>Updated risk factors (changes only)</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Investor strategy:</strong> Use the 10-K for deep annual analysis, then monitor 10-Qs throughout the year to track trends in working capital, receivables, inventory, and legal risks.</p>
+      </div>
+
+      <div class="comparison-detail fade-in" id="cmp-10k-8k">
+        <h3>10-K vs. 8-K — Scheduled vs. Event-Driven</h3>
+        <table class="comparison-table">
+          <thead><tr><th>Aspect</th><th>Form 10-K</th><th>Form 8-K</th></tr></thead>
+          <tbody>
+            <tr><td>Filing trigger</td><td>Calendar-based (fiscal year end)</td><td>Event-based (material event occurs)</td></tr>
+            <tr><td>Frequency</td><td>Once per year</td><td>As needed (could be multiple per year)</td></tr>
+            <tr><td>Scope</td><td>Full company overview for entire year</td><td>Single event or development</td></tr>
+            <tr><td>Financials</td><td>Complete annual audited statements</td><td>Usually none (unless earnings release)</td></tr>
+            <tr><td>Deadline</td><td>60–90 days post FY-end</td><td>4 business days after event</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Key insight:</strong> The 10-K gives you the full annual picture; the 8-K keeps you informed of developments between annual/quarterly filings. Monitor both for a complete view.</p>
+      </div>
+
+      <div class="comparison-detail fade-in" id="cmp-10q-8k">
+        <h3>10-Q vs. 8-K — Periodic vs. Immediate</h3>
+        <table class="comparison-table">
+          <thead><tr><th>Aspect</th><th>Form 10-Q</th><th>Form 8-K</th></tr></thead>
+          <tbody>
+            <tr><td>Filing trigger</td><td>Calendar-based (quarter end)</td><td>Event-based (material event)</td></tr>
+            <tr><td>Filing frequency</td><td>3 times per year (Q1–Q3)</td><td>As needed</td></tr>
+            <tr><td>Content</td><td>Quarterly financial performance update</td><td>Disclosure of specific material event</td></tr>
+            <tr><td>Financials</td><td>Condensed unaudited quarterly statements</td><td>Typically none</td></tr>
+            <tr><td>Timeliness</td><td>40–45 day delay from quarter end</td><td>4 business days after event (near real-time)</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Use case:</strong> The 10-Q offers a regular quarterly health check; the 8-K provides immediate alerts about significant changes. Together, they minimize information gaps between annual filings.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">Educational Articles</span>
+        <h2 class="section-title">Investor Blog</h2>
+        <p class="section-subtitle">Practical guides to help you interpret SEC filings like a professional analyst.</p>
+      </div>
+      <div class="blog-grid fade-in">
+        <article class="blog-card"><span class="blog-badge">Guide</span><h3>How to Read a 10-K Like a Professional Investor</h3><p>A step-by-step walkthrough of the most important sections in a 10-K and what to look for in each one.</p><div class="blog-meta"><span>📖 12 min read</span><span>🏷️ Fundamental Analysis</span></div></article>
+        <article class="blog-card"><span class="blog-badge">Analysis</span><h3>Understanding Risk Factors in SEC Filings</h3><p>Risk factors are more than legal boilerplate. Learn to identify genuine warnings versus generic disclaimers.</p><div class="blog-meta"><span>📖 8 min read</span><span>🏷️ Risk Management</span></div></article>
+        <article class="blog-card"><span class="blog-badge">Strategy</span><h3>How Hedge Funds Use 13F Filings</h3><p>Track "smart money" by analyzing institutional holdings reports. Learn the techniques and limitations.</p><div class="blog-meta"><span>📖 10 min read</span><span>🏷️ Institutional Investing</span></div></article>
+        <article class="blog-card"><span class="blog-badge">Deep Dive</span><h3>The Most Important Sections of a 10-K</h3><p>Not all sections are created equal. Focus your analysis time on the parts that reveal the most about a company.</p><div class="blog-meta"><span>📖 9 min read</span><span>🏷️ Due Diligence</span></div></article>
+      </div>
+
+      <!-- Blog detail articles -->
+      <article class="blog-detail fade-in" id="blog-10k-guide">
+        <h3>How to Read a 10-K Like a Professional Investor</h3>
+        <p>The 10-K annual report is the single most important document for understanding a public company. Here's a professional's approach to reading it efficiently:</p>
+        <h4>Step 1: Start With the Business Description (Item 1)</h4>
+        <p>Before diving into numbers, understand what the company actually does. Item 1 describes products, services, customer segments, competitive landscape, and regulatory environment. This context is essential for interpreting the financials.</p>
+        <h4>Step 2: Read Risk Factors (Item 1A)</h4>
+        <p>While many risks are boilerplate, look for <strong>company-specific risks</strong>. New risks added since the last filing, risks with specific dollar figures, and risks mentioning ongoing litigation are particularly important.</p>
+        <h4>Step 3: Analyze MD&amp;A (Item 7)</h4>
+        <p>Management's Discussion &amp; Analysis is where the company explains its financial results. Look for explanations of revenue growth or decline, margin changes, capital allocation decisions, and forward-looking commentary.</p>
+        <h4>Step 4: Study the Financial Statements</h4>
+        <p>Calculate key ratios: revenue growth, gross margins, operating margins, free cash flow, return on equity, and debt-to-equity. Compare with peers and prior years to identify trends.</p>
+        <h4>Step 5: Read the Footnotes</h4>
+        <p>This is where the most important details hide. Footnotes reveal accounting method changes, pending litigation, off-balance-sheet arrangements, segment detail, and related-party transactions. Never skip this section.</p>
+      </article>
+
+      <article class="blog-detail fade-in" id="blog-risk-factors">
+        <h3>Understanding Risk Factors in SEC Filings</h3>
+        <p>Every 10-K and S-1 contains a risk factors section that can span 20+ pages. Most investors skip it. That's a mistake.</p>
+        <h4>Separating Signal from Noise</h4>
+        <p>Generic risks ("adverse economic conditions could affect our business") appear in virtually every filing and can be skimmed. Focus instead on:</p>
+        <ul>
+          <li><strong>Newly added risks:</strong> Compare with prior year's filing. New risks are the most informative.</li>
+          <li><strong>Specific dollar amounts:</strong> Risks mentioning specific financial exposure signal genuine concern.</li>
+          <li><strong>Customer concentration:</strong> If one customer represents &gt;10% of revenue, that's a material risk.</li>
+          <li><strong>Regulatory action:</strong> Mentions of ongoing SEC investigations, consent orders, or compliance failures.</li>
+          <li><strong>Going concern language:</strong> Any mention of "substantial doubt about the company's ability to continue as a going concern" is a major red flag.</li>
+        </ul>
+      </article>
+
+      <article class="blog-detail fade-in" id="blog-13f">
+        <h3>How Hedge Funds Use 13F Filings</h3>
+        <p>Form 13F reveals the quarterly equity portfolios of institutional managers with $100M+ in assets. Here's how to use them effectively:</p>
+        <h4>Tracking Conviction Positions</h4>
+        <p>Look for positions that represent a large percentage of a fund's portfolio — these indicate high conviction. New positions are also meaningful, especially when multiple respected managers initiate the same position simultaneously.</p>
+        <h4>Limitations to Remember</h4>
+        <ul>
+          <li>45-day filing delay — positions may have changed</li>
+          <li>Only long equity positions disclosed (no shorts, bonds, or derivatives)</li>
+          <li>Snapshot in time — doesn't show intra-quarter trading</li>
+          <li>No disclosure of the investment thesis behind positions</li>
+        </ul>
+        <h4>Practical Strategy</h4>
+        <p>Use 13F data as one input among many. Look for consensus among multiple funds, track position changes over several quarters (increasing vs. decreasing conviction), and combine with your own fundamental analysis.</p>
+      </article>
+
+      <article class="blog-detail fade-in" id="blog-important-sections">
+        <h3>The Most Important Sections of a 10-K</h3>
+        <p>If you only have an hour to review a 10-K, focus on these sections in this order:</p>
+        <ol>
+          <li><strong>Item 7 — MD&amp;A:</strong> Management's narrative about what happened and why. The most qualitative and informative section.</li>
+          <li><strong>Item 8 — Financial Statements:</strong> The audited numbers. Focus on the income statement for profitability trends and the cash flow statement for cash generation.</li>
+          <li><strong>Footnotes to Financial Statements:</strong> Revenue recognition policies, debt structure, lease obligations, pending litigation, and accounting changes.</li>
+          <li><strong>Item 1A — Risk Factors:</strong> Company-specific risks, especially newly added ones.</li>
+          <li><strong>Item 1 — Business Description:</strong> Essential if you're analyzing the company for the first time.</li>
+        </ol>
+        <div class="investor-tip"><strong>Pro tip:</strong> Read the auditor's opinion letter. An "unqualified" (clean) opinion is standard. Any qualifications, emphasis of matter paragraphs, or going concern notes deserve immediate attention.</div>
+      </article>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== EDUCATIONAL GUIDES ===== -->
+  <section class="section section-alt" id="guides">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">Getting Started</span>
+        <h2 class="section-title">Educational Guides</h2>
+        <p class="section-subtitle">Foundation knowledge for working with SEC filings and the EDGAR system.</p>
+      </div>
+      <div class="guides-grid fade-in">
+        <div class="guide-card">
+          <div class="guide-icon" style="background:rgba(31,122,224,0.12);color:var(--accent-blue);">🏛️</div>
+          <h3>What Is the SEC?</h3>
+          <p>The Securities and Exchange Commission was created through the Securities Exchange Act of 1934 to restore investor confidence after the 1929 crash. It protects investors, maintains fair markets, and facilitates capital formation.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon" style="background:rgba(0,212,255,0.12);color:var(--accent-cyan);">💻</div>
+          <h3>Using EDGAR</h3>
+          <p>EDGAR (Electronic Data Gathering, Analysis, and Retrieval) is the SEC's free system for accessing all filings. Search by company name, ticker, or form type at <a href="https://www.sec.gov/cgi-bin/browse-edgar" target="_blank" rel="noopener">sec.gov/edgar</a>.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon" style="background:rgba(16,185,129,0.12);color:var(--accent-green);">📅</div>
+          <h3>Filing Calendar</h3>
+          <p>Key deadlines: 10-K within 60–90 days of FY-end, 10-Q within 40–45 days of quarter-end, 8-K within 4 business days of event, 13F within 45 days of quarter-end. Missing deadlines triggers Form 12b-25.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section-label">Questions & Answers</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list fade-in">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question">What are SEC filings?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>SEC filings are regulatory documents that public companies and securities issuers must submit to the Securities and Exchange Commission. They provide transparency about financial performance, risks, governance, and material events, helping investors make informed decisions.</p></div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question">How do I look up SEC filings?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>All SEC filings are available for free on EDGAR (Electronic Data Gathering, Analysis, and Retrieval) at <a href="https://www.sec.gov/edgar" target="_blank" rel="noopener">sec.gov/edgar</a>. You can search by company name, CIK number, or ticker symbol. Many brokerage platforms and financial portals like Google Finance also surface SEC filings.</p></div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question">Are SEC filings public information?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>Yes. SEC filings are public and can be retrieved for free via EDGAR. Companies may also host copies in their investor relations section. In rare cases, companies may request confidential treatment (CTR) to redact specific information that could cause material harm if disclosed.</p></div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question">What's the difference between a 10-K and an annual report?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>The 10-K is a comprehensive, standardized SEC document with full audited financials, risk factors, legal proceedings, and detailed business descriptions. The annual report is a shorter, glossy marketing document with key highlights, a CEO letter, and summarized financials. The 10-K is required; the annual report is optional.</p></div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question">Why should investors read footnotes in SEC filings?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>Footnotes reveal accounting methods, off-balance-sheet arrangements, pending litigation, revenue recognition policies, changes in accounting estimates, related-party transactions, and other details that can be red flags. Many accounting irregularities are first visible in the footnotes.</p></div>
+        </div>
+        <div class="faq-item" id="faq-6">
+          <button class="faq-question">What is EDGAR Next?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>EDGAR Next is the SEC's platform overhaul of the EDGAR filing system, introducing updated login and authentication for enhanced security. Business entities had until September 12, 2025, to comply with changes, or until December 19, 2025, to file an amended Form ID for continued EDGAR access.</p></div>
+        </div>
+        <div class="faq-item" id="faq-7">
+          <button class="faq-question">How quickly must companies file an 8-K?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>Companies must file Form 8-K within four business days of a material triggering event such as a merger, bankruptcy, executive departure, or asset acquisition/disposition. Some voluntary disclosures like earnings releases may be filed sooner.</p></div>
+        </div>
+        <div class="faq-item" id="faq-8">
+          <button class="faq-question">What does insider buying or selling signal?<span class="chevron">▼</span></button>
+          <div class="faq-answer"><p>Insider buying is generally considered a positive signal — insiders buy when they believe the stock is undervalued. Insider selling has many possible reasons (diversification, tax planning, estate planning) and is not always negative. Track Form 4 filings for insider transactions.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text-footer">SEC Filings Guide</div>
+          <p>A comprehensive educational resource helping investors, analysts, and researchers understand SEC filings and corporate disclosures.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SEC Forms</h4>
+          <ul>
+            <li><a href="#detail-10k">Form 10-K</a></li>
+            <li><a href="#detail-10q">Form 10-Q</a></li>
+            <li><a href="#detail-8k">Form 8-K</a></li>
+            <li><a href="#detail-s1">Form S-1</a></li>
+            <li><a href="#detail-13f">Form 13F</a></li>
+            <li><a href="#detail-proxy">DEF 14A</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://www.sec.gov/edgar" target="_blank" rel="noopener">SEC EDGAR Database</a></li>
+            <li><a href="https://www.sec.gov" target="_blank" rel="noopener">SEC Official Website</a></li>
+            <li><a href="https://www.investor.gov" target="_blank" rel="noopener">Investor.gov</a></li>
+            <li><a href="#guides">Educational Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="#comparisons">Filing Comparisons</a></li>
+            <li><a href="#blog">Investor Blog</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#search-filings">All Forms Table</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SEC Filings Guide. Educational resource only — not financial advice. Official rules at <a href="https://www.sec.gov" target="_blank" rel="noopener">sec.gov</a>.</p>
+        <p>References: <a href="https://www.dfinsolutions.com/knowledge-hub/thought-leadership/knowledge-resources/what-sec-filing" target="_blank" rel="noopener">DFIN</a> · <a href="https://www.investopedia.com" target="_blank" rel="noopener">Investopedia</a> · <a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
