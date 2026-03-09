@@ -11,11 +11,45 @@
   var tableSearch = document.getElementById('table-search');
   var filingsTable = document.getElementById('filings-table');
   var filterPills = document.getElementById('filter-pills');
+  var showAllFilingsBtn = document.getElementById('show-all-filings');
   var resultCount = document.getElementById('result-count');
+  var tablePagination = document.getElementById('table-pagination');
+  var paginationPrev = document.getElementById('pagination-prev');
+  var paginationNext = document.getElementById('pagination-next');
+  var paginationPages = document.getElementById('pagination-pages');
   var faqItems = document.querySelectorAll('.faq-item');
   var fadeElements = document.querySelectorAll('.fade-in');
   var navAnchors = document.querySelectorAll('.nav-links a');
   var tableRows = filingsTable ? filingsTable.querySelectorAll('tbody tr') : [];
+  var themeToggle = document.getElementById('theme-toggle');
+  var root = document.documentElement;
+
+  // ===== THEME SUPPORT =====
+  function setTheme(theme) {
+    if (theme === 'light') {
+      root.setAttribute('data-theme', 'light');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    localStorage.setItem('sec-filing-theme', theme);
+  }
+
+  // Initial Theme Load
+  var savedTheme = localStorage.getItem('sec-filing-theme');
+  var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else if (!systemDark) {
+    setTheme('light');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var isLight = root.getAttribute('data-theme') === 'light';
+      setTheme(isLight ? 'dark' : 'light');
+    });
+  }
 
   // ===== STICKY HEADER =====
   var lastScroll = 0;
@@ -95,6 +129,9 @@
 
   // ===== TABLE SEARCH & FILTER =====
   var activeFilter = 'all';
+  var currentPage = 1;
+  var rowsPerPage = 20;
+  var totalPages = 1;
 
   function escapeRegex(str) {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -127,16 +164,18 @@
 
   function filterTable() {
     var query = tableSearch ? tableSearch.value.trim().toLowerCase() : '';
-    var visibleCount = 0;
+    var matchingRows = [];
 
     tableRows.forEach(function (row) {
       var category = row.getAttribute('data-category') || '';
-      var text = row.textContent.toLowerCase();
+      var text = ((row.getAttribute('data-search') || '') + ' ' + row.textContent).toLowerCase();
       var matchesFilter = activeFilter === 'all' || category === activeFilter;
       var matchesSearch = !query || text.indexOf(query) !== -1;
-      var show = matchesFilter && matchesSearch;
-      row.style.display = show ? '' : 'none';
-      if (show) visibleCount++;
+      var matches = matchesFilter && matchesSearch;
+      if (matches) matchingRows.push(row);
+
+      // Hide first; pagination pass decides what is visible.
+      row.style.display = 'none';
 
       // Highlight matching text
       var cells = row.querySelectorAll('td');
@@ -145,29 +184,119 @@
       });
     });
 
+    totalPages = Math.max(1, Math.ceil(matchingRows.length / rowsPerPage));
+    if (currentPage > totalPages) currentPage = totalPages;
+
+    var start = (currentPage - 1) * rowsPerPage;
+    var end = start + rowsPerPage;
+    var pageRows = matchingRows.slice(start, end);
+    pageRows.forEach(function (row) {
+      row.style.display = '';
+    });
+
+    var startLabel = matchingRows.length === 0 ? 0 : start + 1;
+    var endLabel = start + pageRows.length;
     if (resultCount) {
-      if (query || activeFilter !== 'all') {
-        resultCount.textContent = visibleCount + ' of ' + tableRows.length + ' forms shown';
-      } else {
-        resultCount.textContent = '';
-      }
+      resultCount.textContent = 'Showing ' + startLabel + '-' + endLabel + ' of ' + matchingRows.length + ' matching forms (' + tableRows.length + ' total)';
+    }
+
+    renderPagination(matchingRows.length);
+  }
+
+  function renderPagination(totalMatches) {
+    if (!tablePagination || !paginationPrev || !paginationNext || !paginationPages) return;
+
+    if (totalMatches <= rowsPerPage) {
+      tablePagination.style.display = 'none';
+      paginationPages.innerHTML = '';
+      paginationPrev.disabled = true;
+      paginationNext.disabled = true;
+      return;
+    }
+
+    tablePagination.style.display = 'flex';
+    paginationPrev.disabled = currentPage === 1;
+    paginationNext.disabled = currentPage === totalPages;
+
+    paginationPages.innerHTML = '';
+    for (var page = 1; page <= totalPages; page++) {
+      var pageBtn = document.createElement('button');
+      pageBtn.type = 'button';
+      pageBtn.className = 'pagination-page' + (page === currentPage ? ' active' : '');
+      pageBtn.setAttribute('data-page', String(page));
+      pageBtn.textContent = String(page);
+      paginationPages.appendChild(pageBtn);
     }
   }
 
+  function resetFilingsTable() {
+    activeFilter = 'all';
+    currentPage = 1;
+    if (tableSearch) {
+      tableSearch.value = '';
+    }
+    if (filterPills) {
+      filterPills.querySelectorAll('.filter-pill[data-filter]').forEach(function (p) {
+        p.classList.toggle('active', p.getAttribute('data-filter') === 'all');
+      });
+    }
+    filterTable();
+  }
+
   if (tableSearch) {
-    tableSearch.addEventListener('input', filterTable);
+    tableSearch.addEventListener('input', function () {
+      currentPage = 1;
+      filterTable();
+    });
   }
 
   if (filterPills) {
     filterPills.addEventListener('click', function (e) {
       var pill = e.target.closest('.filter-pill');
-      if (!pill) return;
+      if (!pill || !pill.hasAttribute('data-filter')) return;
       activeFilter = pill.getAttribute('data-filter') || 'all';
+      currentPage = 1;
       filterPills.querySelectorAll('.filter-pill').forEach(function (p) {
         p.classList.toggle('active', p === pill);
       });
       filterTable();
     });
+  }
+
+  if (paginationPrev) {
+    paginationPrev.addEventListener('click', function () {
+      if (currentPage <= 1) return;
+      currentPage--;
+      filterTable();
+    });
+  }
+
+  if (paginationNext) {
+    paginationNext.addEventListener('click', function () {
+      if (currentPage >= totalPages) return;
+      currentPage++;
+      filterTable();
+    });
+  }
+
+  if (paginationPages) {
+    paginationPages.addEventListener('click', function (e) {
+      var pageBtn = e.target.closest('.pagination-page');
+      if (!pageBtn) return;
+      var page = Number(pageBtn.getAttribute('data-page'));
+      if (!page || page === currentPage) return;
+      currentPage = page;
+      filterTable();
+    });
+  }
+
+  if (showAllFilingsBtn) {
+    showAllFilingsBtn.addEventListener('click', resetFilingsTable);
+  }
+
+  // Ensure the section always starts in "show all filings" mode.
+  if (tableRows.length > 0) {
+    resetFilingsTable();
   }
 
   // ===== FAQ ACCORDION =====
@@ -194,7 +323,8 @@
         }
       });
     }, {
-      threshold: 0.1,
+      // Large elements (like the full filings table) may never hit 10% in view on initial load.
+      threshold: 0.01,
       rootMargin: '0px 0px -50px 0px'
     });
 
@@ -240,7 +370,10 @@
       title: "Form 10-K — The Annual Report",
       desc: "Go beyond the summary. Our dedicated Form 10-K guide breaks down all 19 pages of the official SEC requirements, from Item 1 Business descriptions to Item 15 Exhibits.",
       tags: ["Part I-IV", "16 Items Detailed", "Legal Reference"],
-      link: "filings/10k.html"
+      link: "filings/10k.html",
+      what: "Comprehensive annual report with audited financial statements, risk factors, MD&A, and business/legal disclosures.",
+      who: "Domestic public issuers subject to Exchange Act annual reporting obligations.",
+      when: "Annual deadline is tied to filer status under SEC rules (typically 60, 75, or 90 days after fiscal year-end)."
     },
     {
       id: "10-q",
@@ -248,7 +381,10 @@
       title: "Form 10-Q — Quarterly Snapshot",
       desc: "Understand a company's ongoing financial health. Form 10-Q provides regular, unaudited quarterly check-ups to track working capital, risk shifts, and legal updates.",
       tags: ["Q1-Q3 Updates", "Interim Financials", "Timely Disclosures"],
-      link: "filings/10q.html"
+      link: "filings/10q.html",
+      what: "Quarterly update with unaudited financial statements, management analysis, and material disclosure updates.",
+      who: "Reporting companies required to file periodic Exchange Act reports.",
+      when: "Filed after each of Q1, Q2, and Q3 based on SEC filer category deadlines."
     },
     {
       id: "8-k",
@@ -256,7 +392,10 @@
       title: "Form 8-K — Material Events",
       desc: "Stay ahead of the market. The Form 8-K alerts investors to unscheduled material events such as bankruptcies, executive departures, asset acquisitions, and M&A.",
       tags: ["Event-Driven", "4 Day Deadline", "Market Mover"],
-      link: "filings/8k.html"
+      link: "filings/8k.html",
+      what: "Current report for material corporate events outside the normal periodic reporting cycle.",
+      who: "Issuers that report under Exchange Act Sections 13 or 15(d) when a triggering event occurs.",
+      when: "Generally due within four business days of the reportable event, subject to item-specific rules."
     },
     {
       id: "13F",
@@ -264,7 +403,10 @@
       title: "Form 13F — Institutional Holdings",
       desc: "Track the smart money. Learn how to decode Form 13F filings from institutional managers holding over $100M+ to identify high conviction trades.",
       tags: ["Smart Money", "Hedge Funds", "Portfolio Trackers"],
-      link: "filings/13f.html"
+      link: "filings/13f.html",
+      what: "Quarterly holdings report showing long positions in SEC-defined 13F securities.",
+      who: "Institutional investment managers with discretion over at least $100 million in 13F securities.",
+      when: "Due within 45 days after each calendar quarter-end."
     }
   ];
 
@@ -275,12 +417,32 @@
   const featTags = document.getElementById('feat-tags');
   const featLink = document.getElementById('feat-link');
   const featProgress = document.getElementById('feat-progress');
+  const featPreviewWhat = document.getElementById('feat-preview-what');
+  const featPreviewWho = document.getElementById('feat-preview-who');
+  const featPreviewWhen = document.getElementById('feat-preview-when');
 
   if (featWrapper && featIcon && featTitle && featDesc && featTags && featLink && featProgress) {
     let currentIndex = 0;
-    const rotateInterval = 5000;
+    const rotateInterval = 10000;
     let progressInterval = 100; // Update progress bar every 100ms
     let currentProgress = 0;
+
+    function renderFeaturedContent(data) {
+      featIcon.textContent = data.id;
+      featIcon.className = `filing-card-icon ${data.class}`;
+      featTitle.textContent = data.title;
+      featDesc.textContent = data.desc;
+      featLink.setAttribute("href", data.link);
+      featTags.innerHTML = data.tags.map(tag => `<span class="tag">${tag}</span>`).join("");
+
+      if (featPreviewWhat && featPreviewWho && featPreviewWhen) {
+        featPreviewWhat.textContent = data.what;
+        featPreviewWho.textContent = data.who;
+        featPreviewWhen.textContent = data.when;
+      }
+    }
+
+    renderFeaturedContent(featuredData[currentIndex]);
     
     function cycleFeaturedFiling() {
       // Start fade out animation
@@ -292,13 +454,7 @@
         const nextData = featuredData[currentIndex];
         
         // Swap content while hidden
-        featIcon.textContent = nextData.id;
-        featIcon.className = `filing-card-icon ${nextData.class}`;
-        featTitle.textContent = nextData.title;
-        featDesc.textContent = nextData.desc;
-        featLink.setAttribute("href", nextData.link);
-        
-        featTags.innerHTML = nextData.tags.map(tag => `<span class="tag">${tag}</span>`).join("");
+        renderFeaturedContent(nextData);
 
         // Switch animation class to slide from right
         featWrapper.classList.remove('animating-out');

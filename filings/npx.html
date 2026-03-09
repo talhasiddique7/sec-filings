@@ -21,7 +21,11 @@
 <a href="../index.html#search-filings">Search All</a>
 <a href="../index.html#deep-dives">Learn</a>
 </nav>
-<button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
 <span></span><span></span><span></span>
 </button>
 </div>
@@ -37,7 +41,7 @@
 <div class="meta-box"><span class="meta-label">Who Files</span><span class="meta-value">Public Entities</span></div>
 <div class="meta-box"><span class="meta-label">Authority</span><span class="meta-value">SEC Mandate</span></div>
 </div>
-<div class="filing-actions"><a class="btn btn-primary" href="https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0035_01_annual-report-of-proxy-voting-record-of-registered-management-investme_formnpx.pdf" target="_blank"><span>📄 View Original PDF</span></a></div>
+<div class="filing-actions"><a class="btn btn-primary" href="https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0035_01_annual-report-of-proxy-voting-record-of-registered-management-investme_formnpx.pdf" target="_blank"><span>📄 Download or View in Browser →</span></a></div>
 </section>
 <div class="filing-layout">
 <aside class="filing-toc fade-in visible"><div class="toc-inner"><h3>Page Contents</h3><nav><a class="active" href="#general-info">General Information</a>
@@ -56,27 +60,38 @@
 <li><strong>When:</strong> This is generally an event-based filing. It must be filed within 4 business days.</li>
 <li><strong>Who:</strong> It must be filed by public entities.</li>
 </ul>
-<a href="../index.html#deep-dives" style="display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--accent-blue); text-decoration: none; padding: 0.5rem 1rem; background: rgba(31,122,224,0.1); border-radius: 4px; transition: background 0.2s ease;">📘 Read Deep-Dive Guide →</a>
+</div>
+<div class="callout insight" style="margin-top: 2rem; background: var(--bg-subtle-blue); border-left: 3px solid var(--accent-purple); border-radius: 0 var(--radius-md) var(--radius-md) 0;;">
+    <h3 style="margin-top: 0; color: var(--accent-purple); margin-bottom: 0.5rem; font-size: 1.1rem;">Expert Insight (DFIN)</h3>
+    <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">Every year, certain kinds of companies report information on proxy votes to the SEC using Form N-PX , which is similar to but distinct from Form DEF 14A . This required form is important for accountability and information sharing. A new rule change in 2022 requires even more disclosures.</p>
 </div>
 
-<h3>Purpose of NPX</h3>
-<p>OMB APPROVAL OMB Number: 3235-0582 Expires: Sept. 30, 2026 Estimated average burden hours per response.......... 21.05 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, DC 20549 FORM N-PX ANNUAL REPORT OF PROXY VOTING RECORD GENERAL INSTRUCTIONS A. Rule as to Use of Form N-PX. Form N-PX is to be used by a registered management investment company, other than a
-small business investment company registered on Form N-5 (17 CFR 239.24 and 274.5), to file
-the registered management investment company’s complete proxy voting record pursuant to
-Section 30 of the Investment Company Act of 1940 (“Investment Company Act”) and Rule
-30b1-4 thereunder (17 CFR 270.30b1-4). Form N-PX also is to be used by a person that is
-required to file reports under Rule 13f-1 (“Institutional Manager”), to file the Institutional
-Manager’s proxy voting record regarding votes pursuant to Sections 14A(a) and (b) of the
-Securities Exchange Act of 1934 (“Exchange Act”) on certain executive compensation matters,
-pursuant to Section 14A(d) of the Exchange Act and Rule 14Ad-1 thereunder (17 CFR
-240.14Ad-1). Form N-PX is to be filed not later than August 31 of each year for the most recent
-12-month period ended June 30, except in the case of Institutional Managers that make initial or
-final filings on Form 13F during the relevant 12-month period as described in General
-Instruction F. B. Application of General Rules and Regulations. The General Rules and Regulations under the Investment Company Act and the
-Exchange Act contain certain general requirements that are applicable to reporting on any form
-under those Acts. These general requirements should be read and observed carefully in the
-preparation and filing of reports on this form, except that any provision in the form or in these
-instructions is controlling. C. Joint Reporting Rules. 1. If two or more Institutional Managers, each of which is required by Rule 14Ad-1 to file a report on Form N-PX for the reporting period, exercised voting power over the same securities on a vote pursuant to Section 14A(a) or (b) of the Exchange Act, only one such Institutional Manager must include the information regarding that vote in its report on Form N-PX. 2. Two or more Institutional Managers that are affiliated person...</p>
+<h3>What is SEC Form N-PX?</h3>
+<p>N-PX is a form that companies use to report proxy voting records. The form provides information about various aspects of voting, such as board elections, executive compensation and proposals.</p>
+<p>Some of these changes, such as executive compensation, are relatively new for reporting purposes. For example, institutional managers subject to Section 13(f) are now required to file Form N-PX for say-on-pay votes. These changes went into effect as of the latest update (late 2022) to the N-PX form.</p>
+<p>Registered management investment companies must fill out this form annually and file it with the SEC. Because mutual funds and exchange-traded funds are types of registered management investment companies, they are required to complete this form.</p>
+
+<h3>Purpose of SEC Form N-PX</h3>
+<p>Now that you understand what is Form N-PX, let's review the purpose.</p>
+<p>The overall purpose of this form is to make specific aspects of proxy statements public so that anyone can understand voting results and priorities.</p>
+<p>In the long term, this increases corporate transparency. It also promotes accountability. If a company made a public commitment, for instance regarding ESG priorities for disclosure and fiduciary duty, and voted in accordance with these commitments, the voting record demonstrates accountability and progress toward goals.</p>
+<p>It is important to note that this type of information is often made available to investors in other ways. Some companies will post proxy vote results directly on their website. Others will sum up relevant information in shareholder communication, including annual reports.</p>
+<p>Even if the company communicates this information directly to the public, they must still complete an N-PX filing.</p>
+
+<h3>Key Components of SEC Form N-PX</h3>
+<p>Every SEC N-PX filing contains these core components:</p>
+
+<h3>Importance for Investors</h3>
+<p>As alluded to earlier, investors may review proxy vote results to get a better understanding of how the company acts and why. Specifically, they may want to see whether decisions made align with stated goals, where they differ and why.</p>
+<p>Investors have choices of where to invest. Many choose to invest in funds that align with their fiduciary and stewardship values. These investors won't just take a fund's word for something, they want to double-check that the fund is following through on its commitments.</p>
+<p>By making voting information public, forms such as the N-PX allow investors to view and verify voting results. When investors understand voting results, they can make sure their investments line up with their values and adjust their portfolios if that becomes necessary.</p>
+
+<h3>Filing Requirements</h3>
+<p>Every year, funds and certain types of advisors must prepare and transmit their SEC N-PX filing using EDGAR, the SEC's electronic filing system and conforming to the SEC's new data tagging adn structured format rules. The form will subsequently be made accessible to the public; there is no separate process for making the N-PX publicly available.</p>
+<p>The N-PX filing deadline is August 31. The form should cover the previous 12 months with an ending date of June 30. DFIN’s proxy statement services can help public companies make sense of their obligations, so get in touch with us today to learn more.</p>
+
+<h4>Marcie Clark</h4>
+
 </div>
 </article>
 <article class="content-section" id="part-i"><div class="part-header">PART I</div><h2>Section Overview</h2><div class="item-grid">

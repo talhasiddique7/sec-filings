@@ -21,7 +21,11 @@
 <a href="../index.html#search-filings">Search All</a>
 <a href="../index.html#deep-dives">Learn</a>
 </nav>
-<button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
 <span></span><span></span><span></span>
 </button>
 </div>
@@ -37,7 +41,7 @@
 <div class="meta-box"><span class="meta-label">Who Files</span><span class="meta-value">Public Entities</span></div>
 <div class="meta-box"><span class="meta-label">Authority</span><span class="meta-value">SEC Mandate</span></div>
 </div>
-<div class="filing-actions"><a class="btn btn-primary" href="https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0047_01_financial-and-operational-combined-uniform-single-focus-report-informa_formx-17a-5_schedi.pdf" target="_blank"><span>📄 View Original PDF</span></a></div>
+<div class="filing-actions"><a class="btn btn-primary" href="https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0047_01_financial-and-operational-combined-uniform-single-focus-report-informa_formx-17a-5_schedi.pdf" target="_blank"><span>📄 Download or View in Browser →</span></a></div>
 </section>
 <div class="filing-layout">
 <aside class="filing-toc fade-in visible"><div class="toc-inner"><h3>Page Contents</h3><nav><a class="active" href="#general-info">General Information</a>
@@ -58,12 +62,51 @@
 <li><strong>When:</strong> This is generally an event-based filing. It must be filed within 4 business days.</li>
 <li><strong>Who:</strong> It must be filed by public entities.</li>
 </ul>
-<a href="../index.html#deep-dives" style="display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--accent-blue); text-decoration: none; padding: 0.5rem 1rem; background: rgba(31,122,224,0.1); border-radius: 4px; transition: background 0.2s ease;">📘 Read Deep-Dive Guide →</a>
+</div>
+<div class="callout insight" style="margin-top: 2rem; background: var(--bg-subtle-blue); border-left: 3px solid var(--accent-purple); border-radius: 0 var(--radius-md) var(--radius-md) 0;;">
+    <h3 style="margin-top: 0; color: var(--accent-purple); margin-bottom: 0.5rem; font-size: 1.1rem;">Expert Insight (DFIN)</h3>
+    <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">Publicly traded companies are subject to SEC requirements, such as regulations that mandate certain types of financial reporting and disclosures. These include the Schedule 13D and 13G forms, which are required when an investor becomes a beneficial owner of 5% or more of a public company's stock.</p>
 </div>
 
-<h3>Purpose of SEC Filing</h3>
-<p>OMB APPROVAL OMB Number: 3525-0123 Expires: November 30, 2026 UNITED STATES SECURITIES AND EXCHANGE COMMISSION OMB Number: 3525-0122 Expires: December 31, 2026 Washington, D.C. 20549 Estimated average burden hours per FOCUS REPORT response . . . . . . . 12.00 FORM X-17A-5 SCHEDULE I (To be filed annually as of the end of calendar year) Contents Schedule I INFORMATION REQUIRED OF ALL BROKERS AND DEALERS PURUSANT TO RULE 17a-5 * * * * * __________________________________________________ Name of Respondent Persons who are to respond to the collection of information contained in this form are not required to respond unless the form displays a currently valid OMB control number. SEC1675 (5-13) 1 of 7 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM X-17A-5 SCHEDULE I GENERAL INSTRUCTIONS NOTE TO RESPONDENTS: Schedule I of Form X-17A-5 is a calendar year unconsolidated report to be filed by
-all registrants either as a supplement to the regular fourth quarter...</p>
+<h3>Understanding Schedule 13D or Schedule 13G</h3>
+<p>Whether an investor is required to file a Schedule 13D or Schedule 13G depends on their intentions. Here is a quick breakdown of each form and when it is required.</p>
+
+<h4>Schedule 13D</h4>
+<p>This must be filed by active investors or activist shareholders. It requires detailed disclosure of intent, plans, governance changes, potential takeovers, etc.</p>
+
+<h4>Schedule 13G</h4>
+<p>This is the short-form version of beneficial ownership reporting. Schedule 13G filers include passive investors, qualified institutional investors (QII), and certain exempt entities. The form requires fewer disclosures and allows for later 13G filing under certain conditions.</p>
+<p>The key differences between these two forms are the filing deadlines, the types of investors required to file them, the depth of the disclosures, and any final rules pertaining to ongoing amendments.</p>
+
+<h3>Who is Required to File a Schedule 13D & 13G?</h3>
+<p>Someone who becomes a 5% or greater beneficial owner of the company's stock is required to file Schedule 13D or 13G, which is also called a beneficial ownership report. Beneficial ownership is defined by the SEC as investors having voting or investment power over 5% or more of a class of derivative securities. This is different from record ownership because the investors can maintain the benefits of ownership even if their names are not on the title. Individuals, groups and institutional entities are subject to this requirement.</p>
+<p>There are some exceptions to note. For instance, investment bankers and dealers don't have to file this form because they naturally acquire large quantities of shares as a part of their business routine. Someone who is a passive investor does not have to file the 13D but must file the Schedule 13G form instead. This is an important distinction because passive investors are not interested in outperforming the market but are looking for a steady investment opportunity. On the other hand, active investors seek to take advantage of market changes by managing their portfolio in a more-direct manner.</p>
+<p>Someone who bought their shares before the company went public, such as an employee who was given shares before an IPO took place, is also exempt from this filing.</p>
+<p>Many SEC forms are filed once, but the forms 13D and 13G are a bit different. If the ownership shares changes by 1% or greater, the beneficial ownership form must be amended to reflect the new holding amount.</p>
+
+<h3>Key Information Included in Schedule 13D and 13G Filing</h3>
+<p>Now that you have a better understanding of who is impacted by 13D or 13G reporting requirements, let's look at the information required in SEC form 13D or 13G. This is extremely important because any incorrect or incomplete disclosures can lead to increased scrutiny from the SEC and incur the risk of penalties.</p>
+<p>This disclosure gathers information about:</p>
+<p>Recent amended rules from the SEC have expanded the digital formatting options allowed and made changes to clarity standards for disclosures.</p>
+
+<h3>Filing Deadlines and Amendment Requirements</h3>
+<p>There are strict timelines for some SEC filings, including the 13D and 13G forms. In January 2024, the SEC implemented accelerated deadlines for beneficial ownership filings. Under these new deadlines, an initial Schedule 13D filing must be made within five business days, and amendments must be submitted within two business days of any material change. In the case of Schedule 13G, the deadline depends on the filer. In the case of passive investors, the filing is due within five business days of crossing the 5% threshold. For QIIs, the filing is due within 45 days after the end of the fiscal year, but may be required earlier if the 10% threshold is reached.</p>
+<p>As mentioned above, they are required to amend their beneficial ownership form on an ongoing basis whenever their proportion of ownership increases by 1% or greater.</p>
+<p>To understand how form 13D & 13G impacts public companies and their shareholders, it is important to understand the most common reasons an individual or group might choose to buy a large percentage of a public company's stock.</p>
+<p>In some cases, entities hope to influence the company to move in another direction. These are referred to as activist investors. Activist investors can be individuals or entities, such as hedge funds.</p>
+<p>In the case of an individual activist investor, someone might become a shareholder so they can have voting power and hope to sway the company to act in a certain way, for instance toward an ESG commitment.</p>
+<p>With an entity such as a hedge fund, the goal might be to change the way the company does business, for instance, by restructuring the company to make it more profitable. In other cases, shareholders may be unhappy with the company leadership, such as its board of directors or C-suite personnel. By becoming a shareholder, they may want to hold a proxy contest and drum out the current management.</p>
+<p>If you are unfamiliar with the concept of a proxy contest, it is a type of corporate takeover in which shareholders band together to force a vote to remove some or all of a company's existing management. The goal is to replace those individuals with leaders who are better aligned with the goals or values of the dissident side.</p>
+<p>These examples suggest that the beneficial ownership form leads to negative outcomes. However, it is important to remember there are many times when the process is benign or beneficial and not something for leadership to dread. In some cases, people decide to buy a significant portion of a company's shares because they believe the company is undervalued. They hope to buy low, sell high and come out ahead.</p>
+<p>The 13D and 13G forms are so important because they provide stakeholders with the context needed to better understand the purchasing intent so they can prepare. If someone buys a large percentage of shares and signals an active intent, they have advance warning and can better prepare for the battle. Other shareholders get to learn what's coming and make their own decisions.</p>
+<p>Because the forms are publicly available, it provides investors with transparency into who owns a significant percentage of shares and whether that person's intent is passive or active.</p>
+<p>Required SEC forms such as the 13D and 13G exist for the benefit of investors. They provide important information about company operations and ownership and ensure transparency. This allows investors to stay up to date with important developments and make informed decisions rather than being surprised and potentially unwanted by a new development at a company whose stock they own.</p>
+<p>Maintaining open lines of communication between a company's Investor Relations team and investors is critical for avoiding surprises. By reaching out to large shareholders as they gain influence by tracking Schedule 13D and 13G filings, companies can better prepare themselves for the possibility of activist investors and potentially address their concerns before complications arise.</p>
+
+<h3>Staying Compliant with Beneficial Ownership Rules</h3>
+<p>The Schedule 13D & 13G filing deadline is strict. This is why it is so important to know how to quickly and accurately prepare SEC filings using SEC reporting software. DFIN's signature software includes built-in templates and error checks so you don't miss any of the 13D & 13G filing requirements. Our secure, cloud-based software comes with built-in security, data privacy, and encryption features, for additional peace of mind.</p>
+<p>Download the Schedule 13D and Schedule 13G templates to simplify your filing requirements and ensure timely submissions. Contact DFIN to help with ensuring SEC filing compliance, including Schedule 13D & 13G disclosures.</p>
+
 </div>
 </article>
 <article class="content-section" id="financial-disclosure">
