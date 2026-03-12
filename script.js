@@ -268,6 +268,7 @@
       if (currentPage <= 1) return;
       currentPage--;
       filterTable();
+      document.getElementById('search-filings').scrollIntoView({ behavior: 'smooth' });
     });
   }
 
@@ -276,6 +277,7 @@
       if (currentPage >= totalPages) return;
       currentPage++;
       filterTable();
+      document.getElementById('search-filings').scrollIntoView({ behavior: 'smooth' });
     });
   }
 
@@ -287,6 +289,7 @@
       if (!page || page === currentPage) return;
       currentPage = page;
       filterTable();
+      document.getElementById('search-filings').scrollIntoView({ behavior: 'smooth' });
     });
   }
 
