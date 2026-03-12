@@ -22,11 +22,11 @@
 <a href="../index.html#search-filings">Search All</a>
 <a href="../index.html#deep-dives">Learn</a>
 </nav>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
-      <button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
+<button aria-label="Toggle theme" class="theme-toggle" id="theme-toggle">
+<svg class="sun-icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
+<svg class="moon-icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+</button>
+<button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
 <span></span><span></span><span></span>
 </button>
 </div>
@@ -48,108 +48,48 @@
 <aside class="filing-toc fade-in visible">
 <div class="toc-inner">
 <h3>Page Contents</h3>
-<nav>
-<a class="active" href="#overview">Guide Overview</a>
-<a href="#reporting-req">Reporting Requirements</a>
-<a href="#deadlines">Critical Deadlines</a>
-<a href="#item-details">Form Content</a>
-<a href="#signatures">Signatures</a>
-</nav>
+<nav><a class="active" href="#general-info">General Information</a><a href="#key-components">Key Form Components</a><a href="#usage">Regulatory Context</a><a href="#signatures">Signatures</a></nav>
 </div>
 </aside>
-<div class="filing-content fade-in visible">
-<article class="content-section" id="overview">
-<h2>Form Overview & Purpose</h2>
-<div class="article-block">
-<div class="callout tip filing-summary" style="margin-bottom: 2rem;">
-<h3 style="margin-top: 0; color: var(--text-primary); margin-bottom: 1rem;">Quick Summary</h3>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem;">
-<li><strong>What:</strong> Form X-17F-1A is used to report securities that have been stolen, lost, or found to be counterfeit.</li>
-<li><strong>Why:</strong> To alert the SEC, the FBI, and the "SEC Lost and Stolen Securities Program" (LSSP) to prevent the illegal negotiation of these certificates.</li>
-<li><strong>When:</strong> Filing is required immediately upon discovery of theft and within strict windows for other losses.</li>
-<li><strong>Who:</strong> Filed by "Reporting Institutions" including broker-dealers, banks, and clearing agencies.</li>
-</ul>
-</div>
-
-<div class="callout insight" style="margin-top: 2rem; background: var(--bg-subtle-blue); border-left: 3px solid var(--accent-purple); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-    <h3 style="margin-top: 0; color: var(--accent-purple); margin-bottom: 0.5rem; font-size: 1.1rem;">Expert Insight</h3>
-    <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">Form X-17F-1A acts as a critical safety net for the secondary market. By centralizing the data of lost and stolen certificates, the SEC's Lost and Stolen Securities Program (LSSP) allows financial institutions to "check" certificates before they accept them for transfer, effectively neutralizing the value of stolen paper securities.</p>
-</div>
-
-<h3>The Role of Reporting Institutions</h3>
-<p>Under Section 17(f)(1) of the Securities Exchange Act of 1934, almost all financial intermediaries are designated as "Reporting Institutions." This includes all members of the National Securities Exchange, registered broker-dealers, and most banking institutions. These entities are legally mandated to report any instance where they discover that a security in their custody or control has gone missing or is potentially counterfeit.</p>
-</div>
-</article>
-
-<article class="content-section" id="reporting-req">
-<h2>Reporting Requirements</h2>
-<div class="article-block">
-<p>Reporting follows a tiered system based on the nature of the security incident. Institutions must use Form X-17F-1A to notify the Securities Information Center (SIC), which manages the program on the SEC's behalf.</p>
-
-<h3>What must be reported?</h3>
-<ul class="feature-list" style="list-style-type: none; padding-left: 0;">
-<li style="margin-bottom: 10px;">✅ <strong>Stolen Securities:</strong> Any security evidence of theft.</li>
-<li style="margin-bottom: 10px;">✅ <strong>Lost or Missing Securities:</strong> Where custody cannot be accounted for.</li>
-<li style="margin-bottom: 10px;">✅ <strong>Counterfeit Securities:</strong> Discovered forged or duplicated certificates.</li>
-<li style="margin-bottom: 10px;">✅ <strong>Recoveries:</strong> If a previously reported missing security is found, it must be reported as a "Recovery" on the same form.</li>
-</ul>
-</div>
-</article>
-
-<article class="content-section" id="deadlines">
-<h2>Critical Deadlines</h2>
-<div class="article-block">
+<div class="filing-content fade-in visible"><article class="content-section" id="key-components">
+<div class="part-header">STRUCTURE</div>
+<h2>Key Form Components</h2>
+<p class="section-intro">This SEC filing consists of mandatory disclosures tailored to its specific regulatory purpose. Typical components include:</p>
 <div class="item-grid">
 <div class="item-card highlighted">
-<h3>Theft</h3>
-<p>Report to the SEC/SIC and the FBI within <strong>1 business day</strong> of discovery.</p>
-</div>
-<div class="item-card highlighted">
-<h3>Loss/Missing</h3>
-<p>Report within <strong>1 business day</strong> if criminal activity is suspected; otherwise within <strong>2 business days</strong> after internal search.</p>
-</div>
-<div class="item-card highlighted">
-<h3>Counterfeit</h3>
-<p>Report to the SEC/SIC and the FBI within <strong>2 business days</strong> of discovery.</p>
-</div>
-</div>
-</div>
-</article>
-
-<article class="content-section" id="item-details">
-<div class="part-header">Form Details</div>
-<h2>Key Information Fields</h2>
-<div class="item-grid">
-<div class="item-card">
-<span class="item-num">Field 1</span>
-<h3>Reporting Institution</h3>
-<p>Details of the firm filing the report, including their FIN/SIC Identifier Number.</p>
+<h3>Primary Disclosures</h3>
+<p>The core information required by the regulatory mandate. This section provides the detailed factual records, financial details, or ownership changes relevant to the filing.</p>
 </div>
 <div class="item-card">
-<span class="item-num">Field 2</span>
-<h3>Type of Report</h3>
-<p>Selection between "Loss," "Recovery," or "Update" to an existing filing.</p>
+<h3>Exhibits &amp; Attachments</h3>
+<p>Supplementary materials, legal agreements, contracts, or prior filings incorporated by reference to support the primary disclosures.</p>
 </div>
 <div class="item-card">
-<span class="item-num">Field 5-13</span>
-<h3>Security Identification</h3>
-<p>Specifics of the security: Issuer name, CUSIP number, Certificate/Serial numbers, and Denomination (shares or par value).</p>
-</div>
-<div class="item-card">
-<span class="item-num">Field 15</span>
-<h3>Criminal Suspicion</h3>
-<p>Indication if the loss is believed to be the result of a criminal act (triggers FBI notification).</p>
+<h3>Declarations</h3>
+<p>Statements asserting the accuracy, completeness, and compliance of the provided information, standard across official SEC documents.</p>
 </div>
 </div>
-</article>
-
-<article class="content-section" id="signatures">
-<h2>Signatures</h2>
-<div class="article-block dark">
-<p>The form must be signed by a natural person authorized by the reporting institution. This individual attests to the accuracy of the report and acknowledges that providing false information is a felony under federal law.</p>
+</article><article class="content-section" id="usage">
+<div class="part-header">APPLICATION</div>
+<h2>Regulatory Context</h2>
+<div class="article-block">
+<p>This form serves a distinct function within the SEC's EDGAR database, maintaining market transparency and ensuring fair access to crucial institutional data.</p>
+<div class="item-row">
+<div class="item-num-tag">Integrity</div>
+<div class="item-detail">
+<h3>Market Integrity</h3>
+<p>By mandating standardized disclosures, the SEC ensures all market participants have equal access to material information.</p>
 </div>
-</article>
 </div>
+<div class="item-row">
+<div class="item-num-tag">Compliance</div>
+<div class="item-detail">
+<h3>Legal Compliance</h3>
+<p>Filers must adhere to strict formatting and timeline rules. Failure to submit or materially misrepresenting facts results in significant enforcement actions.</p>
+</div>
+</div>
+</div>
+</article><article class="content-section" id="signatures"><h2>Signatures</h2><div class="article-block dark"><p>The report must be signed by the registrant and by its authorized officers/directors in accordance with SEC rules.</p></div></article></div>
 </div>
 </main>
 <footer class="site-footer">

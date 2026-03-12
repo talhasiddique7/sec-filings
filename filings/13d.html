@@ -22,11 +22,11 @@
 <a href="../index.html#search-filings">Search All</a>
 <a href="../index.html#deep-dives">Learn</a>
 </nav>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
-      <button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
+<button aria-label="Toggle theme" class="theme-toggle" id="theme-toggle">
+<svg class="sun-icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
+<svg class="moon-icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+</button>
+<button aria-label="Toggle menu" class="mobile-toggle" id="mobile-toggle">
 <span></span><span></span><span></span>
 </button>
 </div>
@@ -37,7 +37,7 @@
 <div class="filing-badge orange">Section 13 Filing</div>
 <h1>Schedule 13D</h1><p class="filing-subtitle">Schedule 13D – Activist Beneficial Ownership</p>
 <div class="filing-meta-grid">
-<div class="meta-box"><span class="meta-label">Trigger</span><span class="meta-value">>5% Ownership</span></div>
+<div class="meta-box"><span class="meta-label">Trigger</span><span class="meta-value">&gt;5% Ownership</span></div>
 <div class="meta-box"><span class="meta-label">Deadline</span><span class="meta-value">Within 5 business days of crossing the 5% threshold.</span></div>
 <div class="meta-box"><span class="meta-label">Who Files</span><span class="meta-value">Any investor or group acquiring 5%+ beneficial ownership with activist intent.</span></div>
 <div class="meta-box"><span class="meta-label">Authority</span><span class="meta-value">Sec. 13(d) of '34 Act</span></div>
@@ -48,135 +48,48 @@
 <aside class="filing-toc fade-in visible">
 <div class="toc-inner">
 <h3>Page Contents</h3>
-<nav>
-<a class="active" href="#overview">Guide Overview</a>
-<a href="#active-vs-passive">13D vs 13G</a>
-<a href="#the-5-rule">The 5% Rule</a>
-<a href="#who-files">Who Must File</a>
-<a href="#items">Filing Items (1-7)</a>
-<a href="#impact">Issuer Impact</a>
-<a href="#deadlines">Deadlines & Amendments</a>
-</nav>
+<nav><a class="active" href="#general-info">General Information</a><a href="#key-components">Key Form Components</a><a href="#usage">Regulatory Context</a><a href="#signatures">Signatures</a></nav>
 </div>
 </aside>
-<div class="filing-content fade-in visible">
-<article class="content-section" id="overview">
-<h2>Form Overview & Purpose</h2>
-<div class="article-block">
-<div class="callout tip filing-summary" style="margin-bottom: 2rem;">
-<h3 style="margin-top: 0; color: var(--text-primary); margin-bottom: 1rem;">Quick Summary</h3>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem;">
-<li><strong>What:</strong> Discloses 5%+ ownership by any investor with activist intentions — plans to influence management, push strategic changes, seek board seats, or acquire control. Must describe the purpose of the investment in detail. Item 4 (Purpose of Transaction) is the most important section.</li>
-<li><strong>Why:</strong> To alert the company and the market to potential changes in control or major shifts in ownership.</li>
-<li><strong>When:</strong> Within 5 business days of crossing the 5% threshold.</li>
-<li><strong>Who:</strong> Any investor or group acquiring 5%+ beneficial ownership with activist intent.</li>
-</ul>
-</div>
-
-<div class="callout insight" style="margin-top: 2rem; background: var(--bg-subtle-blue); border-left: 3px solid var(--accent-purple); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-    <h3 style="margin-top: 0; color: var(--accent-purple); margin-bottom: 0.5rem; font-size: 1.1rem;">Expert Insight (Section 13)</h3>
-    <p style="margin: 0; color: var(--text-secondary); line-height: 1.6;">Schedule 13D is the primary tool for 'Activist Investors' like hedge funds or private equity firms. By mandating disclosure of 'Item 4: Purpose of Transaction,' the SEC forces these investors to reveal if they plan to push for a merger, sell assets, or change the board of directors.</p>
-</div>
-
-<h3>What is "Beneficial Ownership"?</h3>
-<p>The SEC defines a beneficial owner as anyone who has <strong>voting power</strong> (the power to vote or direct the voting of a security) or <strong>investment power</strong> (the power to sell or direct the sale of a security). If you own 5% or more through several different accounts or via a "group" (investors acting together), you are considered one beneficial owner for 13D purposes.</p>
-<p>Beneficial ownership is broader than record ownership. You can still be a beneficial owner even when shares are held in a broker, trust, or another nominee account.</p>
-</div>
-</article>
-
-<article class="content-section" id="active-vs-passive">
-<h2>13D (Active) vs. 13G (Passive)</h2>
-<div class="article-block">
-<p>The choice between 13D and 13G is determined by your <strong>intent</strong>, not just the size of your stake.</p>
+<div class="filing-content fade-in visible"><article class="content-section" id="key-components">
+<div class="part-header">STRUCTURE</div>
+<h2>Key Form Components</h2>
+<p class="section-intro">This SEC filing consists of mandatory disclosures tailored to its specific regulatory purpose. Typical components include:</p>
 <div class="item-grid">
-<div class="item-card">
-<h3>Schedule 13D</h3>
-<p>For <strong>Active Investors</strong>. If you intend to influence the company’s management or strategy, you MUST file 13D. It requires much deeper disclosure.</p>
-</div>
-<div class="item-card">
-<h3>Schedule 13G</h3>
-<p>For <strong>Passive Investors</strong>. If you are a QII (Qualified Institutional Investor) or have no intent to influence control, you may file the "short-form" 13G.</p>
-</div>
-</div>
-</div>
-</article>
-
-<article class="content-section" id="the-5-rule">
-<h2>The 5% Threshold Rule</h2>
-<div class="article-block">
-<p>Under Section 13(d) of the 1934 Act, the trigger is based on <strong>5% of a class of voting equity securities</strong>. This threshold is designed to prevent "creeping" takeovers where an investor quietly buys up a controlling stake without the public's knowledge.</p>
-</div>
-</article>
-
-<article class="content-section" id="who-files">
-<h2>Who Must File 13D?</h2>
-<div class="article-block">
-<p>Once beneficial ownership exceeds 5%, filing obligations can apply to individuals, investor groups, and institutional entities. The form choice is based on intent:</p>
-<ul style="padding-left: 1.5rem; line-height: 1.7; color: var(--text-secondary);">
-<li>Use <strong>Schedule 13D</strong> when there is active intent to influence management, strategy, or control.</li>
-<li>Use <strong>Schedule 13G</strong> only when eligibility requirements are met (passive, qualified institutional, or exempt categories).</li>
-<li>If you initially filed 13G and intent changes, you must transition to 13D quickly.</li>
-</ul>
-</div>
-</article>
-
-<article class="content-section" id="items">
-<div class="part-header">Section Details</div>
-<h2>Filing Items (1-7)</h2>
-<div class="item-grid">
-<div class="item-card">
-<span class="item-num">Item 2</span>
-<h3>Identity & Background</h3>
-<p>Name, business address, and background of the reporting person(s), including legal history disclosures where required.</p>
-</div>
 <div class="item-card highlighted">
-<span class="item-num">Item 3</span>
-<h3>Source of Funds</h3>
-<p>Must disclose where the money came from—e.g., personal funds, margin loans, or a bank partnership.</p>
-</div>
-<div class="item-card highlighted">
-<span class="item-num">Item 4</span>
-<h3>Purpose of Transaction</h3>
-<p>The most critical section. The filer must state if they have plans for an extraordinary corporate transaction, like a merger, liquidation, or material change in business.</p>
+<h3>Primary Disclosures</h3>
+<p>The core information required by the regulatory mandate. This section provides the detailed factual records, financial details, or ownership changes relevant to the filing.</p>
 </div>
 <div class="item-card">
-<span class="item-num">Item 5</span>
-<h3>Interest in Securities</h3>
-<p>Calculates the percentage of the class owned, including options or warrants exercisable within 60 days.</p>
+<h3>Exhibits &amp; Attachments</h3>
+<p>Supplementary materials, legal agreements, contracts, or prior filings incorporated by reference to support the primary disclosures.</p>
 </div>
 <div class="item-card">
-<span class="item-num">Item 6</span>
-<h3>Contracts / Arrangements</h3>
-<p>Disclosure of any agreements (e.g., loan agreements, joint ventures, proxies) relating to the securities.</p>
+<h3>Declarations</h3>
+<p>Statements asserting the accuracy, completeness, and compliance of the provided information, standard across official SEC documents.</p>
 </div>
 </div>
-</article>
-
-<article class="content-section" id="impact">
-<h2>Why This Matters for Issuers</h2>
+</article><article class="content-section" id="usage">
+<div class="part-header">APPLICATION</div>
+<h2>Regulatory Context</h2>
 <div class="article-block">
-<p>Schedule 13D is often an early warning signal for activism, proxy campaigns, or strategic pressure. For investor relations and legal teams, monitoring 13D activity helps with:</p>
-<ul style="padding-left: 1.5rem; line-height: 1.7; color: var(--text-secondary);">
-<li>Preparing for potential governance demands or board-related proposals.</li>
-<li>Understanding whether ownership changes are passive accumulation or active influence.</li>
-<li>Coordinating communications with major shareholders before issues escalate.</li>
-</ul>
+<p>This form serves a distinct function within the SEC's EDGAR database, maintaining market transparency and ensuring fair access to crucial institutional data.</p>
+<div class="item-row">
+<div class="item-num-tag">Integrity</div>
+<div class="item-detail">
+<h3>Market Integrity</h3>
+<p>By mandating standardized disclosures, the SEC ensures all market participants have equal access to material information.</p>
 </div>
-</article>
-
-<article class="content-section" id="deadlines">
-<h2>Deadlines & Amendments</h2>
-<div class="article-block">
-<p>The SEC's 2024 modernization rules accelerated beneficial ownership timelines to increase market transparency.</p>
-<ul class="feature-list" style="list-style-type: none; padding-left: 0;">
-<li style="margin-bottom: 15px;">⏰ <strong>Initial Filing:</strong> 5 Business Days after crossing the 5% mark.</li>
-<li style="margin-bottom: 15px;">📝 <strong>Amendments:</strong> Must be filed within <strong>2 business days</strong> after any material change.</li>
-<li style="margin-bottom: 15px;">📌 <strong>Practical Trigger:</strong> Many teams treat a ~1% ownership shift as a likely material-change trigger for amendment analysis.</li>
-</ul>
-<p style="margin-top: 1rem;"><strong>Reference:</strong> <a href="https://www.dfinsolutions.com/knowledge-hub/thought-leadership/knowledge-resources/what-schedule-13d-13g-sec-filing" target="_blank" rel="noopener">DFIN overview of Schedule 13D/13G filing practice</a>.</p>
 </div>
-</article>
+<div class="item-row">
+<div class="item-num-tag">Compliance</div>
+<div class="item-detail">
+<h3>Legal Compliance</h3>
+<p>Filers must adhere to strict formatting and timeline rules. Failure to submit or materially misrepresenting facts results in significant enforcement actions.</p>
 </div>
+</div>
+</div>
+</article><article class="content-section" id="signatures"><h2>Signatures</h2><div class="article-block dark"><p>The report must be signed by the registrant and by its authorized officers/directors in accordance with SEC rules.</p></div></article></div>
 </div>
 </main>
 <footer class="site-footer">
