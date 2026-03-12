@@ -25,7 +25,7 @@
       "category": "Annual Reports",
       "full_name": "Annual Report – Foreign Private Issuers",
       "what": "Foreign equivalent of 10-K. Audited annual financials under IFRS (or home-country GAAP with US GAAP reconciliation), MD&A, business description, and risk factors. Used by all ADR companies.",
-      "when": "Within 4 months after fiscal year-end.",
+      "when": "Within 120 days (4 months) after fiscal year-end.",
       "who": "Foreign private issuers (FPIs) listed on US exchanges.",
       "why_use_it": "Only audited source for ADR stock financials. Needed to fairly compare ASML, Alibaba, Toyota, Samsung ADRs against US peers. Sites like Stockanalysis.com pull ADR data directly from 20-F filings."
     },
@@ -34,7 +34,7 @@
       "category": "Annual Reports",
       "full_name": "Annual Report – Canadian Companies (MJDS)",
       "what": "Annual report for Canadian companies using the Multijurisdictional Disclosure System. Allows use of Canadian disclosure documents accepted by SEC.",
-      "when": "Same as Canadian regulatory deadlines; typically within 140 days of fiscal year-end.",
+      "when": "Same day as the issuer's annual report is due to be filed with Canadian securities regulators.",
       "who": "Qualifying Canadian companies listed on US exchanges under MJDS.",
       "why_use_it": "Source of annual financials for major Canadian companies trading on US exchanges (e.g., Shopify, TD Bank, Canadian Natural Resources)."
     },
@@ -52,7 +52,7 @@
       "category": "Annual Reports",
       "full_name": "Annual Report – Employee Stock Plans",
       "what": "Annual report specifically for employee stock purchase plans, 401(k) plans, or savings plans that invest in company securities. Contains audited plan financials.",
-      "when": "Within 90 days after plan's fiscal year-end (120 days for large accelerated filers).",
+      "when": "Within 90 days after plan's fiscal year-end (180 days for plans subject to ERISA).",
       "who": "Companies whose employee benefit/savings plans hold company securities registered under the Securities Act.",
       "why_use_it": "Used in equity compensation analysis. Reveals actual shares held by employees in company stock, a proxy for internal confidence in the stock."
     },
@@ -96,7 +96,7 @@
       "form_type": "8-K",
       "category": "Current / Event Reports",
       "full_name": "Current Report – Material Events",
-      "what": "Reports material corporate events across 17 categories: earnings releases (Exhibit 99.1), M&A announcements, CEO/CFO changes, bankruptcy filings, dividend declarations, stock buyback programs, credit agreement amendments, debt offerings, SEC investigation notices, and more.",
+      "what": "Reports material corporate events across 33 categories: earnings releases (Exhibit 99.1), M&A announcements, CEO/CFO changes, bankruptcy filings, dividend declarations, stock buyback programs, credit agreement amendments, debt offerings, SEC investigation notices, and more.",
       "when": "Within 4 business days of the triggering event.",
       "who": "All domestic Exchange Act reporting companies.",
       "why_use_it": "The most market-moving filing. Earnings announcements, M&A deals, management changes — all hit EDGAR as 8-Ks first. Every news feed on Yahoo Finance, MarketBeat, Seeking Alpha, and TipRanks parses 8-K filings in real time. Missing 8-K monitoring means hearing news hours or days late."
@@ -151,7 +151,7 @@
       "category": "Registration Statements (S-Series)",
       "full_name": "IPO Registration Statement",
       "what": "Primary registration for domestic companies going public (IPO) or registering a new class of securities. Contains: business overview, financials (3 years audited), risk factors, use of proceeds, management, and underwriter info.",
-      "when": "Filed before IPO; effective after SEC review (~30–90 days).",
+      "when": "Filed before IPO; effective after SEC review. Must be public at least 15 days before roadshow begins.",
       "who": "Domestic companies conducting first public offering.",
       "why_use_it": "The IPO document. Contains all historical financials and business narrative for a pre-IPO company. Every IPO-focused tool on Yahoo Finance, Seeking Alpha, and TipRanks links to the S-1 as the definitive source. Essential reading before investing in any new listing."
     },
@@ -357,7 +357,7 @@
       "form_type": "10-12G",
       "category": "Registration Statements (Other)",
       "full_name": "Exchange Act Registration – Section 12(g)",
-      "what": "Registration of a class of securities under Section 12(g) by companies with 2,000+ shareholders (or 500 non-accredited investors) that are not exchange-listed. Triggers Exchange Act reporting obligations.",
+      "what": "Registration of a class of securities under Section 12(g) by companies with 2,000+ shareholders (or 500 non-accredited investors) and total assets exceeding $10 million that are not exchange-listed. Triggers Exchange Act reporting obligations.",
       "when": "Filed when shareholder thresholds are crossed.",
       "who": "Companies crossing Section 12(g) registration thresholds.",
       "why_use_it": "Tracks companies that become public reporters without doing a traditional IPO. Important for OTC market research and tracking companies that grow into SEC reporting requirements."
@@ -394,7 +394,7 @@
       "category": "Proxy Statements",
       "full_name": "Definitive Proxy Statement",
       "what": "The final official proxy statement sent to shareholders before annual/special meetings. Contains: director nominations, executive compensation tables (CEO/CFO total comp), Say-on-Pay vote, auditor ratification, shareholder proposals, related-party transactions, and equity plan approvals.",
-      "when": "Filed at least 40 calendar days before the annual meeting.",
+      "when": "Mailed or made available at least 40 calendar days before the annual meeting.",
       "who": "All public companies holding shareholder meetings.",
       "why_use_it": "The definitive source for executive pay, board governance, and shareholder voting. CEO compensation data on Simply Wall St, MarketBeat governance scores, and ISS/Glass Lewis proxy recommendations all derive from DEF 14A. Must-read for ESG analysis and governance risk assessment."
     },
@@ -637,7 +637,7 @@
       "category": "Beneficial Ownership (13D/G)",
       "full_name": "Schedule 13D – Activist Beneficial Ownership",
       "what": "Discloses 5%+ ownership by any investor with activist intentions — plans to influence management, push strategic changes, seek board seats, or acquire control. Must describe the purpose of the investment in detail. Item 4 (Purpose of Transaction) is the most important section.",
-      "when": "Within 10 calendar days of crossing the 5% threshold.",
+      "when": "Within 5 business days of crossing the 5% threshold.",
       "who": "Any investor or group acquiring 5%+ beneficial ownership with activist intent.",
       "why_use_it": "One of the most powerful stock catalysts on EDGAR. 13D filings from Elliott, Icahn, ValueAct, or Third Point cause immediate 5–20% price spikes. Every stock news platform headlines 13D filings as breaking news. Event-driven investors front-run activist campaigns by monitoring 13D filings in real time."
     },
@@ -646,7 +646,7 @@
       "category": "Beneficial Ownership (13D/G)",
       "full_name": "Schedule 13G – Passive Beneficial Ownership",
       "what": "Short-form beneficial ownership disclosure for passive investors (mutual funds, index funds, pension funds) holding 5%+. No activist intent.",
-      "when": "Initial: within 45 days after year-end in which threshold was crossed. Annual update: by February 14.",
+      "when": "Initial (QIIs/Exempt): within 45 days after quarter-end of crossing 5%. Initial (Passive): 5 business days. Amendments: 45 days after quarter-end of any material change.",
       "who": "Institutional investors (investment advisers, mutual funds, banks, insurance companies) with 5%+ passive stakes.",
       "why_use_it": "The source of all institutional ownership data on stock research sites. Yahoo Finance 'Holders' tab, Finviz 'Inst Own' column, MarketBeat ownership tracker — all powered by 13G data. Rising institutional ownership is a key positive momentum indicator."
     },
@@ -1034,7 +1034,7 @@
       "full_name": "Investment Adviser Registration / Annual Update",
       "what": "Registration form for SEC-registered investment advisers. Contains: business description, clients and AUM, fee schedules, ownership structure, disciplinary history, and conflicts of interest. Also serves as the annual updating amendment (Part 1 filed with SEC; Part 2 — brochure — provided to clients).",
       "when": "Initial: before commencing advisory activities. Annual update: within 90 days of fiscal year-end.",
-      "who": "Investment advisers with $110M+ AUM required to register with SEC.",
+      "who": "Investment advisers with $110M+ AUM (advisers with $100M+ may also register voluntarily).",
       "why_use_it": "The definitive disclosure for every major hedge fund, mutual fund manager, and RIA. AUM data, fee structures, key personnel, and disciplinary history all derive from ADV filings. Used by institutional due diligence teams and RIA databases like SEC Investment Adviser Search."
     },
     {
@@ -1051,7 +1051,7 @@
       "category": "Investment Advisers (ADV)",
       "full_name": "Private Fund Systemic Risk Report",
       "what": "Systemic risk report for private funds (hedge funds, private equity, venture capital) managed by SEC-registered advisers. Provides gross/net AUM, leverage ratios, liquidity profiles, and counterparty exposure.",
-      "when": "Large hedge fund advisers: quarterly within 60 days of quarter-end. Others: annually within 120 days of fiscal year-end.",
+      "when": "Large hedge fund advisers ($1.5B+): quarterly within 60 days + 72-hour event reporting. Large private equity advisers ($2B+): quarterly event-based reports within 60 days. Large liquidity fund advisers ($1B+): quarterly within 15 days. Others: annually within 120 days.",
       "who": "SEC-registered advisers managing private funds with at least $150M in private fund assets.",
       "why_use_it": "Systemic risk monitoring. Form PF data (in aggregate) is used by regulators to monitor systemic risk in private markets. Individual filings reveal fund-level leverage, strategy type, and liquidity mismatches — used by institutional counterparties and researchers."
     },
@@ -1203,7 +1203,7 @@
       "form_type": "NT 10-Q",
       "category": "Late Filing Notifications",
       "full_name": "Late Quarterly Report Notice",
-      "what": "Filed when a company cannot meet its 10-Q quarterly filing deadline. Grants a 5-business-day extension.",
+      "what": "Filed when a company cannot meet its 10-Q quarterly filing deadline. Grants a 5-calendar-day extension.",
       "when": "Filed by the original 10-Q due date.",
       "who": "Any registrant unable to meet 10-Q deadline.",
       "why_use_it": "Yellow flag for accounting integrity. Repeated NT 10-Q filings signal systemic internal control issues. MarketBeat tracks NT 10-Q as a risk signal."
@@ -1286,12 +1286,12 @@
       "full_name": "Rule 144 Resale Notice",
       "what": "Notice of proposed sale of restricted or control securities under SEC Rule 144. Filed by insiders or holders of restricted stock who plan to sell shares in the public market. Signals impending insider selling before it appears in Form 4.",
       "when": "Filed when selling 5,000+ shares or securities worth $50,000+ in a 3-month period.",
-      "who": "Insiders and restricted stockholders proposing to sell securities under Rule 144.",
+      "who": "Only affiliates (corporate insiders) proposing to sell securities under Rule 144.",
       "why_use_it": "Pre-Form 4 selling signal. A Rule 144 notice gives a few days' advance warning that an insider is about to sell shares. Used by traders who monitor insider selling activity. Pre-dates the actual Form 4 disclosure of the completed sale."
     },
     {
       "form_type": "12G3-2B",
-      "category": "Rule 144 / Resale",
+      "category": "Foreign Issuers",
       "full_name": "ADR Exemption – Section 12(g)",
       "what": "Exemption filing for foreign private issuers whose American Depositary Receipts trade in US markets without full SEC registration (OTC/Pink Sheet ADRs).",
       "when": "Filed when FPI establishes an informal ADR program.",
