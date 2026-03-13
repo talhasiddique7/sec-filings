@@ -973,28 +973,44 @@ mark {
   line-height: 1.75;
 }
 
-.article-block ul, .article-block ol {
+.article-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.article-block h3 {
+  color: var(--text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-block p, .article-block ul, .article-block ol {
   color: var(--text-secondary);
-  margin: 0.5rem 0 1rem 1.25rem;
-  font-size: 0.95rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
 .article-block li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
 }
 
 .article-block strong {
   color: var(--text-primary);
+  font-weight: 600;
 }
 
 /* Callout boxes */
 .callout {
-  margin: 1.25rem 0;
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.9rem;
-  line-height: 1.65;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .callout.tip {
@@ -1007,6 +1023,57 @@ mark {
   background: rgba(255, 184, 0, 0.08);
   border-left: 3px solid var(--accent-gold);
   color: #FCD34D;
+}
+
+/* ===== PROFESSIONAL INSIGHT BOX ===== */
+/* Theme-aware insight callout — adapts to both dark and light modes */
+.professional-insight {
+  margin-top: 2rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--bg-subtle-blue);
+  border-left: 4px solid var(--accent-blue);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.professional-insight:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-md);
+}
+
+.professional-insight .insight-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.professional-insight .insight-header svg {
+  flex-shrink: 0;
+  color: var(--accent-blue);
+  transition: color var(--transition-fast);
+}
+
+.professional-insight:hover .insight-header svg {
+  color: var(--accent-cyan);
+}
+
+.professional-insight .insight-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  border: none;
+  padding: 0;
+}
+
+.professional-insight .insight-body {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
 }
 
 .callout.warning {
@@ -1756,82 +1823,121 @@ mark {
 
 .breadcrumb {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.6rem;
   font-size: 0.85rem;
+  font-weight: 500;
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-.breadcrumb a { color: var(--text-muted); }
-.breadcrumb a:hover { color: var(--accent-blue); }
-.breadcrumb .sep { opacity: 0.5; }
-.breadcrumb .current { color: var(--text-secondary); }
+.breadcrumb a { 
+  color: var(--text-muted); 
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover { 
+  color: var(--accent-blue); 
+}
+
+.breadcrumb .sep { 
+  font-size: 0.75rem;
+  opacity: 0.4; 
+}
 
 .filing-hero {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+  position: relative;
 }
 
 .filing-badge {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 0.3rem 1rem;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 1rem;
   border-radius: 100px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.filing-badge.cyan { background: rgba(0, 212, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 212, 255, 0.2); }
+.filing-badge.cyan { 
+  background: rgba(0, 212, 255, 0.1); 
+  color: var(--accent-cyan); 
+  border: 1px solid rgba(0, 212, 255, 0.3); 
+}
 
 .filing-hero h1 {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: 1rem;
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
 }
 
 .filing-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
   color: var(--text-secondary);
-  max-width: 800px;
+  line-height: 1.4;
+  margin-bottom: 3.5rem;
+  border-left: 3px solid var(--accent-blue);
+  padding-left: 1.5rem;
 }
 
 .filing-meta-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1px;
-  background: var(--border-subtle);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  margin: 3rem 0;
-  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 4rem 0;
 }
 
 .meta-box {
-  background: var(--bg-surface);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-smooth);
+}
+
+.meta-box:hover {
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
 }
 
 .meta-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.75rem;
-  color: var(--text-muted);
+  color: var(--text-accent);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
 .meta-value {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--text-primary);
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .filing-actions {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.filing-actions .btn {
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
 }
 
 /* Layout with TOC */
@@ -1918,12 +2024,19 @@ mark {
 .item-card {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
   transition: all var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
 }
 
-.item-card:hover { border-color: var(--accent-blue); }
+.item-card:hover { 
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-md); 
+  transform: translateY(-3px);
+}
 
 .item-card.highlighted {
   border: 1px solid var(--border-glow);
@@ -1931,23 +2044,46 @@ mark {
 }
 
 .item-num {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--accent-blue);
-  display: block;
-  margin-bottom: 0.5rem;
+  background: rgba(31, 122, 224, 0.1);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: fit-content;
+  letter-spacing: 0.05em;
 }
 
 .item-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.3;
 }
 
 .item-card p {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+.item-card .truncate-wrapper {
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.item-card p.section-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.75rem;
+  margin-top: auto;
+  font-style: italic;
 }
 
 .section-intro {
@@ -2004,4 +2140,41 @@ mark {
   .filing-toc { display: none; }
   .featured-card { grid-template-columns: 1fr; }
   .featured-card-preview { display: none; }
+}
+
+/* ===== TRUNCATE TEXT ===== */
+.truncate-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.truncate-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.truncate-text.expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+
+.read-more-btn {
+  background: transparent;
+  color: var(--accent-blue);
+  border: none;
+  padding: 0;
+  margin-top: 6px;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: 600;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
 }

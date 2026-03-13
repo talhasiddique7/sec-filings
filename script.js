@@ -489,3 +489,11 @@
   }
 
 })();
+
+window.toggleReadMore = function(btn) {
+  var textEl = btn.previousElementSibling;
+  if (textEl && textEl.classList.contains('truncate-text')) {
+    textEl.classList.toggle('expanded');
+    btn.textContent = textEl.classList.contains('expanded') ? 'Read less' : 'Read more';
+  }
+};

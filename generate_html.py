@@ -50,6 +50,14 @@ tbody_html = ""
 seen_forms = set()
 unique_forms = []
 
+def format_cell(text):
+    if not text:
+        return ""
+    if len(text) > 80:
+        return f'<div class="truncate-wrapper"><div class="truncate-text">{text}</div><button type="button" class="read-more-btn" onclick="toggleReadMore(this)">Read more</button></div>'
+    return text
+
+
 for form in data['forms']:
     ft = form['form_type']
     if ft not in seen_forms:
@@ -74,10 +82,10 @@ for form in unique_forms:
     row += f'              <td><a href="{link}">{ft}</a></td>\n'
     row += f'              <td>{fn}</td>\n'
     row += f'              <td>{c}</td>\n'
-    row += f'              <td>{w}</td>\n'
-    row += f'              <td>{who}</td>\n'
-    row += f'              <td>{wn}</td>\n'
-    row += f'              <td>{val}</td>\n'
+    row += f'              <td>{format_cell(w)}</td>\n'
+    row += f'              <td>{format_cell(who)}</td>\n'
+    row += f'              <td>{format_cell(wn)}</td>\n'
+    row += f'              <td>{format_cell(val)}</td>\n'
     row += f'            </tr>\n'
     tbody_html += row
 

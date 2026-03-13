@@ -23,10 +23,31 @@ def update_file(filepath, form_data):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
+    # Update title
+    content = re.sub(
+        r'(<title>)(.*?)(</title>)',
+        fr'\g<1>{form_data["form_type"]} — {form_data["full_name"]} | SEC Filings Guide\g<3>',
+        content
+    )
+
+    # Update h1
+    content = re.sub(
+        r'(<h1>)(.*?)(</h1>)',
+        fr'\g<1>{form_data["form_type"]}\g<3>',
+        content
+    )
+
+    # Update breadcrumb
+    content = re.sub(
+        r'(<span class="current">)(.*?)(</span>)',
+        fr'\g<1>{form_data["form_type"]}\g<3>',
+        content
+    )
+
     # Update subtitle
     content = re.sub(
         r'(<p class="filing-subtitle">)(.*?)(</p>)',
-        fr'\1{form_data["full_name"]}\3',
+        fr'\g<1>{form_data["full_name"]}\g<3>',
         content,
         flags=re.DOTALL
     )

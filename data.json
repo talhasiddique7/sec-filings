@@ -570,7 +570,7 @@
       "why_use_it": "Lockup expiration tracking. When VCs and insiders file 424B7 to resell shares, it signals upcoming supply entering the market — a bearish near-term signal for stock price."
     },
     {
-      "form_type": "425.0",
+      "form_type": "425",
       "category": "Prospectuses (424 / 497 Series)",
       "full_name": "Merger/Acquisition Communications",
       "what": "Written communications relating to business combinations (mergers, tender offers) filed during the solicitation period. Includes investor presentations, press releases, and factual business information distributed about the deal.",
@@ -588,7 +588,7 @@
       "why_use_it": "Pre-IPO investor presentation tracking. FWP filings include the actual road show slide decks and investor term sheets — gives direct access to the pitch management is making to institutional investors."
     },
     {
-      "form_type": "497.0",
+      "form_type": "497",
       "category": "Prospectuses (424 / 497 Series)",
       "full_name": "Mutual Fund Prospectus",
       "what": "Final prospectus for an open-end investment company (mutual fund). Contains the fund's investment objective, fees, performance history, and portfolio manager details.",
@@ -606,7 +606,7 @@
       "why_use_it": "The key facts document that fund comparison sites display — expense ratio, fund objective, performance, and risk summary all derived from 497K."
     },
     {
-      "form_type": "3.0",
+      "form_type": "3",
       "category": "Insider Trading (Section 16)",
       "full_name": "Initial Ownership Statement",
       "what": "First ownership report when a person becomes a corporate insider (officer, director, or 10%+ shareholder). Establishes baseline ownership across all classes of company equity.",
@@ -615,7 +615,7 @@
       "why_use_it": "Establishes the baseline for tracking all future insider transactions. Without Form 3 data, sites like Finviz and MarketBeat cannot calculate accurate total insider ownership percentages."
     },
     {
-      "form_type": "4.0",
+      "form_type": "4",
       "category": "Insider Trading (Section 16)",
       "full_name": "Statement of Changes in Ownership",
       "what": "Reports every change in an insider's holdings: open-market purchases, open-market sales, option grants and exercises, RSU vesting, gifts, and other transactions. The most frequently filed Section 16 form.",
@@ -624,7 +624,7 @@
       "why_use_it": "The single most-tracked insider signal. Finviz, Yahoo Finance, MarketBeat, and TipRanks all prominently display Form 4 insider buys/sells. Cluster buying (multiple insiders buying simultaneously) is statistically one of the strongest long-term buy signals. Academic studies consistently show insider purchase portfolios outperform."
     },
     {
-      "form_type": "5.0",
+      "form_type": "5",
       "category": "Insider Trading (Section 16)",
       "full_name": "Annual Insider Ownership Reconciliation",
       "what": "Year-end filing for insiders to report transactions that were either exempt from Form 4 or not timely reported. Acts as an annual reconciliation of all insider activity.",
@@ -786,7 +786,7 @@
       "why_use_it": "Foreign company going dark in the US market. Impact on ADR program and US investor access."
     },
     {
-      "form_type": "25.0",
+      "form_type": "25",
       "category": "Deregistration & Delisting",
       "full_name": "Exchange Delisting Notice",
       "what": "Filed by the national securities exchange notifying the SEC that it is delisting a security. The exchange's official notice that a stock is being removed from its listing.",
