@@ -60,6 +60,10 @@ def format_cell(text):
 
 for form in data['forms']:
     ft = form['form_type']
+    # Skip variants in the main table
+    if form.get('is_variant', False):
+        continue
+        
     if ft not in seen_forms:
         seen_forms.add(ft)
         unique_forms.append(form)

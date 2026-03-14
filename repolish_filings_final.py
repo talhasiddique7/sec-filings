@@ -11,6 +11,13 @@ def slugify(text):
     s = s.replace('.', '')
     return s
 
+def clean_text(text):
+    if not text: return ""
+    # Standardize common encoding issues
+    text = text.replace('\u0393\u00c7\u00f4', '—').replace('\u0393\u00c7\u00f6', '—').replace('\u0393\u00c7\u00f8', '—')
+    text = text.replace('ΓÇô', '—').replace('ΓÇö', '—')
+    return text.strip()
+
 def main():
     base_dir = r"c:/Users/ahmad/OneDrive/Desktop/Blogs/sec-filings"
     filings_dir = os.path.join(base_dir, "filings")
@@ -19,15 +26,16 @@ def main():
     with open(data_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    # Map slug to (std_form_type, full_name)
+    # Map slug to (std_form_type, full_name, category)
     info_map = {}
     for form in data['forms']:
-        ft = form['form_type']
-        fn = form['full_name']
-        info_map[slugify(ft)] = (ft, fn)
+        ft = clean_text(form['form_type'])
+        fn = clean_text(form['full_name'])
+        cat = clean_text(form['category'])
+        info_map[slugify(ft)] = (ft, fn, cat)
     
     # Special handle for 10-K
-    info_map['10k'] = ('10-K', 'Annual Report')
+    info_map['10k'] = ('10-K', 'Annual Report', 'Annual Reports')
 
     for filename in os.listdir(filings_dir):
         if not filename.endswith('.html'):
@@ -44,7 +52,7 @@ def main():
         if not info:
             continue
             
-        std_ft, std_fn = info
+        std_ft, std_fn, std_cat = info
 
         # 1. Fix <title> tag
         title_tag = soup.find('title')
@@ -71,9 +79,12 @@ def main():
             # Rebuild hero contents
             hero.clear()
             
+            # Map slug to info
+            _, _, cat = info
+            
             # Badge
             badge = soup.new_tag('div', **{'class': 'filing-badge cyan'})
-            badge.string = "SEC Filing"
+            badge.string = cat if cat else "SEC Filing"
             hero.append(badge)
             
             # H1
@@ -120,7 +131,7 @@ def main():
                 footer.append(btn_copy)
             
             # Remove original if it wasn't already in footer
-            if not btn_to_move.find_parent('div', class_='filing-content-footer'):
+            if btn_to_move and not btn_to_move.find_parent('div', class_='filing-content-footer'):
                 # Also remove the container if it was in .filing-actions
                 actions = btn_to_move.find_parent('div', class_='filing-actions')
                 if actions:
@@ -128,9 +139,16 @@ def main():
                 else:
                     btn_to_move.decompose()
 
+        # 4. Fix Breadcrumb Link
+        bc = soup.find('div', class_='breadcrumb')
+        if bc:
+            f_link = bc.find('a', string=re.compile("Filings", re.I))
+            if f_link:
+                f_link['href'] = "../index.html#search-filings"
+
         # Save changes
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(soup.prettify())
+            f.write(str(soup))
             
     print(f"Repolished all HTML files in {filings_dir}")
 
