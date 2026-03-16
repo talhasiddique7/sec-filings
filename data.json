@@ -6,11 +6,12 @@
       "form_type": "10-K",
       "category": "Annual Reports",
       "full_name": "Annual Report",
-      "what": "Comprehensive annual report: audited financials (income statement, balance sheet, cash flows), MD&A, business description, risk factors, properties, legal proceedings, executive compensation, and internal controls assessment.",
+      "what": "The definitive annual report for US public companies. It contains audited financial statements including the Balance Sheet, Income Statement, and Cash Flow Statement. Crucially, it includes the MD&A (Item 7), where management explains the 'why' behind the numbers, and Item 1A (Risk Factors), detailing everything that could go wrong. It also covers legal proceedings, executive compensation, and the effectiveness of internal controls (SOX 404).",
       "when": "60 days (large accelerated), 75 days (accelerated), or 90 days (non-accelerated) after fiscal year-end.",
       "who": "All domestic public companies registered under Exchange Act Sections 12 or 15(d).",
-      "why_use_it": "Gold standard of financial disclosure. Every revenue, EPS, margin, and debt metric on Yahoo Finance / Finviz / Macrotrends flows from 10-K data. Without it you cannot build a proper DCF, compare historical financials, or verify audited results.",
-      "is_variant": false
+      "why_use_it": "The 10-K is the 'gold standard' for fundamental analysis. It's used to build discounted cash flow (DCF) models, assess long-term competitive moats, and verify the integrity of reported earnings via the auditor's report. Professional analysts skip the investor presentation and go straight to the 10-K to find hidden liabilities, pension obligations, and lease commitments that aren't visible in summary data.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0014_01_annual-report-pursuant-to-section-13-or-15d_form10-k.pdf"
     },
     {
       "form_type": "10-KT",
@@ -27,11 +28,12 @@
       "form_type": "20-F",
       "category": "Annual Reports",
       "full_name": "Annual Report — Foreign Private Issuers",
-      "what": "Foreign equivalent of 10-K. Audited annual financials under IFRS (or home-country GAAP with US GAAP reconciliation), MD&A, business description, and risk factors. Used by all ADR companies.",
+      "what": "The foreign private issuer's equivalent of a 10-K. It is the primary annual disclosure for non-US companies listed on US exchanges (ADRs). It features audited financials, often under IFRS, and includes a critical mandatory reconciliation to US GAAP for certain items. It also covers business risks, governance, and director backgrounds for international entities like ASML, Alibaba, or Sony.",
       "when": "Within 120 days (4 months) after fiscal year-end.",
       "who": "Foreign private issuers (FPIs) listed on US exchanges.",
-      "why_use_it": "Only audited source for ADR stock financials. Needed to fairly compare ASML, Alibaba, Toyota, Samsung ADRs against US peers. Sites like Stockanalysis.com pull ADR data directly from 20-F filings.",
-      "is_variant": false
+      "why_use_it": "The only audited source for ADR stock financials. It allows investors to compare foreign giants against US domestic peers by normalizing financial reporting. Analysts look for unique international risk factors (currency, geopolitical, foreign tax) and 'Material Weaknesses' in internal controls that are more common in non-US firms.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0036_01_registration-statement--annual-report--transition-report_form20-f.pdf"
     },
     {
       "form_type": "40-F",
@@ -41,7 +43,8 @@
       "when": "Same day as the issuer's annual report is due to be filed with Canadian securities regulators.",
       "who": "Qualifying Canadian companies listed on US exchanges under MJDS.",
       "why_use_it": "Source of annual financials for major Canadian companies trading on US exchanges (e.g., Shopify, TD Bank, Canadian Natural Resources).",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0008_01_registration-statement-pursuant-to-section-12-or-annual-report-pursuan_form40-f.pdf"
     },
     {
       "form_type": "18-K",
@@ -51,7 +54,8 @@
       "when": "Typically within 9 months after fiscal year-end.",
       "who": "Foreign governments, central banks, and government agencies that have issued securities in US markets.",
       "why_use_it": "Used by sovereign bond investors and EM (emerging market) debt analysts to assess country credit risk, GDP, debt-to-GDP ratios, and fiscal position.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0130_01_annual-report-for-foreign-governments-and-political-subdivisions-there_form18-k.pdf"
     },
     {
       "form_type": "11-K",
@@ -61,7 +65,8 @@
       "when": "Within 90 days after plan's fiscal year-end (180 days for plans subject to ERISA).",
       "who": "Companies whose employee benefit/savings plans hold company securities registered under the Securities Act.",
       "why_use_it": "Used in equity compensation analysis. Reveals actual shares held by employees in company stock, a proxy for internal confidence in the stock.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0165_01_annual-reports-of-employee-stock-purchase-savings-and-similar-plans-pu_form11-k.pdf"
     },
     {
       "form_type": "11-KT",
@@ -78,11 +83,12 @@
       "form_type": "10-Q",
       "category": "Quarterly Reports",
       "full_name": "Quarterly Report",
-      "what": "Unaudited quarterly financial statements for Q1, Q2, Q3. Includes balance sheet, income statement, cash flow statement, MD&A, and updates on material developments. Q4 is covered by 10-K.",
+      "what": "A quarterly report filed after each of the first three fiscal quarters. Unlike the 10-K, current quarterly financial statements are typically unaudited. It provides a real-time update on a company's financial health, seasonal trends, and any material developments that occurred since the last annual report. It includes condensed financials and a shorter MD&A focused specifically on the recent quarter's performance.",
       "when": "40 days (large accelerated/accelerated) or 45 days (non-accelerated) after each of first three fiscal quarter-ends.",
       "who": "All domestic Exchange Act reporting companies.",
-      "why_use_it": "Powers all quarterly financial tracking \u0393\u00c7\u00f6 revenue growth, EPS beat/miss, margin trends, cash burn. Every earnings tracker and stock screener (Yahoo Finance, Finviz, Macrotrends) sources quarterly data from 10-Q. Most frequently used periodic filing for active investors.",
-      "is_variant": false
+      "why_use_it": "Investors use 10-Qs to track short-term momentum and identify 'earnings beats' or 'misses' early. It reveals deteriorating margins or slowing growth trends months before the annual report. Comparing the 10-Q to the previous year's corresponding quarter (YoY) is the standard method for measuring fundamental growth in public markets.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0005_01_general-form-for-quarterly-reports-under-section-13-or-15d_form10-q.pdf"
     },
     {
       "form_type": "10-QT",
@@ -91,7 +97,7 @@
       "what": "Quarterly report for a transition period when a company is changing its fiscal year and the transition includes one or more quarters.",
       "when": "Within standard 10-Q deadlines from transition quarter-end.",
       "who": "Domestic public companies mid-fiscal-year change.",
-      "why_use_it": "Fills the data gap created by fiscal year changes \u0393\u00c7\u00f6 important for maintaining unbroken quarterly revenue/earnings series in financial models.",
+      "why_use_it": "Fills the data gap created by fiscal year changes ΓÇö important for maintaining unbroken quarterly revenue/earnings series in financial models.",
       "parent_form": "10-Q",
       "is_variant": true
     },
@@ -110,11 +116,12 @@
       "form_type": "8-K",
       "category": "Current / Event Reports",
       "full_name": "Current Report — Material Events",
-      "what": "Reports material corporate events across 33 categories: earnings releases (Exhibit 99.1), M&A announcements, CEO/CFO changes, bankruptcy filings, dividend declarations, stock buyback programs, credit agreement amendments, debt offerings, SEC investigation notices, and more.",
+      "what": "The 'breaking news' filing. Companies must file an 8-K for 'material' events, often within 4 business days. This includes earnings releases (Item 2.02), entering into major contracts (Item 1.01), CEO or CFO departures (Item 5.02), bankruptcy, or dividend changes. It is the primary vehicle for ensuring all investors have access to market-moving information simultaneously.",
       "when": "Within 4 business days of the triggering event.",
       "who": "All domestic Exchange Act reporting companies.",
-      "why_use_it": "The most market-moving filing. Earnings announcements, M&A deals, management changes \u0393\u00c7\u00f6 all hit EDGAR as 8-Ks first. Every news feed on Yahoo Finance, MarketBeat, Seeking Alpha, and TipRanks parses 8-K filings in real time. Missing 8-K monitoring means hearing news hours or days late.",
-      "is_variant": false
+      "why_use_it": "An 8-K is the ultimate catalyst for stock price volatility. Day traders and institutional desks monitor 8-K feeds (Item 99.1 exhibits) for earnings slides and press releases. A sudden 8-K filing can signal a company is about to be acquired, is facing a major lawsuit, or is experiencing a management crisis. It is the most time-sensitive filing on EDGAR.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0012_01_current-report-pursuant-to-section-13-or-15d_form8-k.pdf"
     },
     {
       "form_type": "8-K12B",
@@ -123,7 +130,7 @@
       "what": "Filed when a successor company's securities become registered under Section 12(b) automatically as a result of a merger, reincorporation, or business combination.",
       "when": "Filed in connection with the succession event.",
       "who": "Successor companies in mergers/reincorporations.",
-      "why_use_it": "Tracks the moment a new legal entity officially becomes a public reporting company \u0393\u00c7\u00f6 used in M&A timeline databases.",
+      "why_use_it": "Tracks the moment a new legal entity officially becomes a public reporting company ΓÇö used in M&A timeline databases.",
       "parent_form": "8-K",
       "is_variant": true
     },
@@ -131,7 +138,7 @@
       "form_type": "8-K12G3",
       "category": "Current / Event Reports",
       "full_name": "Section 12(g) Registration via Succession",
-      "what": "Filed when a successor company's securities become registered under Section 12(g) \u0393\u00c7\u00f6 typically when a SPAC or private company completes a reverse merger and becomes a reporting company.",
+      "what": "Filed when a successor company's securities become registered under Section 12(g) ΓÇö typically when a SPAC or private company completes a reverse merger and becomes a reporting company.",
       "when": "Filed at completion of reverse merger or SPAC business combination.",
       "who": "Companies going public via SPAC or reverse merger.",
       "why_use_it": "The official signal that a de-SPAC or reverse merger is complete and the combined company is now a reporting issuer. Used to track SPAC deal closings.",
@@ -153,11 +160,12 @@
       "form_type": "6-K",
       "category": "Current / Event Reports",
       "full_name": "Foreign Issuer Current Report",
-      "what": "Foreign private issuers' equivalent of the 8-K. Reports material information that the FPI disclosed or was required to disclose in its home country or on any foreign stock exchange.",
+      "what": "The 'current report' for foreign private issuers (the international version of an 8-K). It is used to report any material information that a foreign company releases in its home market, to its local exchange, or to its shareholders. This includes everything from quarterly results and debt issuances to major executive changes and M&A activity.",
       "when": "Promptly after information is made public in home country.",
       "who": "Foreign private issuers registered under Section 12 of the Exchange Act.",
-      "why_use_it": "The only way to track material news from ADR companies \u0393\u00c7\u00f6 earnings results from ASML, Shell, Alibaba, Sony all arrive via 6-K. Any platform covering international stocks monitors 6-K filings.",
-      "is_variant": false
+      "why_use_it": "Essential for tracking the 'intra-year' progress of ADRs. Because foreign companies don't file 10-Qs, the 6-K is the only way to get quarterly or semi-annual performance updates. It is the definitive record of how a foreign company is interacting with its global shareholder base.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0019_01_report-of-foreign-private-issuer-pursuant-to-rule-13a-16-or-15d-16-und_form6-k.pdf"
     },
     {
       "form_type": "1-U",
@@ -167,36 +175,39 @@
       "when": "Within 4 business days of triggering event.",
       "who": "Companies with ongoing Reg A Tier 2 offerings or reporting obligations.",
       "why_use_it": "Tracks material news for smaller, non-NYSE/NASDAQ companies that used Reg A mini-IPO route. Niche but important for micro-cap and retail crowdfunding investors.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0010_01_current-report-pursuant-to-regulation-a_form1-u.pdf"
     },
     {
       "form_type": "S-1",
       "category": "Registration Statements (S-Series)",
       "full_name": "IPO Registration Statement",
-      "what": "Primary registration for domestic companies going public (IPO) or registering a new class of securities. Contains: business overview, financials (3 years audited), risk factors, use of proceeds, management, and underwriter info.",
+      "what": "The 'Initial Public Offering' (IPO) registration statement. It is the first time a private company pulls back the curtain, disclosing 3 years of audited financials, the full competitive landscape, and every conceivable risk factor. It includes the 'Use of Proceeds' section, explaining how the company plans to spend the IPO cash.",
       "when": "Filed before IPO; effective after SEC review. Must be public at least 15 days before roadshow begins.",
       "who": "Domestic companies conducting first public offering.",
-      "why_use_it": "The IPO document. Contains all historical financials and business narrative for a pre-IPO company. Every IPO-focused tool on Yahoo Finance, Seeking Alpha, and TipRanks links to the S-1 as the definitive source. Essential reading before investing in any new listing.",
-      "is_variant": false
+      "why_use_it": "The S-1 is the definitive guide to a new stock. It helps investors determine if an IPO is a 'hype' play or a sustainable business. Analysts focus on the revenue growth rates, path to profitability, and the 'Dual-Class' share structure which often gives founders total voting control even with a minority of shares.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0037_01_registration-statement-under-securities-act-of-1933_forms-1.pdf"
     },
     {
       "form_type": "S-3",
       "category": "Registration Statements (S-Series)",
       "full_name": "Shelf Registration Statement",
-      "what": "Allows seasoned companies to register large amounts of securities (stock, bonds, warrants) in advance and offer them over 3 years using short-form prospectus supplements. Enables rapid capital markets access.",
+      "what": "The 'Shelf Registration' statement for seasoned companies. It allows a company to register a large amount of securities (stock, bonds, warrants) in advance and then 'pull them off the shelf' to sell to the public over the next 3 years. It is a short-form registration that incorporates previous filings by reference.",
       "when": "Effective immediately for WKSIs; others require SEC review.",
       "who": "Large public companies with at least 12 months of Exchange Act reporting.",
-      "why_use_it": "Dilution signal. Every S-3 filing means the company can issue new shares at will. ATM (at-the-market) programs are shelf offerings. MarketBeat and Seeking Alpha flag S-3 filings as share overhang risk. Essential for monitoring dilution exposure.",
-      "is_variant": false
+      "why_use_it": "Every S-3 filing is a potential dilution signal. It means the company is preparing to raise capital. Investors track the 'Shelf Overhang' to see how much new stock could suddenly hit the market. It is the primary vehicle for ATM (At-the-Market) offerings, which allow companies to sell shares directly into daily trading volume.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0016_01_registration-statement-under-securities-act-of-1933_forms-3.pdf"
     },
     {
       "form_type": "S-3ASR",
       "category": "Registration Statements (S-Series)",
       "full_name": "Automatic Shelf Registration — WKSI",
-      "what": "Version of S-3 for Well-Known Seasoned Issuers that is automatically effective upon filing. The fastest way to access capital markets.",
+      "what": "Automatic Shelf Registration for 'Well-Known Seasoned Issuers' (WKSIs). It is a shelf registration that is automatically effective upon filing, meaning the company can sell shares instantly without waiting for SEC review.",
       "when": "Effective immediately upon filing.",
-      "who": "Well-Known Seasoned Issuers (WKSIs) \u0393\u00c7\u00f6 typically large-cap companies with $700M+ public float.",
-      "why_use_it": "Instant dilution risk for large-cap stocks. A WKSI can issue billions in new stock within hours of filing. Monitored by institutional risk desks for dilution exposure.",
+      "who": "Well-Known Seasoned Issuers (WKSIs) ΓÇö typically large-cap companies with $700M+ public float.",
+      "why_use_it": "The ultimate institutional capital-raising tool. It signals that a company has such high-quality reporting and market cap that the SEC trusts it to raise billions of dollars at a moment's notice. It is a sign of blue-chip corporate strength.",
       "parent_form": "S-3",
       "is_variant": true
     },
@@ -207,7 +218,7 @@
       "what": "Registers securities issued pursuant to dividend reinvestment plans (DRIPs) and employee stock purchase plans for automatic effectiveness.",
       "when": "Automatically effective for eligible issuers.",
       "who": "Companies with DRIP plans registering the underlying shares.",
-      "why_use_it": "DRIP plans allow ongoing share issuance \u0393\u00c7\u00f6 a very slow but continuous dilution source. Important for accurate share count tracking in dividend-focused portfolios.",
+      "why_use_it": "DRIP plans allow ongoing share issuance ΓÇö a very slow but continuous dilution source. Important for accurate share count tracking in dividend-focused portfolios.",
       "parent_form": "S-3",
       "is_variant": true
     },
@@ -215,21 +226,23 @@
       "form_type": "S-4",
       "category": "Registration Statements (S-Series)",
       "full_name": "Business Combination Registration",
-      "what": "Registers securities issued as consideration in mergers, acquisitions, and exchange offers. Contains the joint proxy statement/prospectus \u0393\u00c7\u00f6 the definitive M&A voting document.",
+      "what": "The 'Merger & Acquisition' registration statement. Filed when a company issues new shares to acquire another business. It contains the most detailed information available on a corporate deal, including the 'Background of the Merger' (a secret history of the negotiations) and 'Pro Forma' financials showing what the combined company will look like.",
       "when": "Filed in connection with the deal; effective before shareholder vote.",
       "who": "Acquirer companies using stock consideration in M&A.",
-      "why_use_it": "The M&A bible. Contains audited target financials, fairness opinion, pro-forma combined financials, synergy assumptions, and exchange ratio. Seeking Alpha and TipRanks M&A analysis all reference S-4 data. Critical for merger arbitrage modeling.",
-      "is_variant": false
+      "why_use_it": "The deal-maker's bible. Risk arbitrageurs and M&A analysts use the S-4 to determine if a deal is actually good for shareholders. It reveals the 'Fairness Opinion' from investment banks and explains exactly how much dilution current shareholders will face in the acquisition.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0017_01_registration-statement-under-securities-act-of-1933_forms-4.pdf"
     },
     {
       "form_type": "S-8",
       "category": "Registration Statements (S-Series)",
       "full_name": "Employee Benefit Plan Registration",
-      "what": "Registers securities issued to employees under stock option plans, RSU plans, ESPPs, and other employee benefit plans. Automatically effective upon filing.",
+      "what": "A registration statement for securities offered to employees, consultants, or advisors under an employee benefit plan (like an ESOP or 401k). It is used to register shares for stock options and restricted stock units (RSUs).",
       "when": "Effective immediately upon filing.",
       "who": "Public companies registering equity compensation plan shares.",
-      "why_use_it": "Every time a company files an S-8, it's registering shares for employee compensation \u0393\u00c7\u00f6 a form of ongoing dilution. Platforms track S-8 filings to update the fully diluted share count used in market cap calculations.",
-      "is_variant": false
+      "why_use_it": "Provides a view into the company's employee incentive structure. A large S-8 filing indicates that a significant number of shares are being authorized for employee compensation, which informs analysts about potential future dilution as those options vest and are exercised.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0063_01_registration-statement-under-securities-act-of-1933-to-be-offered-to-e_forms-8.pdf"
     },
     {
       "form_type": "S-8 POS",
@@ -238,7 +251,7 @@
       "what": "Post-effective amendment to an S-8 to update information about an employee benefit plan.",
       "when": "Filed as needed after S-8 effectiveness.",
       "who": "Same company that filed original S-8.",
-      "why_use_it": "Tracks updates to equity compensation structures \u0393\u00c7\u00f6 changes to option pool size, new plan adoptions.",
+      "why_use_it": "Tracks updates to equity compensation structures ΓÇö changes to option pool size, new plan adoptions.",
       "is_variant": false
     },
     {
@@ -248,8 +261,9 @@
       "what": "Registration statement for REITs and companies primarily engaged in real estate operations. Similar to S-1 but tailored for real estate entities and their unique financial metrics.",
       "when": "Filed before public offering; effective upon SEC declaration.",
       "who": "REITs and real estate companies offering securities.",
-      "why_use_it": "Primary registration document for REIT IPOs. Contains property portfolio details, FFO projections, occupancy rates, and lease expirations \u0393\u00c7\u00f6 all critical REIT-specific metrics.",
-      "is_variant": false
+      "why_use_it": "Primary registration document for REIT IPOs. Contains property portfolio details, FFO projections, occupancy rates, and lease expirations ΓÇö all critical REIT-specific metrics.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0018_01_registration-of-securities-of-certain-real-estate-companies_forms-11.pdf"
     },
     {
       "form_type": "S-1MEF",
@@ -269,7 +283,7 @@
       "what": "Adds securities to a prior S-3 shelf registration.",
       "when": "Filed concurrently with related offering.",
       "who": "Companies adding to existing shelf registration capacity.",
-      "why_use_it": "Tracks expanded shelf capacity \u0393\u00c7\u00f6 means more potential dilution headroom for the company.",
+      "why_use_it": "Tracks expanded shelf capacity ΓÇö means more potential dilution headroom for the company.",
       "parent_form": "S-3",
       "is_variant": true
     },
@@ -280,7 +294,7 @@
       "what": "Adds securities to a prior S-4 registration in a business combination.",
       "when": "Filed as needed in connection with the business combination.",
       "who": "Companies issuing additional shares in M&A transactions.",
-      "why_use_it": "Signals expanded share issuance in M&A \u0393\u00c7\u00f6 may affect the exchange ratio calculation and deal economics.",
+      "why_use_it": "Signals expanded share issuance in M&A ΓÇö may affect the exchange ratio calculation and deal economics.",
       "is_variant": false
     },
     {
@@ -297,11 +311,12 @@
       "form_type": "F-1",
       "category": "Registration Statements (F-Series)",
       "full_name": "IPO Registration — Foreign Private Issuers",
-      "what": "Primary registration statement for foreign private issuers conducting a US IPO. Foreign equivalent of S-1. May use IFRS financials.",
+      "what": "The registration statement for foreign private issuers going public in the US for the first time. It is the international version of the S-1. It provides 3 years of audited financials, business history, and an exhaustive list of risk factors specific to the company's home country and the US listing.",
       "when": "Filed before US IPO; effective upon SEC declaration.",
       "who": "Foreign companies listing on US exchanges for the first time.",
-      "why_use_it": "The foreign IPO document. Used for major foreign tech IPOs (Alibaba F-1 is one of the most read filings in history). Every international IPO tracker and ADR database sources data from F-1 filings.",
-      "is_variant": false
+      "why_use_it": "Crucial for analyzing the 'Cross-Border IPO.' It reveals the capital structure of the foreign entity and how the US ADRs will be backed by the underlying foreign shares. Essential for determining if a high-growth international company has the governance standards necessary for a US listing.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0007_01_registration-statement-for-securities-of-certain-foreign-private-issue_formf-1.pdf"
     },
     {
       "form_type": "F-3",
@@ -311,7 +326,8 @@
       "when": "Effective immediately for WKSIs; others require SEC review.",
       "who": "Seasoned FPIs with at least 12 months of Exchange Act reporting.",
       "why_use_it": "Dilution monitoring for ADR stocks. Same function as S-3 but for foreign companies. Tracked when large ADR issuers raise capital in US markets.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0009_01_registration-statement-for-securities-of-certain-foreign-private-issue_formf-3.pdf"
     },
     {
       "form_type": "F-3ASR",
@@ -320,7 +336,7 @@
       "what": "Automatic shelf registration for WKSI-eligible foreign private issuers. Effective immediately upon filing.",
       "when": "Effective immediately.",
       "who": "WKSI-eligible foreign private issuers.",
-      "why_use_it": "Instant capital access for large foreign companies. Means new ADR shares can appear in the market almost immediately \u0393\u00c7\u00f6 dilution risk tracker for foreign stock positions.",
+      "why_use_it": "Instant capital access for large foreign companies. Means new ADR shares can appear in the market almost immediately ΓÇö dilution risk tracker for foreign stock positions.",
       "parent_form": "F-3",
       "is_variant": true
     },
@@ -332,7 +348,8 @@
       "when": "Filed in connection with transaction; effective before shareholder vote.",
       "who": "Foreign private issuers using stock consideration in M&A.",
       "why_use_it": "Used in cross-border M&A where a foreign company acquires a US company (or vice versa) using shares. Contains pro-forma combined financials for cross-border deal analysis.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0023_01_registration-statement-for-securities-of-certain-foreign-private-issue_formf-4.pdf"
     },
     {
       "form_type": "F-6",
@@ -341,8 +358,9 @@
       "what": "Registers American Depositary Receipts (ADRs) representing securities of foreign private issuers. Each ADR corresponds to a specific number of underlying foreign shares.",
       "when": "Filed before ADR program commences.",
       "who": "Depositary banks (e.g., JPMorgan, Citibank) establishing ADR programs.",
-      "why_use_it": "Establishes the legal framework for ADR trading. The F-6 contains the ADR ratio (e.g., 1 ADR = 10 ordinary shares) \u0393\u00c7\u00f6 critical for calculating true per-share metrics.",
-      "is_variant": false
+      "why_use_it": "Establishes the legal framework for ADR trading. The F-6 contains the ADR ratio (e.g., 1 ADR = 10 ordinary shares) ΓÇö critical for calculating true per-share metrics.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0020_01_registration-statement-under-the-securities-act-of-1933-for-depositary_formf-6.pdf"
     },
     {
       "form_type": "F-6 POS",
@@ -351,7 +369,7 @@
       "what": "Post-effective amendment to an F-6 ADR registration. Updates ADR program terms.",
       "when": "Filed as needed after F-6 effectiveness.",
       "who": "Depositary banks amending ADR programs.",
-      "why_use_it": "Tracks changes to ADR ratios or program structure \u0393\u00c7\u00f6 important when ADR ratios are adjusted, which can cause apparent price changes.",
+      "why_use_it": "Tracks changes to ADR ratios or program structure ΓÇö important when ADR ratios are adjusted, which can cause apparent price changes.",
       "parent_form": "F-6",
       "is_variant": true
     },
@@ -363,7 +381,8 @@
       "when": "Filed before rights offering commences.",
       "who": "Canadian issuers conducting rights offerings to US shareholders.",
       "why_use_it": "Rights offerings create arbitrage opportunities between the subscription price and market price. Used by event-driven investors.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0080_01_registration-statement-under-the-securities-act-of-1933-for-securities_formf-7.pdf"
     },
     {
       "form_type": "F-8",
@@ -373,7 +392,8 @@
       "when": "Filed before the exchange offer commences.",
       "who": "Canadian issuers in exchange offer transactions.",
       "why_use_it": "Cross-border M&A tracking tool for Canadian company deals involving US-listed shares.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0081_01_registration-statement-under-the-securities-act-of-1933-for-securities_formf-8.pdf"
     },
     {
       "form_type": "F-9",
@@ -382,7 +402,7 @@
       "what": "Registration of investment-grade debt securities by Canadian issuers under MJDS.",
       "when": "Filed before the offering.",
       "who": "Canadian issuers registering investment-grade debt in US markets.",
-      "why_use_it": "Tracks Canadian corporate bond issuances in US markets \u0393\u00c7\u00f6 relevant for fixed income investors monitoring Canadian corporate credit.",
+      "why_use_it": "Tracks Canadian corporate bond issuances in US markets ΓÇö relevant for fixed income investors monitoring Canadian corporate credit.",
       "is_variant": false
     },
     {
@@ -392,8 +412,9 @@
       "what": "General securities registration for Canadian issuers under MJDS. Similar to S-1 but allows use of Canadian disclosure documents.",
       "when": "Filed before public offering.",
       "who": "Canadian companies registering securities (equity or debt) in US markets.",
-      "why_use_it": "Tracks Canadian company capital market activities in the US \u0393\u00c7\u00f6 used by cross-border portfolio managers.",
-      "is_variant": false
+      "why_use_it": "Tracks Canadian company capital market activities in the US ΓÇö used by cross-border portfolio managers.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0059_01_registration-statement-for-securities-of-certain-canadian-issuers_formf-10.pdf"
     },
     {
       "form_type": "10-12B",
@@ -402,7 +423,7 @@
       "what": "Initial registration of a class of securities on a national securities exchange (NYSE, NASDAQ) under Section 12(b). The form that makes a company an Exchange Act reporting company when listing on a major exchange.",
       "when": "Filed before or upon listing on a national exchange.",
       "who": "Companies listing on national exchanges that were not previously SEC reporting companies.",
-      "why_use_it": "Marks the moment a company becomes a full SEC reporting issuer \u0393\u00c7\u00f6 often filed by direct listings, spin-offs, or emerging companies becoming exchange-listed.",
+      "why_use_it": "Marks the moment a company becomes a full SEC reporting issuer ΓÇö often filed by direct listings, spin-offs, or emerging companies becoming exchange-listed.",
       "is_variant": false
     },
     {
@@ -422,7 +443,7 @@
       "what": "Short-form registration of a class of securities under Section 12(b) for companies already registered under the Exchange Act that list on a national exchange.",
       "when": "Filed when securities are listed on a national exchange.",
       "who": "Already-reporting companies listing a new class of securities on an exchange.",
-      "why_use_it": "Tracks when a company lists new securities classes (e.g., preferred stock) on an exchange \u0393\u00c7\u00f6 important for preferred stock investors.",
+      "why_use_it": "Tracks when a company lists new securities classes (e.g., preferred stock) on an exchange ΓÇö important for preferred stock investors.",
       "is_variant": false
     },
     {
@@ -432,7 +453,7 @@
       "what": "Notification that a successor issuer's securities are deemed registered under Section 12(g) following a corporate succession.",
       "when": "Filed in connection with succession event.",
       "who": "Successor companies in mergers or restructurings.",
-      "why_use_it": "Corporate identity tracking \u0393\u00c7\u00f6 ensures continuity of reporting obligations after corporate restructurings.",
+      "why_use_it": "Corporate identity tracking ΓÇö ensures continuity of reporting obligations after corporate restructurings.",
       "is_variant": false
     },
     {
@@ -449,20 +470,20 @@
       "form_type": "DEF 14A",
       "category": "Proxy Statements",
       "full_name": "Definitive Proxy Statement",
-      "what": "The final official proxy statement sent to shareholders before annual/special meetings. Contains: director nominations, executive compensation tables (CEO/CFO total comp), Say-on-Pay vote, auditor ratification, shareholder proposals, related-party transactions, and equity plan approvals.",
+      "what": "The 'Proxy Statement' for the annual shareholder meeting. This is where you find the 'real' story of corporate governance. It details the Summary Compensation Table (what the CEO actually made), the background of board members, and any shareholder proposals on the ballot. It also discloses 'Related Person Transactions' where the company might be doing business with an insider's family members.",
       "when": "Mailed or made available at least 40 calendar days before the annual meeting.",
       "who": "All public companies holding shareholder meetings.",
-      "why_use_it": "The definitive source for executive pay, board governance, and shareholder voting. CEO compensation data on Simply Wall St, MarketBeat governance scores, and ISS/Glass Lewis proxy recommendations all derive from DEF 14A. Must-read for ESG analysis and governance risk assessment.",
+      "why_use_it": "Essential for ESG (Environmental, Social, and Governance) analysis. It reveals if a CEO's pay is aligned with performance or if the board is 'entrenched' with long-tenured members who lack independence. Activist campaigns often start by analyzing the DEF 14A for governance weaknesses and excessive perk spending.",
       "is_variant": false
     },
     {
       "form_type": "DEFA14A",
       "category": "Proxy Statements",
       "full_name": "Additional Definitive Proxy Materials",
-      "what": "Supplemental proxy materials distributed after the definitive proxy. Used to respond to activist criticism, ISS/Glass Lewis negative recommendations, or provide additional color on proposals.",
+      "what": "Additional definitive proxy soliciting materials. These are supplemental documents sent to shareholders after the initial proxy statement (DEF 14A) has been filed. They are often used to respond to activist criticism or urge shareholders to vote in a specific way.",
       "when": "Promptly after distributing supplemental materials.",
       "who": "Companies seeking additional shareholder support for proposals.",
-      "why_use_it": "Activist pressure indicator. A DEFA14A filed days before a vote often means management is fighting a negative ISS recommendation or activist opposition \u0393\u00c7\u00f6 a real-time governance battle signal.",
+      "why_use_it": "A signal of a governance battle. If you see many DEFA14A filings, it usually means management is fighting for its life against an activist or a negative vote recommendation from ISS/Glass Lewis. It contains the most aggressive 'persuasion' pieces in the corporate world.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -470,10 +491,10 @@
       "form_type": "DEFC14A",
       "category": "Proxy Statements",
       "full_name": "Definitive Proxy — Contested Solicitation",
-      "what": "Proxy statement filed in a contested election \u0393\u00c7\u00f6 proxy fights where activist shareholders are opposing management nominees for board seats.",
+      "what": "Proxy statement filed in a contested election ΓÇö proxy fights where activist shareholders are opposing management nominees for board seats.",
       "when": "Before the contested meeting.",
       "who": "Either management or dissident shareholders in a proxy contest.",
-      "why_use_it": "Proxy fight proxy statement. Activists like Elliott Management or Carl Icahn file DEFC14A to wage board battles. These contests often unlock significant shareholder value \u0393\u00c7\u00f6 DEFC14A filings are headline events.",
+      "why_use_it": "Proxy fight proxy statement. Activists like Elliott Management or Carl Icahn file DEFC14A to wage board battles. These contests often unlock significant shareholder value ΓÇö DEFC14A filings are headline events.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -492,10 +513,10 @@
       "form_type": "DEFN14A",
       "category": "Proxy Statements",
       "full_name": "Definitive Proxy — Non-Management",
-      "what": "Definitive proxy statement filed by a party other than management \u0393\u00c7\u00f6 typically an activist shareholder running a competing slate of directors.",
+      "what": "Definitive proxy statement filed by a party other than management ΓÇö typically an activist shareholder running a competing slate of directors.",
       "when": "Before the shareholder meeting.",
       "who": "Non-management parties soliciting proxies (activists, dissident shareholders).",
-      "why_use_it": "The activist's own proxy \u0393\u00c7\u00f6 presents the dissident case for change. Often proposes new directors, demands strategic review, or pushes for sale of the company.",
+      "why_use_it": "The activist's own proxy ΓÇö presents the dissident case for change. Often proposes new directors, demands strategic review, or pushes for sale of the company.",
       "is_variant": false
     },
     {
@@ -505,7 +526,7 @@
       "what": "A corrected or updated version of the definitive proxy after it has already been filed.",
       "when": "As needed after original DEF 14A.",
       "who": "Companies needing to correct or update an already-filed proxy.",
-      "why_use_it": "Material corrections to proxy data \u0393\u00c7\u00f6 could affect executive comp numbers or voting thresholds. Important for accurate governance databases.",
+      "why_use_it": "Material corrections to proxy data ΓÇö could affect executive comp numbers or voting thresholds. Important for accurate governance databases.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -516,7 +537,7 @@
       "what": "Proxy statement for a special shareholder meeting (not the annual meeting). Special meetings are called for urgent corporate actions: emergency capital raise, emergency M&A vote, charter amendment.",
       "when": "At least 20—40 days before the special meeting.",
       "who": "Public companies calling special shareholder meetings.",
-      "why_use_it": "Special meetings signal urgent corporate action \u0393\u00c7\u00f6 spin-offs, emergency financings, contested takeovers. The DEFS14A reveals what management needs shareholder approval for on an accelerated basis.",
+      "why_use_it": "Special meetings signal urgent corporate action ΓÇö spin-offs, emergency financings, contested takeovers. The DEFS14A reveals what management needs shareholder approval for on an accelerated basis.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -527,7 +548,7 @@
       "what": "Preliminary version of the DEF 14A filed for SEC review before it is sent to shareholders. Required for non-routine matters.",
       "when": "At least 10 calendar days before filing the DEF 14A.",
       "who": "Companies with non-routine meeting items needing SEC pre-clearance.",
-      "why_use_it": "Early preview of proxy content \u0393\u00c7\u00f6 governance analysts and proxy advisory firms start reviewing PRE 14A before the final version. Contains early signal of major corporate votes.",
+      "why_use_it": "Early preview of proxy content ΓÇö governance analysts and proxy advisory firms start reviewing PRE 14A before the final version. Contains early signal of major corporate votes.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -538,7 +559,7 @@
       "what": "Preliminary proxy in a contested election, filed for SEC review.",
       "when": "During SEC review before distribution.",
       "who": "Parties in a proxy contest.",
-      "why_use_it": "Early warning of an upcoming proxy fight \u0393\u00c7\u00f6 filed before the definitive contested proxy.",
+      "why_use_it": "Early warning of an upcoming proxy fight ΓÇö filed before the definitive contested proxy.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -549,7 +570,7 @@
       "what": "Preliminary merger proxy statement filed for SEC review.",
       "when": "During SEC review of the merger proxy.",
       "who": "Companies involved in mergers requiring shareholder votes.",
-      "why_use_it": "First public look at merger proxy terms before the definitive version \u0393\u00c7\u00f6 M&A professionals track this for deal structure details.",
+      "why_use_it": "First public look at merger proxy terms before the definitive version ΓÇö M&A professionals track this for deal structure details.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -571,7 +592,7 @@
       "what": "Information statement sent to shareholders when a corporate action is approved by written consent of majority holders without a formal meeting vote.",
       "when": "Sent to non-consenting shareholders at least 20 days before the record date.",
       "who": "Companies taking corporate action via written consent.",
-      "why_use_it": "Used when controlling shareholders push through corporate changes without a vote. Important for minority shareholder protection analysis \u0393\u00c7\u00f6 tracks actions taken without full shareholder voting.",
+      "why_use_it": "Used when controlling shareholders push through corporate changes without a vote. Important for minority shareholder protection analysis ΓÇö tracks actions taken without full shareholder voting.",
       "parent_form": "DEF 14A",
       "is_variant": true
     },
@@ -590,7 +611,7 @@
       "form_type": "PX14A6G",
       "category": "Proxy Statements",
       "full_name": "Exempt Solicitation Notice",
-      "what": "Filed by large shareholders (owning over $5M in company securities) who communicate with other shareholders about proxy votes without formally soliciting proxies \u0393\u00c7\u00f6 exempt from full proxy rules.",
+      "what": "Filed by large shareholders (owning over $5M in company securities) who communicate with other shareholders about proxy votes without formally soliciting proxies ΓÇö exempt from full proxy rules.",
       "when": "Promptly when exempt soliciting materials are distributed.",
       "who": "Large shareholders ($5M+) communicating about proxy issues.",
       "why_use_it": "Tracks major institutional views on contested governance issues without full proxy filing overhead. Shows which large shareholders are taking public positions on proxy votes.",
@@ -603,7 +624,7 @@
       "what": "Final prospectus filed when a registration statement did not contain the public offering price. Contains all deal terms including final price, underwriters, and proceeds.",
       "when": "Filed no later than 2 business days after determining the offering price.",
       "who": "Companies conducting registered public offerings.",
-      "why_use_it": "The final IPO/offering price document \u0393\u00c7\u00f6 confirms exactly what investors will pay and how many shares are being sold. Used by underwriting analysis tools.",
+      "why_use_it": "The final IPO/offering price document ΓÇö confirms exactly what investors will pay and how many shares are being sold. Used by underwriting analysis tools.",
       "parent_form": "424B4",
       "is_variant": true
     },
@@ -614,7 +635,7 @@
       "what": "Prospectus supplement filed pursuant to Rule 424(b)(2) for offerings under shelf registration statements. Frequently used by banks for structured products and notes.",
       "when": "Filed before or on the offering date.",
       "who": "Companies (particularly financial institutions) filing supplements to shelf registrations.",
-      "why_use_it": "The actual offering document for a specific tranche of securities from a shelf. Contains the final terms \u0393\u00c7\u00f6 size, price, maturity, interest rate \u0393\u00c7\u00f6 for bonds or structured products.",
+      "why_use_it": "The actual offering document for a specific tranche of securities from a shelf. Contains the final terms ΓÇö size, price, maturity, interest rate ΓÇö for bonds or structured products.",
       "parent_form": "424B4",
       "is_variant": true
     },
@@ -622,7 +643,7 @@
       "form_type": "424B3",
       "category": "Prospectuses (424 / 497 Series)",
       "full_name": "Prospectus — Rule 424(b)(3)",
-      "what": "Prospectus filed to update information in a prior prospectus \u0393\u00c7\u00f6 adding material information that changes the prior document.",
+      "what": "Prospectus filed to update information in a prior prospectus ΓÇö adding material information that changes the prior document.",
       "when": "Filed at least 2 days before distribution or use.",
       "who": "Companies with effective registration statements updating their prospectus.",
       "why_use_it": "Material update to offering terms. Often contains updated financial statements, revised risk factors, or new business developments since the original filing.",
@@ -633,10 +654,10 @@
       "form_type": "424B4",
       "category": "Prospectuses (424 / 497 Series)",
       "full_name": "Final Prospectus — Rule 424(b)(4)",
-      "what": "Final prospectus including the public offering price, filed for IPOs and secondary offerings. The document delivered to all investors at the time of pricing.",
+      "what": "The 'Final Prospectus' filed after a registration statement (like an S-1 or F-1) has become effective. It is the final version of the IPO or secondary offering document, including the actual final offering price, the exact number of shares sold, and the list of participating underwriters.",
       "when": "Filed within 2 business days of pricing.",
       "who": "All companies pricing a registered public offering.",
-      "why_use_it": "The definitive IPO/offering document distributed to investors. Contains final price, final number of shares sold, use of proceeds, and underwriter discounts. The permanent record of every public offering.",
+      "why_use_it": "The definitive document for any new stock offering. Unlike the 'Preliminary' (Red Herring) prospectus, the 424B4 is the legally binding final version. Analysts use it to confirm the final valuation and to track the 'Lock-Up' agreements that prevent insiders from selling shares immediately after the IPO.",
       "is_variant": false
     },
     {
@@ -646,7 +667,7 @@
       "what": "Prospectus supplement for a takedown from a shelf registration under Rule 415. The actual pricing and deal terms document for a specific offering off the shelf.",
       "when": "Filed at time of shelf offering pricing.",
       "who": "Companies conducting secondary offerings, debt offerings, or ATM programs off a shelf.",
-      "why_use_it": "Documents every specific capital raise under a shelf registration. Dilution event tracker \u0393\u00c7\u00f6 each 424B5 represents actual new shares or debt entering the market.",
+      "why_use_it": "Documents every specific capital raise under a shelf registration. Dilution event tracker ΓÇö each 424B5 represents actual new shares or debt entering the market.",
       "parent_form": "424B4",
       "is_variant": true
     },
@@ -657,7 +678,7 @@
       "what": "Prospectus filed by selling shareholders to resell previously registered shares. Often used by venture capital/PE investors selling stock post-IPO lockup expiration.",
       "when": "Filed when insiders or investors begin reselling registered shares.",
       "who": "Selling shareholders (insiders, PE/VC backers) reselling registered shares.",
-      "why_use_it": "Lockup expiration tracking. When VCs and insiders file 424B7 to resell shares, it signals upcoming supply entering the market \u0393\u00c7\u00f6 a bearish near-term signal for stock price.",
+      "why_use_it": "Lockup expiration tracking. When VCs and insiders file 424B7 to resell shares, it signals upcoming supply entering the market ΓÇö a bearish near-term signal for stock price.",
       "parent_form": "424B4",
       "is_variant": true
     },
@@ -668,7 +689,7 @@
       "what": "Written communications relating to business combinations (mergers, tender offers) filed during the solicitation period. Includes investor presentations, press releases, and factual business information distributed about the deal.",
       "when": "Filed on the date the communication is made.",
       "who": "Companies and advisers communicating about pending M&A transactions.",
-      "why_use_it": "M&A deal marketing materials \u0393\u00c7\u00f6 investor presentations arguing why the deal creates value. Used by merger arbitrageurs to track deal narrative, management guidance, and deal progress.",
+      "why_use_it": "M&A deal marketing materials ΓÇö investor presentations arguing why the deal creates value. Used by merger arbitrageurs to track deal narrative, management guidance, and deal progress.",
       "is_variant": false
     },
     {
@@ -678,7 +699,7 @@
       "what": "Any written communication made by or on behalf of an issuer related to a registered securities offering that is not the statutory prospectus. Includes term sheets, road show materials, investor emails, and deal-related press releases.",
       "when": "Filed on the date used or within 1 business day of use.",
       "who": "Issuers and underwriters in registered offerings.",
-      "why_use_it": "Pre-IPO investor presentation tracking. FWP filings include the actual road show slide decks and investor term sheets \u0393\u00c7\u00f6 gives direct access to the pitch management is making to institutional investors.",
+      "why_use_it": "Pre-IPO investor presentation tracking. FWP filings include the actual road show slide decks and investor term sheets ΓÇö gives direct access to the pitch management is making to institutional investors.",
       "parent_form": "424B4",
       "is_variant": true
     },
@@ -696,62 +717,65 @@
       "form_type": "497K",
       "category": "Prospectuses (424 / 497 Series)",
       "full_name": "Mutual Fund Summary Prospectus",
-      "what": "Condensed summary prospectus for mutual funds \u0393\u00c7\u00f6 a shorter, more investor-friendly version covering key fund facts: fees, performance, risks.",
+      "what": "Condensed summary prospectus for mutual funds ΓÇö a shorter, more investor-friendly version covering key fund facts: fees, performance, risks.",
       "when": "Filed simultaneously with or before the full 497 prospectus.",
       "who": "Mutual funds providing a summary prospectus to investors.",
-      "why_use_it": "The key facts document that fund comparison sites display \u0393\u00c7\u00f6 expense ratio, fund objective, performance, and risk summary all derived from 497K.",
+      "why_use_it": "The key facts document that fund comparison sites display ΓÇö expense ratio, fund objective, performance, and risk summary all derived from 497K.",
       "is_variant": false
     },
     {
       "form_type": "3",
       "category": "Insider Trading (Section 16)",
       "full_name": "Initial Ownership Statement",
-      "what": "First ownership report when a person becomes a corporate insider (officer, director, or 10%+ shareholder). Establishes baseline ownership across all classes of company equity.",
+      "what": "The initial statement of beneficial ownership. Filed within 10 days of a person becoming an officer, director, or 10% shareholder. It sets the baseline for all future insider trading reports.",
       "when": "Within 10 days of becoming an insider.",
       "who": "Officers, directors, and beneficial owners of more than 10% of any registered equity class.",
-      "why_use_it": "Establishes the baseline for tracking all future insider transactions. Without Form 3 data, sites like Finviz and MarketBeat cannot calculate accurate total insider ownership percentages.",
+      "why_use_it": "Establishing the baseline ownership levels. Analysts use Form 3 to determine 'day zero' holdings and see if a new executive already has 'skin in the game' through prior equity grants or direct purchases.",
       "parent_form": "4",
-      "is_variant": true
+      "is_variant": true,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0163_01_initial-statement-of-beneficial-ownership-of-securities_form3.pdf"
     },
     {
       "form_type": "4",
       "category": "Insider Trading (Section 16)",
       "full_name": "Statement of Changes in Ownership",
-      "what": "Reports every change in an insider's holdings: open-market purchases, open-market sales, option grants and exercises, RSU vesting, gifts, and other transactions. The most frequently filed Section 16 form.",
+      "what": "A report of a change in ownership for corporate insiders (officers, directors, or 10% owners). Most Form 4 filings report open-market buys or sells, but they also cover stock option exercises and RSU vestings. Under SEC rules, these must be filed within 2 business days of the trade.",
       "when": "Within 2 business days of the transaction.",
       "who": "All corporate insiders: officers, directors, 10%+ shareholders.",
-      "why_use_it": "The single most-tracked insider signal. Finviz, Yahoo Finance, MarketBeat, and TipRanks all prominently display Form 4 insider buys/sells. Cluster buying (multiple insiders buying simultaneously) is statistically one of the strongest long-term buy signals. Academic studies consistently show insider purchase portfolios outperform.",
-      "is_variant": false
+      "why_use_it": "The most powerful insider signal. While insiders might sell for many reasons (taxes, diversifying, buying a house), they almost always buy for only one: they think the price is going up. 'Cluster Buying'—where multiple insiders buy stock simultaneously—is one of the most reliable indicators of future outperformance.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0161_01_statement-of-changes-in-beneficial-ownership-of-securities_form4.pdf"
     },
     {
       "form_type": "5",
       "category": "Insider Trading (Section 16)",
       "full_name": "Annual Insider Ownership Reconciliation",
-      "what": "Year-end filing for insiders to report transactions that were either exempt from Form 4 or not timely reported. Acts as an annual reconciliation of all insider activity.",
+      "what": "Annual reconciliation of insider ownership. Reports transactions that were either exempt from Form 4 or failed to be reported on time during the year. Acts as the final cumulative check on insider data.",
       "when": "Within 45 days after the company's fiscal year-end.",
       "who": "Insiders with deferred or exempt transactions during the fiscal year.",
-      "why_use_it": "Catches unreported small transactions and gifts that affect total insider ownership counts. Important for ownership accuracy in ESG and governance scoring systems.",
+      "why_use_it": "A cleanup document. While less market-moving than Form 4, it ensures institutional databases have the correct final share counts for governance and valuation purposes.",
       "parent_form": "4",
-      "is_variant": true
+      "is_variant": true,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0153_01_annual-statement-of-changes-in-beneficial-ownership-of-securities_form5.pdf"
     },
     {
       "form_type": "SC 13D",
       "category": "Beneficial Ownership (13D/G)",
       "full_name": "Schedule 13D — Activist Beneficial Ownership",
-      "what": "Discloses 5%+ ownership by any investor with activist intentions \u0393\u00c7\u00f6 plans to influence management, push strategic changes, seek board seats, or acquire control. Must describe the purpose of the investment in detail. Item 4 (Purpose of Transaction) is the most important section.",
+      "what": "The Activist Investor's calling card. Filed when an investor (or group) acquires more than 5% of a company with the intent to influence or change control. The most critical section is Item 4: Purpose of Transaction, where the activist must disclose if they want to fire the CEO, sell the company, or demand board seats. Any change in 'intent' requires a prompt amendment.",
       "when": "Within 5 business days of crossing the 5% threshold.",
       "who": "Any investor or group acquiring 5%+ beneficial ownership with activist intent.",
-      "why_use_it": "One of the most powerful stock catalysts on EDGAR. 13D filings from Elliott, Icahn, ValueAct, or Third Point cause immediate 5—20% price spikes. Every stock news platform headlines 13D filings as breaking news. Event-driven investors front-run activist campaigns by monitoring 13D filings in real time.",
+      "why_use_it": "A 13D filing is a massive bullish signal. When institutional 'raiders' like Elliott Management or Carl Icahn file a 13D, it implies they believe the stock is undervalued and they will fight to unlock that value. Following 13D filings allows retail investors to 'ride the coattails' of the world's most aggressive and successful hedge fund managers.",
       "is_variant": false
     },
     {
       "form_type": "SC 13G",
       "category": "Beneficial Ownership (13D/G)",
       "full_name": "Schedule 13G — Passive Beneficial Ownership",
-      "what": "Short-form beneficial ownership disclosure for passive investors (mutual funds, index funds, pension funds) holding 5%+. No activist intent.",
+      "what": "The passive version of the 5% ownership report. Filed by large institutional investors (like BlackRock, Vanguard, or State Street) who own over 5% but have 'no intent to influence control.' It is a shorter, more administrative filing than the 13D but still signals significant institutional support and liquidity in the stock.",
       "when": "Initial (QIIs/Exempt): within 45 days after quarter-end of crossing 5%. Initial (Passive): 5 business days. Amendments: 45 days after quarter-end of any material change.",
       "who": "Institutional investors (investment advisers, mutual funds, banks, insurance companies) with 5%+ passive stakes.",
-      "why_use_it": "The source of all institutional ownership data on stock research sites. Yahoo Finance 'Holders' tab, Finviz 'Inst Own' column, MarketBeat ownership tracker \u0393\u00c7\u00f6 all powered by 13G data. Rising institutional ownership is a key positive momentum indicator.",
+      "why_use_it": "Rising 13G filings indicate increasing institutional 'buy-in.' High institutional ownership is generally a sign of stability and reduced volatility. If a 13G filer suddenly starts filing 13D reports, it signals a major shift toward activism and is a significant market event.",
       "parent_form": "SC 13D",
       "is_variant": true
     },
@@ -759,20 +783,20 @@
       "form_type": "13F-HR",
       "category": "Institutional Holdings (13F)",
       "full_name": "Quarterly Institutional Portfolio Holdings",
-      "what": "Discloses the complete US equity portfolio of institutional investment managers with $100M+ in US equities. Shows every position: issuer name, CUSIP, share class, number of shares, market value, and investment discretion. Filed quarterly.",
+      "what": "A quarterly window into the portfolios of the world's largest investment managers (those with $100M+ in US equities). It lists all long positions, including share counts and market values. High-frequency 13Fs (like those from Renaissance Technologies) or value-focused 13Fs (like Berkshire Hathaway) are dissected by the entire financial community.",
       "when": "Within 45 days after each calendar quarter-end (February 14, May 15, August 14, November 14).",
       "who": "Investment managers exercising investment discretion over $100M+ in US equity securities.",
-      "why_use_it": "The most analyzed quarterly filing in equity markets. Powers 'copycat investing' \u0393\u00c7\u00f6 tracking Berkshire, Bridgewater, Tiger Global, and thousands of hedge funds. Institutional flow data drives Yahoo Finance Holders tab, Finviz, Wisesheets, TipRanks Smart Portfolio. 13F analysis is an entire investment industry.",
+      "why_use_it": "13Fs allow you to see what 'The Smart Money' is doing. You can track which sectors managers are rotating into or witness the exact moment Warren Buffett starts selling a position. Many retail strategies involve 'Copycat Investing,' which replicates the top holdings of elite hedge funds based on their 13F disclosures.",
       "is_variant": false
     },
     {
       "form_type": "13F-NT",
       "category": "Institutional Holdings (13F)",
       "full_name": "13F Notice — No Holdings",
-      "what": "Filed when a manager required to file 13F has no holdings to report \u0393\u00c7\u00f6 all positions were liquidated or transferred.",
+      "what": "Filed when a manager required to file 13F has no holdings to report ΓÇö all positions were liquidated or transferred.",
       "when": "Same deadline as 13F-HR: within 45 days of quarter-end.",
       "who": "Institutional managers with 13F obligations but zero reportable holdings.",
-      "why_use_it": "Signals when a major fund has completely exited all US equity positions \u0393\u00c7\u00f6 rare but significant. Can signal fund closure, strategy change, or transition to non-reportable assets.",
+      "why_use_it": "Signals when a major fund has completely exited all US equity positions ΓÇö rare but significant. Can signal fund closure, strategy change, or transition to non-reportable assets.",
       "is_variant": false
     },
     {
@@ -782,7 +806,7 @@
       "what": "Amendment to a previously filed 13F-HR. Filed when a manager discovers errors in reported holdings.",
       "when": "As needed after original 13F-HR.",
       "who": "Institutional managers correcting 13F-HR filings.",
-      "why_use_it": "Corrects institutional ownership data \u0393\u00c7\u00f6 important for databases tracking precise fund position sizes and changes over time.",
+      "why_use_it": "Corrects institutional ownership data ΓÇö important for databases tracking precise fund position sizes and changes over time.",
       "is_variant": false
     },
     {
@@ -792,14 +816,14 @@
       "what": "Filed when a third party launches a formal tender offer to purchase another company's shares directly from shareholders at a specified premium price. Includes offer price, conditions, financing, minimum shares needed, and plans for target post-acquisition.",
       "when": "Filed on the date the tender offer commences.",
       "who": "Third-party companies or investors making tender offers.",
-      "why_use_it": "Acquisition announcement document. Tender offers typically offer 20—50% premiums \u0393\u00c7\u00f6 immediate price catalyst. Yahoo Finance, MarketBeat, and Seeking Alpha headline SC TO-T filings as M&A breaking news. Merger arb funds analyze offer conditions and bump probability from this filing.",
+      "why_use_it": "Acquisition announcement document. Tender offers typically offer 20—50% premiums ΓÇö immediate price catalyst. Yahoo Finance, MarketBeat, and Seeking Alpha headline SC TO-T filings as M&A breaking news. Merger arb funds analyze offer conditions and bump probability from this filing.",
       "is_variant": false
     },
     {
       "form_type": "SC TO-T/A",
       "category": "Tender Offers & M&A",
       "full_name": "Amendment to Third-Party Tender Offer",
-      "what": "Amendment to update terms of a pending tender offer \u0393\u00c7\u00f6 typically to extend the deadline, increase the offer price, waive conditions, or respond to competing bids.",
+      "what": "Amendment to update terms of a pending tender offer ΓÇö typically to extend the deadline, increase the offer price, waive conditions, or respond to competing bids.",
       "when": "As material changes occur during the offer period.",
       "who": "Third-party offerors amending their tender offer.",
       "why_use_it": "Offer bump tracker. SC TO-T/A increasing the price is a direct arbitrage opportunity signal. Extension amendments signal regulatory delays. Price bumps after SC TO-T/A are among the cleanest merger arb setups.",
@@ -812,7 +836,7 @@
       "what": "Filed when a company makes a tender offer to repurchase its own shares at a premium to market price. A more aggressive form of share buyback than open-market repurchase programs.",
       "when": "Filed when the self-tender commences.",
       "who": "Public companies buying back their own shares via formal tender offer.",
-      "why_use_it": "Premium buyback signal \u0393\u00c7\u00f6 management is so confident the stock is undervalued they're offering a premium to buy it back. Strong capital return and undervaluation signal tracked by MarketBeat and Yahoo Finance.",
+      "why_use_it": "Premium buyback signal ΓÇö management is so confident the stock is undervalued they're offering a premium to buy it back. Strong capital return and undervaluation signal tracked by MarketBeat and Yahoo Finance.",
       "is_variant": false
     },
     {
@@ -822,17 +846,17 @@
       "what": "Amendment to an issuer's self-tender offer, updating terms, price, or deadline.",
       "when": "As material changes occur during self-tender.",
       "who": "Companies amending their self-tender offers.",
-      "why_use_it": "Tracks changes to buyback tender terms \u0393\u00c7\u00f6 price increases are additional positive capital return signals.",
+      "why_use_it": "Tracks changes to buyback tender terms ΓÇö price increases are additional positive capital return signals.",
       "is_variant": false
     },
     {
       "form_type": "SC TO-C",
       "category": "Tender Offers & M&A",
       "full_name": "Tender Offer Written Communications",
-      "what": "Written communications about a tender offer made before or during the offer period \u0393\u00c7\u00f6 investor presentations, press releases, and deal-related communications.",
+      "what": "Written communications about a tender offer made before or during the offer period ΓÇö investor presentations, press releases, and deal-related communications.",
       "when": "Filed on the date the communication is made.",
       "who": "Offerors making pre-offer or during-offer written communications.",
-      "why_use_it": "M&A deal communications tracking. Shows how management and acquirer are framing the deal narrative to shareholders \u0393\u00c7\u00f6 used in contested bid situations to track changing deal rationale.",
+      "why_use_it": "M&A deal communications tracking. Shows how management and acquirer are framing the deal narrative to shareholders ΓÇö used in contested bid situations to track changing deal rationale.",
       "is_variant": false
     },
     {
@@ -843,7 +867,8 @@
       "when": "Filed at commencement of the offer.",
       "who": "Parties in cross-border offers where the target FPI has minimal US shareholder base.",
       "why_use_it": "Tracks cross-border M&A deals where the target is a foreign company. Used by international merger arbitrage strategies.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0058_01_tender-offerrights-offering-notification-form_formcb.pdf"
     },
     {
       "form_type": "SC 13E-3",
@@ -852,7 +877,7 @@
       "what": "Required for any transaction by a public company or its affiliates that would result in the company being deregistered. Requires detailed fairness analysis, financial projections, and justification that the transaction is fair to unaffiliated shareholders. The most shareholder-protective filing requirement.",
       "when": "Filed before the going-private transaction is sent to shareholders.",
       "who": "Controlling shareholders, management teams, or companies in take-private transactions.",
-      "why_use_it": "Minority shareholder protection document. The financial projections disclosed here often reveal management's true view of company value \u0393\u00c7\u00f6 sometimes far higher than the take-private offer. Activist investors and litigation lawyers scrutinize 13E-3 filings intensively.",
+      "why_use_it": "Minority shareholder protection document. The financial projections disclosed here often reveal management's true view of company value ΓÇö sometimes far higher than the take-private offer. Activist investors and litigation lawyers scrutinize 13E-3 filings intensively.",
       "is_variant": false
     },
     {
@@ -862,7 +887,7 @@
       "what": "Filed to terminate registration of securities listed on a national exchange under Section 12(b). The company ceases to be required to file periodic reports with the SEC.",
       "when": "Filed when securities are delisted or threshold requirements are met.",
       "who": "Companies terminating their exchange listing and SEC reporting.",
-      "why_use_it": "Delisting warning or confirmation. A 15-12B means the company is leaving a major exchange \u0393\u00c7\u00f6 major red flag for investors. Could precede bankruptcy, going private, or relisting on OTC markets.",
+      "why_use_it": "Delisting warning or confirmation. A 15-12B means the company is leaving a major exchange ΓÇö major red flag for investors. Could precede bankruptcy, going private, or relisting on OTC markets.",
       "parent_form": "Form 15",
       "is_variant": true
     },
@@ -873,7 +898,7 @@
       "what": "Filed to terminate Section 12(g) registration when a company drops below 300 shareholders of record (or 1,200 for banks/savings associations).",
       "when": "Filed when below 300 shareholders of record threshold.",
       "who": "Companies with fewer than 300 shareholders of record (or 1,200 for qualifying institutions).",
-      "why_use_it": "Company going dark \u0393\u00c7\u00f6 ceasing all public SEC reporting. Significant liquidity risk for existing shareholders. Often preludes to full private company conversion.",
+      "why_use_it": "Company going dark ΓÇö ceasing all public SEC reporting. Significant liquidity risk for existing shareholders. Often preludes to full private company conversion.",
       "parent_form": "Form 15",
       "is_variant": true
     },
@@ -918,7 +943,8 @@
       "when": "Filed when the exchange delists the security.",
       "who": "National securities exchanges (NYSE, NASDAQ, NYSE American) delisting a security.",
       "why_use_it": "Official delisting confirmation. After a Form 25 is filed, the stock typically moves to OTC markets or ceases trading entirely. The most definitive delisting signal in EDGAR.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0139_01_notification-of-the-removal-from-listing-and-registration-of-matured-r_form25.pdf"
     },
     {
       "form_type": "25-NSE",
@@ -927,7 +953,7 @@
       "what": "Alternative delisting form filed directly by the national securities exchange notifying of a stock's removal from listing.",
       "when": "Filed when exchange initiates delisting proceedings.",
       "who": "National securities exchanges.",
-      "why_use_it": "Same function as Form 25 \u0393\u00c7\u00f6 exchange-initiated delisting notification. Critical for clearing portfolio positions before a stock becomes illiquid.",
+      "why_use_it": "Same function as Form 25 ΓÇö exchange-initiated delisting notification. Critical for clearing portfolio positions before a stock becomes illiquid.",
       "parent_form": "Form 15",
       "is_variant": true
     },
@@ -948,7 +974,7 @@
       "what": "Post-effective amendment to an already-qualified Form 1-A offering statement.",
       "when": "As needed after qualification.",
       "who": "Companies with qualified 1-A offerings that need to update information.",
-      "why_use_it": "Tracks material changes to ongoing Reg A offerings \u0393\u00c7\u00f6 price changes, updated financials, new risk factors.",
+      "why_use_it": "Tracks material changes to ongoing Reg A offerings ΓÇö price changes, updated financials, new risk factors.",
       "parent_form": "1-A",
       "is_variant": true
     },
@@ -961,7 +987,8 @@
       "who": "Companies with ongoing Regulation A Tier 2 reporting obligations.",
       "why_use_it": "Annual financial data for Reg A mini-public companies. Many crowdfunding investment platforms display 1-K data as the key annual financial update for Reg A portfolio companies.",
       "parent_form": "1-A",
-      "is_variant": true
+      "is_variant": true,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0006_01_annual-reports-and-special-financial-reports_form1-k.pdf"
     },
     {
       "form_type": "1-SA",
@@ -970,20 +997,22 @@
       "what": "Semiannual financial report for Regulation A Tier 2 companies. Provides mid-year financial update.",
       "when": "Within 90 days after each fiscal half-year end.",
       "who": "Regulation A Tier 2 reporting companies.",
-      "why_use_it": "Mid-year financial update for Reg A portfolio companies \u0393\u00c7\u00f6 provides investors with semiannual check-ins on revenue and business progress.",
+      "why_use_it": "Mid-year financial update for Reg A portfolio companies ΓÇö provides investors with semiannual check-ins on revenue and business progress.",
       "parent_form": "1-A",
-      "is_variant": true
+      "is_variant": true,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0152_01_semiannual-report-or-special-financial-report-pursuant-to-regulation-a_form1-sa.pdf"
     },
     {
       "form_type": "1-Z",
       "category": "Regulation A / Crowdfunding",
       "full_name": "Exit Report — Regulation A",
-      "what": "Final report filed when a Regulation A reporting company terminates its reporting obligations \u0393\u00c7\u00f6 either because it completed reporting requirements or is going private.",
+      "what": "Final report filed when a Regulation A reporting company terminates its reporting obligations ΓÇö either because it completed reporting requirements or is going private.",
       "when": "Filed when Reg A reporting obligations end.",
       "who": "Regulation A companies terminating their reporting.",
-      "why_use_it": "End-of-life signal for Reg A investments \u0393\u00c7\u00f6 company is exiting public reporting, which can mean acquisition, private conversion, or wind-down.",
+      "why_use_it": "End-of-life signal for Reg A investments ΓÇö company is exiting public reporting, which can mean acquisition, private conversion, or wind-down.",
       "parent_form": "1-A",
-      "is_variant": true
+      "is_variant": true,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0095_01_exit-report-under-regulation-a_form1-z.pdf"
     },
     {
       "form_type": "C",
@@ -993,7 +1022,8 @@
       "when": "Filed with SEC before offering commences.",
       "who": "US companies raising money through Reg CF via registered crowdfunding portals (Wefunder, Republic, StartEngine).",
       "why_use_it": "Crowdfunding offering disclosure. Contains business plan, financials, and use of proceeds for companies raising from retail crowdfunding investors. Used by portals to display investment opportunity details.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0011_01_form-c_formc.pdf"
     },
     {
       "form_type": "C-AR",
@@ -1002,7 +1032,7 @@
       "what": "Annual report for Regulation Crowdfunding companies that have ongoing annual reporting obligations.",
       "when": "Within 120 days after fiscal year-end.",
       "who": "Companies with ongoing Reg CF reporting requirements.",
-      "why_use_it": "Annual financial transparency for crowdfunding investors \u0393\u00c7\u00f6 the only way to track financial progress of Reg CF portfolio companies year over year.",
+      "why_use_it": "Annual financial transparency for crowdfunding investors ΓÇö the only way to track financial progress of Reg CF portfolio companies year over year.",
       "parent_form": "1-A",
       "is_variant": true
     },
@@ -1013,7 +1043,7 @@
       "what": "Progress update filed by Regulation Crowdfunding issuers to report on the use of proceeds from their crowdfunding campaign.",
       "when": "Filed when the company reaches 50% and 100% of its fundraising target, and annually thereafter.",
       "who": "Regulation CF issuers that have successfully raised funds.",
-      "why_use_it": "Use-of-proceeds accountability document \u0393\u00c7\u00f6 shows crowdfunding investors whether the company is deploying capital as promised.",
+      "why_use_it": "Use-of-proceeds accountability document ΓÇö shows crowdfunding investors whether the company is deploying capital as promised.",
       "parent_form": "1-A",
       "is_variant": true
     },
@@ -1021,11 +1051,12 @@
       "form_type": "D",
       "category": "Exempt Offerings (Reg D)",
       "full_name": "Notice of Exempt Offering — Regulation D",
-      "what": "Notice of a private securities offering conducted under Regulation D exemptions (Rules 504, 506(b), 506(c)). Not a registration \u0393\u00c7\u00f6 just a notice to the SEC that a private offering is happening. Used for EVERY venture capital, private equity, and hedge fund raise.",
+      "what": "Notice of a private securities offering conducted under Regulation D exemptions (Rules 504, 506(b), 506(c)). Not a registration ΓÇö just a notice to the SEC that a private offering is happening. Used for EVERY venture capital, private equity, and hedge fund raise.",
       "when": "Within 15 calendar days after the first sale of securities.",
       "who": "Companies, funds, and startups raising money under Regulation D from accredited investors.",
       "why_use_it": "The primary signal of private capital raises. EDGAR Form D filings reveal: which companies are raising, how much, at what price, and who is managing the deal. Venture capital databases and private market trackers (Pitchbook, Crunchbase) supplement their data with Form D disclosures.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0089_01_form-d_formd.pdf"
     },
     {
       "form_type": "D/A",
@@ -1034,18 +1065,19 @@
       "what": "Amendment to update a previously filed Form D. Required for material changes to offering terms and annually for ongoing Reg D offerings.",
       "when": "Within 15 days of material change; annually within 15 days of one-year anniversary.",
       "who": "Companies and funds that filed the original Form D.",
-      "why_use_it": "Tracks ongoing private capital raise activity \u0393\u00c7\u00f6 total raised, new investors, changed terms. Venture investors track D/A amendments to follow fundraising progress of portfolio companies.",
+      "why_use_it": "Tracks ongoing private capital raise activity ΓÇö total raised, new investors, changed terms. Venture investors track D/A amendments to follow fundraising progress of portfolio companies.",
       "is_variant": false
     },
     {
       "form_type": "N-1A",
       "category": "Investment Companies (N-Series)",
       "full_name": "Mutual Fund Registration Statement",
-      "what": "Registration statement for open-end management investment companies (mutual funds). Includes the full prospectus (fees, investment objective, risks, performance) and Statement of Additional Information (SAI).",
+      "what": "The registration form used by open-end management investment companies (Mutual Funds). It contains the fund's investment objectives, strategies, risks, and a detailed fee table. It is the source document for the fund's statutory prospectus.",
       "when": "Initial registration before offering shares; annual post-effective amendments.",
       "who": "Open-end management investment companies (mutual funds) offering shares to the public.",
-      "why_use_it": "The definitive disclosure document for every US mutual fund. Morningstar, Yahoo Finance, and fund research platforms derive expense ratios, investment mandates, and manager information directly from N-1A filings.",
-      "is_variant": false
+      "why_use_it": "The most important guide for mutual fund investors. It is used to compare 'Expense Ratios' (how much the fund charges you) and to understand exactly what the 'Principal Investment Strategies' are. If a fund claims to be 'ESG' or 'Tech-focused,' the N-1A is where they must legally define those terms.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0028_01_registration-form-for-open-end-management-investment-companies_form-n-1a.pdf"
     },
     {
       "form_type": "N-2",
@@ -1055,7 +1087,8 @@
       "when": "Filed before offering shares; effective upon SEC declaration.",
       "who": "Closed-end management investment companies.",
       "why_use_it": "Source of investment mandate, fees, and leverage details for closed-end funds (CEFs). CEF-specific metrics like discount/premium to NAV require accurate N-2 data.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0029_01_registration-statement-for-closed-end-management-investment-companies_formn-2.pdf"
     },
     {
       "form_type": "N-14",
@@ -1064,8 +1097,9 @@
       "what": "Registration for securities issued by investment companies in fund mergers, reorganizations, or exchange offers between funds. Discloses the rationale and terms of the fund merger.",
       "when": "Filed before the fund merger; effective upon SEC declaration.",
       "who": "Registered investment companies merging with other funds.",
-      "why_use_it": "Fund merger impact analysis. When two mutual funds merge, the N-14 explains what investors get \u0393\u00c7\u00f6 new fund name, new expense ratio, new investment mandate. Morningstar tracks all fund mergers via N-14 filings.",
-      "is_variant": false
+      "why_use_it": "Fund merger impact analysis. When two mutual funds merge, the N-14 explains what investors get ΓÇö new fund name, new expense ratio, new investment mandate. Morningstar tracks all fund mergers via N-14 filings.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0049_01_form-for-the-registration-of-securities-issued-in-business-combination_formn-14.pdf"
     },
     {
       "form_type": "N-CEN",
@@ -1075,17 +1109,19 @@
       "when": "Within 75 days after fund fiscal year-end.",
       "who": "All registered investment companies (mutual funds, ETFs, closed-end funds, UITs).",
       "why_use_it": "Operational fund data used by fund databases for administrator, custodian, and auditor tracking. Used by compliance and due-diligence databases.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0003_01_annual-report-for-registered-investment-companies_formn-cen.pdf"
     },
     {
       "form_type": "N-CSR",
       "category": "Investment Companies (N-Series)",
       "full_name": "Certified Annual/Semi-Annual Shareholder Report",
-      "what": "Certified annual and semi-annual reports for management investment companies, including full audited financial statements and portfolio holdings.",
+      "what": "Certified Shareholder Report of registered management investment companies (Mutual Funds). It contains the annual or semi-annual report sent to shareholders, including full portfolio holdings and financial statements.",
       "when": "Within 10 days after transmittal to shareholders.",
       "who": "Management investment companies (mutual funds, ETFs, closed-end funds).",
-      "why_use_it": "Full fund portfolio holdings with audited financials. More detailed than N-PORT and includes manager commentary. Used for detailed fund analysis and attribution.",
-      "is_variant": false
+      "why_use_it": "The audited reality of a mutual fund's performance. While 13Fs only show US long positions, N-CSR shows EVERY holding, including shorts, derivatives, and foreign stocks. It is the most comprehensive look at a fund's actual risk profile.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0027_01_certified-shareholder-report-of-registered-management-investment-compa_formn-csr.pdf"
     },
     {
       "form_type": "N-CSRS",
@@ -1104,7 +1140,7 @@
       "what": "Monthly report disclosing complete portfolio holdings of registered investment companies. Includes every position's value, risk metrics, and derivative exposures.",
       "when": "Within 30 days after month-end; public disclosure delayed 60 days.",
       "who": "Registered management investment companies with assets over $1B.",
-      "why_use_it": "Most granular fund holdings data available. More frequent and more detailed than 13F \u0393\u00c7\u00f6 includes fixed income, derivatives, and international positions. Used by institutional research for fund flow analysis.",
+      "why_use_it": "Most granular fund holdings data available. More frequent and more detailed than 13F ΓÇö includes fixed income, derivatives, and international positions. Used by institutional research for fund flow analysis.",
       "is_variant": false
     },
     {
@@ -1114,7 +1150,7 @@
       "what": "The portfolio holdings exhibit filed as part of the N-PORT monthly filing. Contains the actual position-level data.",
       "when": "Filed as part of monthly N-PORT submission.",
       "who": "Same as NPORT-P filers.",
-      "why_use_it": "The underlying data table behind the N-PORT filing \u0393\u00c7\u00f6 useful for quantitative analysts pulling raw fund position data.",
+      "why_use_it": "The underlying data table behind the N-PORT filing ΓÇö useful for quantitative analysts pulling raw fund position data.",
       "is_variant": false
     },
     {
@@ -1124,8 +1160,9 @@
       "what": "Monthly schedule of portfolio holdings of money market funds. Discloses every instrument held including issuer, maturity, yield, and market value.",
       "when": "Filed monthly; within 5 business days after month-end.",
       "who": "Money market funds registered under the Investment Company Act.",
-      "why_use_it": "Money market safety monitoring tool. During financial stress, investors and regulators monitor N-MFP filings to track money market fund exposure to specific issuers \u0393\u00c7\u00f6 the 2008 'breaking the buck' scenario.",
-      "is_variant": false
+      "why_use_it": "Money market safety monitoring tool. During financial stress, investors and regulators monitor N-MFP filings to track money market fund exposure to specific issuers ΓÇö the 2008 'breaking the buck' scenario.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0030_01_monthly-schedule-of-portfolio-holdings-of-money-market-funds_formn-mfp.pdf"
     },
     {
       "form_type": "N-PX",
@@ -1151,10 +1188,10 @@
       "form_type": "N-30D",
       "category": "Investment Companies (N-Series)",
       "full_name": "Annual/Semi-Annual Report to Fund Shareholders",
-      "what": "Annual and semi-annual reports sent to investment company shareholders \u0393\u00c7\u00f6 the fund's investor communication document.",
+      "what": "Annual and semi-annual reports sent to investment company shareholders ΓÇö the fund's investor communication document.",
       "when": "Filed within 60 days after transmittal to shareholders.",
       "who": "Management investment companies.",
-      "why_use_it": "Fund shareholder communication. Contains manager's letter, performance review, and market commentary \u0393\u00c7\u00f6 the portfolio manager's perspective on markets and holdings.",
+      "why_use_it": "Fund shareholder communication. Contains manager's letter, performance review, and market commentary ΓÇö the portfolio manager's perspective on markets and holdings.",
       "is_variant": false
     },
     {
@@ -1165,16 +1202,17 @@
       "when": "Before beginning operations as a registered investment company.",
       "who": "New investment companies registering under the Investment Company Act.",
       "why_use_it": "Marks the legal formation of a new registered investment company. Used to track new fund launches.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0146_01_notification-of-registration-filed-pursuant-to-section-8a-of-investmen_formn-8a.pdf"
     },
     {
       "form_type": "485BPOS",
       "category": "Investment Companies (N-Series)",
       "full_name": "Post-Effective Amendment — Mutual Fund (Rule 485(b))",
-      "what": "Automatic post-effective amendment to a mutual fund's registration statement for routine updates \u0393\u00c7\u00f6 annual updates to performance data, updated prospectus, new share class additions.",
+      "what": "Automatic post-effective amendment to a mutual fund's registration statement for routine updates ΓÇö annual updates to performance data, updated prospectus, new share class additions.",
       "when": "Within 60 days of fiscal year-end; automatically effective under Rule 485(b).",
       "who": "Mutual funds updating their registration statement/prospectus annually.",
-      "why_use_it": "Annual fund data refresh. Contains updated performance track record, current expense ratios, and any new share classes \u0393\u00c7\u00f6 the source for annual mutual fund database updates.",
+      "why_use_it": "Annual fund data refresh. Contains updated performance track record, current expense ratios, and any new share classes ΓÇö the source for annual mutual fund database updates.",
       "is_variant": false
     },
     {
@@ -1184,28 +1222,30 @@
       "what": "Post-effective amendment requiring SEC review (non-automatic). Used when material changes require SEC approval before taking effect.",
       "when": "Filed 60 days before desired effectiveness; requires SEC review.",
       "who": "Mutual funds making material changes to investment policies or operations.",
-      "why_use_it": "Material fund change alert \u0393\u00c7\u00f6 investment mandate shifts, fundamental policy changes, or new fund strategies require 485APOS. Important for tracking when a fund drifts from its stated objective.",
+      "why_use_it": "Material fund change alert ΓÇö investment mandate shifts, fundamental policy changes, or new fund strategies require 485APOS. Important for tracking when a fund drifts from its stated objective.",
       "is_variant": false
     },
     {
       "form_type": "ADV",
       "category": "Investment Advisers (ADV)",
       "full_name": "Investment Adviser Registration / Annual Update",
-      "what": "Registration form for SEC-registered investment advisers. Contains: business description, clients and AUM, fee schedules, ownership structure, disciplinary history, and conflicts of interest. Also serves as the annual updating amendment (Part 1 filed with SEC; Part 2 \u0393\u00c7\u00f6 brochure \u0393\u00c7\u00f6 provided to clients).",
+      "what": "The registration form for Investment Advisers. It consists of Part 1 (quantitative data about the firm, assets, and employees) and Part 2 (a narrative brochure describing the firm's services, fees, and disciplinary history).",
       "when": "Initial: before commencing advisory activities. Annual update: within 90 days of fiscal year-end.",
       "who": "Investment advisers with $110M+ AUM (advisers with $100M+ may also register voluntarily).",
-      "why_use_it": "The definitive disclosure for every major hedge fund, mutual fund manager, and RIA. AUM data, fee structures, key personnel, and disciplinary history all derive from ADV filings. Used by institutional due diligence teams and RIA databases like SEC Investment Adviser Search.",
-      "is_variant": false
+      "why_use_it": "Fundamental due diligence for anyone hiring a wealth manager or hedge fund. It reveals the firm's total Assets Under Management (AUM), their fee structure, and most importantly, any 'Disciplinary Events' or legal troubles the firm or its individuals have faced.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0055_01_uniform-application-for-investment-adviser-registration-and-report-by-_formadv.pdf"
     },
     {
       "form_type": "ADV-W",
       "category": "Investment Advisers (ADV)",
       "full_name": "Withdrawal from Investment Adviser Registration",
-      "what": "Filed when an investment adviser withdraws its SEC registration \u0393\u00c7\u00f6 ceasing operations, falling below registration threshold, or transitioning to state registration.",
+      "what": "Filed when an investment adviser withdraws its SEC registration ΓÇö ceasing operations, falling below registration threshold, or transitioning to state registration.",
       "when": "Within 180 days of ceasing to qualify for SEC registration.",
       "who": "Investment advisers withdrawing from SEC registration.",
-      "why_use_it": "Tracks fund/adviser closures. When a hedge fund files ADV-W, it signals fund shutdown \u0393\u00c7\u00f6 relevant for investors in or tracking those strategies.",
-      "is_variant": false
+      "why_use_it": "Tracks fund/adviser closures. When a hedge fund files ADV-W, it signals fund shutdown ΓÇö relevant for investors in or tracking those strategies.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0088_01_notice-of-withdrawal-from-registration-as-investment-adviser_formadv-w.pdf"
     },
     {
       "form_type": "PF",
@@ -1214,18 +1254,20 @@
       "what": "Systemic risk report for private funds (hedge funds, private equity, venture capital) managed by SEC-registered advisers. Provides gross/net AUM, leverage ratios, liquidity profiles, and counterparty exposure.",
       "when": "Large hedge fund advisers ($1.5B+): quarterly within 60 days + 72-hour event reporting. Large private equity advisers ($2B+): quarterly event-based reports within 60 days. Large liquidity fund advisers ($1B+): quarterly within 15 days. Others: annually within 120 days.",
       "who": "SEC-registered advisers managing private funds with at least $150M in private fund assets.",
-      "why_use_it": "Systemic risk monitoring. Form PF data (in aggregate) is used by regulators to monitor systemic risk in private markets. Individual filings reveal fund-level leverage, strategy type, and liquidity mismatches \u0393\u00c7\u00f6 used by institutional counterparties and researchers.",
-      "is_variant": false
+      "why_use_it": "Systemic risk monitoring. Form PF data (in aggregate) is used by regulators to monitor systemic risk in private markets. Individual filings reveal fund-level leverage, strategy type, and liquidity mismatches ΓÇö used by institutional counterparties and researchers.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0004_01_reporting-form-for-investment-advisers-to-private-funds-and-certain-co_formpf.pdf"
     },
     {
       "form_type": "ABS-15G",
       "category": "Asset-Backed Securities",
       "full_name": "ABS Repurchase Activity Report",
-      "what": "Semi-annual and annual report by ABS securitizers disclosing repurchase demand history \u0393\u00c7\u00f6 instances where investors demanded the securitizer buy back a loan due to representation and warranty breaches.",
+      "what": "Semi-annual and annual report by ABS securitizers disclosing repurchase demand history ΓÇö instances where investors demanded the securitizer buy back a loan due to representation and warranty breaches.",
       "when": "Semi-annually (45 days after June 30) and annually (90 days after December 31).",
       "who": "Securitizers of asset-backed securities that are Exchange Act reporting companies.",
-      "why_use_it": "ABS credit quality tracker. High repurchase demand rates indicate poor loan underwriting quality \u0393\u00c7\u00f6 a leading indicator of ABS pool deterioration used by structured finance analysts.",
-      "is_variant": false
+      "why_use_it": "ABS credit quality tracker. High repurchase demand rates indicate poor loan underwriting quality ΓÇö a leading indicator of ABS pool deterioration used by structured finance analysts.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0096_01_asset-backed-securitizer-report_formabs-15g.pdf"
     },
     {
       "form_type": "ABS-EE",
@@ -1234,8 +1276,9 @@
       "what": "Standardized electronic asset-level data file for asset-backed securities, providing loan-by-loan detail: original balance, current balance, delinquency status, geographic data.",
       "when": "Filed at time of ABS registration and with each periodic report.",
       "who": "Issuers of registered asset-backed securities (mortgage-backed, auto loan, credit card ABS).",
-      "why_use_it": "Loan-level ABS data \u0393\u00c7\u00f6 the raw data used by structured finance quants to model pool performance, prepayment speeds, and loss projections. Essential for MBS/ABS research.",
-      "is_variant": false
+      "why_use_it": "Loan-level ABS data ΓÇö the raw data used by structured finance quants to model pool performance, prepayment speeds, and loss projections. Essential for MBS/ABS research.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0098_01_form-for-submission-of-electronic-exhibits-for-asset-backed-securities_formabs-ee.pdf"
     },
     {
       "form_type": "10-D",
@@ -1244,7 +1287,7 @@
       "what": "Monthly or periodic distribution report for asset-backed securities issuers. Reports payments made to ABS investors, pool balances, delinquencies, and defaults.",
       "when": "Monthly or per the ABS deal's distribution schedule.",
       "who": "Issuers of asset-backed securities registered under the Exchange Act.",
-      "why_use_it": "ABS performance tracker \u0393\u00c7\u00f6 shows actual cash flows, pool factor, and default rates for specific ABS deals. Used by fixed income investors monitoring their ABS/MBS portfolio performance.",
+      "why_use_it": "ABS performance tracker ΓÇö shows actual cash flows, pool factor, and default rates for specific ABS deals. Used by fixed income investors monitoring their ABS/MBS portfolio performance.",
       "is_variant": false
     },
     {
@@ -1255,7 +1298,8 @@
       "when": "Typically within 9 months after fiscal year-end.",
       "who": "Foreign governments, central banks, and government agencies with US-listed securities.",
       "why_use_it": "Sovereign credit analysis. Emerging market bond investors use 18-K filings to assess country fundamentals: GDP growth, inflation, primary fiscal balance, and debt sustainability metrics.",
-      "is_variant": false
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0130_01_annual-report-for-foreign-governments-and-political-subdivisions-there_form18-k.pdf"
     },
     {
       "form_type": "ANNLRPT",
@@ -1274,7 +1318,7 @@
       "what": "Quarterly report filed by multilateral development banks with bond programs in US markets.",
       "when": "Quarterly per the institution's schedule.",
       "who": "Multilateral development banks.",
-      "why_use_it": "Quarterly supranational bond data \u0393\u00c7\u00f6 update on lending activity, capital adequacy, and funding needs of development finance institutions.",
+      "why_use_it": "Quarterly supranational bond data ΓÇö update on lending activity, capital adequacy, and funding needs of development finance institutions.",
       "is_variant": false
     },
     {
@@ -1294,18 +1338,20 @@
       "what": "Registration and ongoing disclosure form for Alternative Trading Systems (ATS/dark pools). Discloses operational details of the dark pool, fee structure, subscriber information, and volume statistics.",
       "when": "Initial: before commencing ATS operations. Amendments when material changes occur.",
       "who": "Operators of Alternative Trading Systems (dark pools, ECNs, crossing networks).",
-      "why_use_it": "Dark pool transparency. ATS-N filings reveal who operates each dark pool, their subscriber list, order types, and trading volumes \u0393\u00c7\u00f6 used by market structure researchers and regulators.",
-      "is_variant": false
+      "why_use_it": "Dark pool transparency. ATS-N filings reveal who operates each dark pool, their subscriber list, order types, and trading volumes ΓÇö used by market structure researchers and regulators.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0069_01_nms-stock-alternative-trading-systems_formats-n.pdf"
     },
     {
       "form_type": "MA",
       "category": "Municipal Advisors",
       "full_name": "Municipal Advisor Registration",
-      "what": "Registration form for municipal advisors \u0393\u00c7\u00f6 entities that advise municipalities on debt issuances. Requires registration with both SEC and MSRB.",
+      "what": "Registration form for municipal advisors ΓÇö entities that advise municipalities on debt issuances. Requires registration with both SEC and MSRB.",
       "when": "Before engaging in municipal advisory activities.",
       "who": "Financial advisors, consultants, and banks that advise municipalities on securities issuance.",
-      "why_use_it": "Municipal bond market oversight. Tracks all registered municipal advisors \u0393\u00c7\u00f6 relevant for investors in municipal bonds who want to understand the advisory ecosystem behind a bond issuance.",
-      "is_variant": false
+      "why_use_it": "Municipal bond market oversight. Tracks all registered municipal advisors ΓÇö relevant for investors in municipal bonds who want to understand the advisory ecosystem behind a bond issuance.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0103_01_application-for-municipal-advisor-registration-annual-update-of-munici_formma.pdf"
     },
     {
       "form_type": "MA-A",
@@ -1314,7 +1360,7 @@
       "what": "Annual update to municipal advisor registration.",
       "when": "Annually within 90 days of fiscal year-end.",
       "who": "Registered municipal advisors.",
-      "why_use_it": "Maintains current information on municipal advisors \u0393\u00c7\u00f6 staffing, disciplinary history, and any changes to advisory services.",
+      "why_use_it": "Maintains current information on municipal advisors ΓÇö staffing, disciplinary history, and any changes to advisory services.",
       "is_variant": false
     },
     {
@@ -1324,8 +1370,9 @@
       "what": "Individual-level registration for natural persons (specific employees) associated with a municipal advisory firm.",
       "when": "Before the individual engages in municipal advisory activities.",
       "who": "Individual municipal advisor representatives.",
-      "why_use_it": "Individual advisor accountability \u0393\u00c7\u00f6 tracks specific persons managing municipal debt advisory relationships.",
-      "is_variant": false
+      "why_use_it": "Individual advisor accountability ΓÇö tracks specific persons managing municipal debt advisory relationships.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0090_01_information-regarding-natural-persons-who-engage-in-municipal-advisory_formma-i.pdf"
     },
     {
       "form_type": "8-A12B",
@@ -1334,7 +1381,7 @@
       "what": "Short-form registration of securities on a national exchange (NYSE, NASDAQ) for companies already subject to Exchange Act reporting. Often filed alongside an S-1 or other registration at IPO.",
       "when": "Before or upon listing on a national exchange.",
       "who": "Already-reporting companies listing new securities classes on exchanges.",
-      "why_use_it": "Tracks exact moment securities become exchange-listed \u0393\u00c7\u00f6 important for calculating official trading start dates and listing history.",
+      "why_use_it": "Tracks exact moment securities become exchange-listed ΓÇö important for calculating official trading start dates and listing history.",
       "is_variant": false
     },
     {
@@ -1343,7 +1390,7 @@
       "full_name": "Notice of Registration Statement Effectiveness",
       "what": "SEC-published notice on EDGAR that a registration statement (S-1, S-3, F-1, etc.) has been declared effective. The company may now proceed with its offering.",
       "when": "Published by SEC when registration becomes effective.",
-      "who": "Published by SEC Division of Corporation Finance \u0393\u00c7\u00f6 not filed by company.",
+      "who": "Published by SEC Division of Corporation Finance ΓÇö not filed by company.",
       "why_use_it": "IPO green light signal. When an EFFECT notice appears on EDGAR, the IPO/offering is officially approved and trading can begin immediately. IPO arbitrageurs watch for EFFECT notices in real time.",
       "is_variant": false
     },
@@ -1354,7 +1401,7 @@
       "what": "Application for exemption from Section 12(g) registration requirements or from certain Exchange Act reporting obligations.",
       "when": "Filed when exemption is sought.",
       "who": "Companies seeking exemption from Section 12(g) registration or reporting.",
-      "why_use_it": "Tracks companies attempting to avoid or exit SEC reporting requirements \u0393\u00c7\u00f6 a governance flag for investors in affected companies.",
+      "why_use_it": "Tracks companies attempting to avoid or exit SEC reporting requirements ΓÇö a governance flag for investors in affected companies.",
       "parent_form": "Form 15",
       "is_variant": true
     },
@@ -1375,7 +1422,7 @@
       "what": "Amendment to a previously filed NT 10-K.",
       "when": "As needed.",
       "who": "Same company that filed NT 10-K.",
-      "why_use_it": "Updates the reason for late filing \u0393\u00c7\u00f6 sometimes reveals additional complexity or expanding accounting issues.",
+      "why_use_it": "Updates the reason for late filing ΓÇö sometimes reveals additional complexity or expanding accounting issues.",
       "parent_form": "NT 10-K",
       "is_variant": true
     },
@@ -1397,7 +1444,7 @@
       "what": "Amendment to NT 10-Q.",
       "when": "As needed.",
       "who": "Same company that filed NT 10-Q.",
-      "why_use_it": "Updated explanation for quarterly delay \u0393\u00c7\u00f6 tracks evolving accounting issues.",
+      "why_use_it": "Updated explanation for quarterly delay ΓÇö tracks evolving accounting issues.",
       "parent_form": "NT 10-K",
       "is_variant": true
     },
@@ -1438,11 +1485,12 @@
       "form_type": "SD",
       "category": "Specialized Disclosures",
       "full_name": "Conflict Minerals Disclosure",
-      "what": "Annual disclosure of whether a company's manufactured products contain conflict minerals (gold, tin, tungsten, tantalum) from the Democratic Republic of Congo or adjoining countries. Requires supply chain due diligence and independent audit if conflict minerals are present.",
+      "what": "The 'Specialized Disclosure' report, most commonly used for Conflict Minerals disclosures. Companies must disclose if their products contain gold, tin, tungsten, or tantalum sourced from the Democratic Republic of the Congo or adjoining countries.",
       "when": "Annually by May 31 for prior calendar year.",
       "who": "SEC-reporting manufacturers whose products use conflict minerals necessary to production or functionality.",
-      "why_use_it": "ESG supply chain transparency. Impact investors and ESG raters use SD filings to score companies on conflict minerals sourcing practices. Tech companies (consumer electronics, semiconductors) file extensively.",
-      "is_variant": false
+      "why_use_it": "The primary data source for ESG (Environmental, Social, and Governance) scores regarding supply chain ethics. Institutional investors use SD filings to ensure the companies they invest in aren't indirectly financing regional conflicts through their mineral procurement.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0070_01_specialized-disclosure-report_formsd.pdf"
     },
     {
       "form_type": "IRANNOTICE",
@@ -1461,7 +1509,7 @@
       "what": "Correspondence between the SEC staff and a registrant during review of a filing. Includes the SEC's comment letters (questions about disclosures) and the company's response letters. Made public after review is complete.",
       "when": "Filed as correspondence is exchanged during SEC review process.",
       "who": "Registrants engaged in active SEC filing reviews.",
-      "why_use_it": "Deep-dive analyst tool. SEC comment letters reveal exactly what regulators questioned \u0393\u00c7\u00f6 revenue recognition, off-balance-sheet items, segment reporting, related-party transactions. Lawyers and forensic accountants read CORRESP filings to identify disclosure weaknesses.",
+      "why_use_it": "Deep-dive analyst tool. SEC comment letters reveal exactly what regulators questioned ΓÇö revenue recognition, off-balance-sheet items, segment reporting, related-party transactions. Lawyers and forensic accountants read CORRESP filings to identify disclosure weaknesses.",
       "is_variant": false
     },
     {
@@ -1471,7 +1519,7 @@
       "what": "Request filed by a company or individual asking the SEC staff to issue a 'no-action' letter confirming they won't recommend enforcement action if a proposed transaction or practice proceeds as described.",
       "when": "Filed as needed before a proposed action.",
       "who": "Companies, law firms, or individuals seeking SEC guidance on novel or uncertain regulatory questions.",
-      "why_use_it": "Regulatory precedent research. No-action letters define the boundaries of securities law in practice \u0393\u00c7\u00f6 used by securities lawyers and compliance officers to understand what the SEC will and won't pursue.",
+      "why_use_it": "Regulatory precedent research. No-action letters define the boundaries of securities law in practice ΓÇö used by securities lawyers and compliance officers to understand what the SEC will and won't pursue.",
       "is_variant": false
     },
     {
@@ -1491,7 +1539,7 @@
       "what": "Exemption filing for foreign private issuers whose American Depositary Receipts trade in US markets without full SEC registration (OTC/Pink Sheet ADRs).",
       "when": "Filed when FPI establishes an informal ADR program.",
       "who": "Foreign private issuers with OTC ADR programs not requiring full SEC registration.",
-      "why_use_it": "Tracks the universe of Level 1 ADRs and OTC-traded foreign securities \u0393\u00c7\u00f6 important for international stock databases tracking available ADR investment opportunities.",
+      "why_use_it": "Tracks the universe of Level 1 ADRs and OTC-traded foreign securities ΓÇö important for international stock databases tracking available ADR investment opportunities.",
       "is_variant": false
     },
     {
@@ -1501,8 +1549,9 @@
       "what": "Registration statement for entities seeking to operate as SEC-registered crowdfunding funding portals under Regulation Crowdfunding.",
       "when": "Before commencing crowdfunding portal operations.",
       "who": "Entities seeking to operate Regulation CF funding portals.",
-      "why_use_it": "Crowdfunding platform registry \u0393\u00c7\u00f6 tracks all SEC-registered portals (Republic, Wefunder, StartEngine). Used by investors to verify a portal's regulatory standing before investing through it.",
-      "is_variant": false
+      "why_use_it": "Crowdfunding platform registry ΓÇö tracks all SEC-registered portals (Republic, Wefunder, StartEngine). Used by investors to verify a portal's regulatory standing before investing through it.",
+      "is_variant": false,
+      "pdf_url": "https://github.com/talhasiddique7/sec-filings/blob/main/sec_pdfs/0085_01_application-or-amendment-to-application-for-registration-or-withdrawal_formcfportal.pdf"
     },
     {
       "form_type": "CERTNYS",
@@ -1518,7 +1567,7 @@
       "form_type": "DRS",
       "category": "Certifications & Exchange Filings",
       "full_name": "Draft Registration Statement",
-      "what": "Draft registration statement submitted confidentially to the SEC for review before public filing \u0393\u00c7\u00f6 allows companies to test the IPO process and get SEC comments without public disclosure. JOBS Act creation.",
+      "what": "Draft registration statement submitted confidentially to the SEC for review before public filing ΓÇö allows companies to test the IPO process and get SEC comments without public disclosure. JOBS Act creation.",
       "when": "Submitted confidentially; must be publicly filed at least 15 days before IPO roadshow.",
       "who": "EGCs (Emerging Growth Companies) and FPIs confidentially submitting IPO registration statements.",
       "why_use_it": "Confidential IPO pipeline tracking. When a DRS becomes public (DRSLTR or public S-1), it confirms a company is actively in the IPO process. Investors use public DRS disclosures to start analyzing upcoming IPOs early.",

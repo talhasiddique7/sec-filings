@@ -68,6 +68,9 @@ for form in data['forms']:
         seen_forms.add(ft)
         unique_forms.append(form)
 
+# Eye SVG for the table
+eye_svg_small = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-icon"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>'
+
 for form in unique_forms:
     ft = form['form_type']
     fn = form['full_name']
@@ -80,10 +83,13 @@ for form in unique_forms:
     link = get_link(ft)
     bucket = get_cat_bucket(c)
     
+    pdf_url = form.get('pdf_url')
+    eye_icon_html = f' <a href="{pdf_url}" target="_blank" class="table-eye-link" title="View Original PDF">{eye_svg_small}</a>' if pdf_url else ""
+    
     search_text = f"{ft} {fn} {c} {w} {wn} {who} {val}".replace('"', '&quot;')
     
     row = f'            <tr data-category="{bucket}" data-search="{search_text}">\n'
-    row += f'              <td><a href="{link}">{ft}</a></td>\n'
+    row += f'              <td><a href="{link}">{ft}</a>{eye_icon_html}</td>\n'
     row += f'              <td>{fn}</td>\n'
     row += f'              <td>{c}</td>\n'
     row += f'              <td>{format_cell(w)}</td>\n'

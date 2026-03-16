@@ -45,6 +45,7 @@ def sync_filings():
         when = clean_text(form['when'])
         who = clean_text(form['who'])
         why = clean_text(form['why_use_it'])
+        pdf_url = form.get('pdf_url')
         
         # 1. Update Hero
         hero = soup.find('section', class_='filing-hero')
@@ -54,10 +55,35 @@ def sync_filings():
                 badge.string = cat
             
             h1 = hero.find('h1')
-            if h1: h1.string = ft
-            
-            sub = hero.find('p', class_='filing-subtitle')
-            if sub: sub.string = full_name
+            if h1:
+                h1.string = ft
+                
+                # Check for eye icon wrap
+                wrap = hero.find('div', class_='title-action-wrap')
+                if pdf_url:
+                    if not wrap:
+                        # Create wrapper and move H1 inside
+                        wrap = soup.new_tag('div', **{'class': 'title-action-wrap'})
+                        h1.replace_with(wrap)
+                        wrap.append(h1)
+                    
+                    # Ensure/Update Eye icon
+                    eye_btn = wrap.find('a', class_='view-pdf-btn')
+                    if not eye_btn:
+                        eye_btn = soup.new_tag('a', **{
+                            'href': pdf_url,
+                            'class': 'view-pdf-btn',
+                            'title': 'View Original PDF',
+                            'target': '_blank'
+                        })
+                        eye_svg = """<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-icon"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>"""
+                        eye_btn.append(BeautifulSoup(eye_svg, 'html.parser'))
+                        wrap.append(eye_btn)
+                    else:
+                        eye_btn['href'] = pdf_url
+                elif wrap:
+                    # If wrap exists but no PDF URL (unlikely but safe), unwrap
+                    wrap.replace_with(h1)
             
             grid = hero.find('div', class_='filing-meta-grid')
             if grid:

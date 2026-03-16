@@ -1878,6 +1878,78 @@ mark {
   color: var(--text-primary);
 }
 
+/* Eye Icon Action next to Title */
+.title-action-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.view-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.view-pdf-btn::after {
+  content: 'View Source';
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+}
+
+.view-pdf-btn:hover {
+  background: var(--bg-card);
+  color: var(--accent-blue) !important;
+  border-color: var(--accent-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(31, 122, 224, 0.2);
+}
+
+.view-pdf-btn:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.view-pdf-btn:active {
+  transform: scale(0.95);
+}
+
+.view-pdf-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.25px;
+}
+
 .filing-subtitle {
   font-size: 1.4rem;
   font-weight: 300;
@@ -1886,6 +1958,27 @@ mark {
   margin-bottom: 3.5rem;
   border-left: 3px solid var(--accent-blue);
   padding-left: 1.5rem;
+}
+
+/* Table Eye Link */
+.table-eye-link {
+  display: inline-flex;
+  margin-left: 10px;
+  color: var(--text-secondary);
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+
+.table-eye-link:hover {
+  opacity: 1;
+  color: var(--accent-blue);
+  transform: scale(1.1);
+}
+
+.table-eye-link svg {
+  width: 16px;
+  height: 16px;
 }
 
 .filing-meta-grid {
